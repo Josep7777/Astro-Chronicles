@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - suelo
+  - pared
+  - paredi
+  - izquierda
   layers:
   - Default
   - TransparentFX

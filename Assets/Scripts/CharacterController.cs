@@ -8,6 +8,8 @@ public class CharacterController : MonoBehaviour
     public float velocidad;
 
     public bool estaensuelo = false;
+    public bool rebotar = false;
+    public bool rebotari = false;
     void Start()
     {
         
@@ -34,7 +36,12 @@ public class CharacterController : MonoBehaviour
           }
         */
         Saltar();
-
+        Rebotar();
+        Rebotari();
+       
+       
+       
+       
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * velocidad;
     }
@@ -44,7 +51,33 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow) &&  estaensuelo == true) 
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 1.5f), ForceMode2D.Impulse);
+
+
+         
+           
         }
 
+    }
+
+    void Rebotar()
+    {
+
+        if (Input.GetKey(KeyCode.Space) && rebotar == true)
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.25f, 0.25f), ForceMode2D.Impulse);
+            //rebotari= true;
+        }
+
+       
+    }
+
+
+    void Rebotari()
+    {
+
+        if (Input.GetKey(KeyCode.Space) && rebotari == true)
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.25f, 0.25f), ForceMode2D.Impulse);
+        }
     }
 }
