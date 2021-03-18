@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma2
       objectReference: {fileID: 0}
+    - target: {fileID: 4693791551512558848, guid: dd13ab26f53c08d4ca059a3072c31d72,
+        type: 3}
+      propertyPath: m_TagString
+      value: trampa
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd13ab26f53c08d4ca059a3072c31d72, type: 3}
 --- !u!4 &56807315 stripped
@@ -263,6 +268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &58628473 stripped
@@ -284,8 +294,8 @@ GameObject:
   - component: {fileID: 72900639}
   - component: {fileID: 72900638}
   m_Layer: 0
-  m_Name: Pared1
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &142222776 stripped
@@ -490,7 +505,7 @@ GameObject:
   - component: {fileID: 212309538}
   m_Layer: 0
   m_Name: Suelo (7)
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -650,6 +665,7 @@ Transform:
   - {fileID: 1039328067}
   - {fileID: 1914478934}
   - {fileID: 1917677704}
+  - {fileID: 1999441383}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -667,7 +683,7 @@ GameObject:
   - component: {fileID: 304973879}
   m_Layer: 0
   m_Name: Suelo (8)
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,6 +866,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &667319544 stripped
@@ -938,7 +959,7 @@ PrefabInstance:
     - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Name
-      value: Plataforma1 (4)
+      value: Techo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
@@ -961,8 +982,8 @@ GameObject:
   - component: {fileID: 723438668}
   - component: {fileID: 723438667}
   m_Layer: 0
-  m_Name: Pared1 (6)
-  m_TagString: Untagged
+  m_Name: ParedIzqui
+  m_TagString: izquierda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1145,6 +1166,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma_trampa1
       objectReference: {fileID: 0}
+    - target: {fileID: 4738162132969689367, guid: 234c2bfe60306a045a11777bb6fa378c,
+        type: 3}
+      propertyPath: m_TagString
+      value: trampa
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234c2bfe60306a045a11777bb6fa378c, type: 3}
 --- !u!4 &744754669 stripped
@@ -1184,7 +1210,6 @@ Transform:
   - {fileID: 723438666}
   - {fileID: 212309537}
   - {fileID: 943332291}
-  - {fileID: 1999441383}
   - {fileID: 1749001624}
   - {fileID: 1125457362}
   m_Father: {fileID: 0}
@@ -1286,8 +1311,8 @@ GameObject:
   - component: {fileID: 809564370}
   - component: {fileID: 809564369}
   m_Layer: 0
-  m_Name: Pared1 (1)
-  m_TagString: Untagged
+  m_Name: ParedIzqui
+  m_TagString: izquierda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1470,6 +1495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &919748813 stripped
@@ -1545,6 +1575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &943332291 stripped
@@ -1566,8 +1601,8 @@ GameObject:
   - component: {fileID: 959465602}
   - component: {fileID: 959465601}
   m_Layer: 0
-  m_Name: Pared1 (2)
-  m_TagString: Untagged
+  m_Name: ParedIzqui
+  m_TagString: izquierda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1760,6 +1795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma2
       objectReference: {fileID: 0}
+    - target: {fileID: 4693791551512558848, guid: dd13ab26f53c08d4ca059a3072c31d72,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd13ab26f53c08d4ca059a3072c31d72, type: 3}
 --- !u!4 &965065383 stripped
@@ -1781,7 +1821,7 @@ GameObject:
   - component: {fileID: 1039328069}
   - component: {fileID: 1039328068}
   m_Layer: 0
-  m_Name: Suelo (6)
+  m_Name: Techo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2005,6 +2045,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &1117354999 stripped
@@ -2026,8 +2071,8 @@ GameObject:
   - component: {fileID: 1125457364}
   - component: {fileID: 1125457363}
   m_Layer: 0
-  m_Name: Pared1 (8)
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +2089,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 797453824}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1125457363
 BoxCollider2D:
@@ -2156,8 +2201,8 @@ GameObject:
   - component: {fileID: 1129251868}
   - component: {fileID: 1129251867}
   m_Layer: 0
-  m_Name: Pared1 (11)
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2287,7 +2332,7 @@ GameObject:
   - component: {fileID: 1131618450}
   m_Layer: 0
   m_Name: Suelo (5)
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,6 +2515,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &1152144937 stripped
@@ -2491,8 +2541,8 @@ GameObject:
   - component: {fileID: 1162654508}
   - component: {fileID: 1162654507}
   m_Layer: 0
-  m_Name: Pared1 (4)
-  m_TagString: Untagged
+  m_Name: ParedIzqui
+  m_TagString: izquierda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2688,7 +2738,7 @@ PrefabInstance:
     - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Name
-      value: Plataforma1 (2)
+      value: Techo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
@@ -2711,7 +2761,7 @@ GameObject:
   - component: {fileID: 1302074136}
   - component: {fileID: 1302074135}
   m_Layer: 0
-  m_Name: Suelo (4)
+  m_Name: Techo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2842,7 +2892,7 @@ GameObject:
   - component: {fileID: 1344594630}
   m_Layer: 0
   m_Name: Suelo (3)
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3040,6 +3090,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &1421740896 stripped
@@ -3062,7 +3117,7 @@ GameObject:
   - component: {fileID: 1480810113}
   m_Layer: 0
   m_Name: Suelo (9)
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3190,6 +3245,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma3
       objectReference: {fileID: 0}
+    - target: {fileID: 249233073715513280, guid: 0f57fb168f820e6458d44e04f7bdf27d,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 8889761201102886829, guid: 0f57fb168f820e6458d44e04f7bdf27d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3266,8 +3326,8 @@ GameObject:
   - component: {fileID: 1501146076}
   - component: {fileID: 1501146075}
   m_Layer: 0
-  m_Name: Pared1 (1)
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3450,6 +3510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &1501446795 stripped
@@ -3538,7 +3603,7 @@ PrefabInstance:
     - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Name
-      value: Plataforma1 (3)
+      value: Techo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
@@ -3614,6 +3679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plataforma_trampa1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738162132969689367, guid: 234c2bfe60306a045a11777bb6fa378c,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234c2bfe60306a045a11777bb6fa378c, type: 3}
@@ -3766,8 +3836,8 @@ GameObject:
   - component: {fileID: 1673707495}
   - component: {fileID: 1673707494}
   m_Layer: 0
-  m_Name: Pared1 (10)
-  m_TagString: Untagged
+  m_Name: ParedIzqui
+  m_TagString: izquierda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3936,8 +4006,8 @@ GameObject:
   - component: {fileID: 1749001626}
   - component: {fileID: 1749001625}
   m_Layer: 0
-  m_Name: Pared1 (7)
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3954,7 +4024,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 797453824}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1749001625
 BoxCollider2D:
@@ -4067,7 +4137,7 @@ GameObject:
   - component: {fileID: 1758991048}
   m_Layer: 0
   m_Name: Suelo (2)
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4250,6 +4320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma2
       objectReference: {fileID: 0}
+    - target: {fileID: 4693791551512558848, guid: dd13ab26f53c08d4ca059a3072c31d72,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd13ab26f53c08d4ca059a3072c31d72, type: 3}
 --- !u!4 &1914478934 stripped
@@ -4325,6 +4400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4693791551512558848, guid: dd13ab26f53c08d4ca059a3072c31d72,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd13ab26f53c08d4ca059a3072c31d72, type: 3}
 --- !u!4 &1917677704 stripped
@@ -4346,8 +4426,8 @@ GameObject:
   - component: {fileID: 1928968883}
   - component: {fileID: 1928968882}
   m_Layer: 0
-  m_Name: Pared1 (5)
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4530,6 +4610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma1
       objectReference: {fileID: 0}
+    - target: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0fa67888f993249ba3d6436b88e443, type: 3}
 --- !u!4 &1961591206 stripped
@@ -4543,22 +4628,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 797453824}
+    m_TransformParent: {fileID: 267211957}
     m_Modifications:
     - target: {fileID: 4173402841211437434, guid: 234c2bfe60306a045a11777bb6fa378c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0508823
+      value: 12.949118
       objectReference: {fileID: 0}
     - target: {fileID: 4173402841211437434, guid: 234c2bfe60306a045a11777bb6fa378c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0069065
+      value: 20.993093
       objectReference: {fileID: 0}
     - target: {fileID: 4173402841211437434, guid: 234c2bfe60306a045a11777bb6fa378c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 121.359856
+      value: 9.2089405
       objectReference: {fileID: 0}
     - target: {fileID: 4173402841211437434, guid: 234c2bfe60306a045a11777bb6fa378c,
         type: 3}
@@ -4583,7 +4668,7 @@ PrefabInstance:
     - target: {fileID: 4173402841211437434, guid: 234c2bfe60306a045a11777bb6fa378c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4173402841211437434, guid: 234c2bfe60306a045a11777bb6fa378c,
         type: 3}
@@ -4604,6 +4689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plataforma_trampa1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738162132969689367, guid: 234c2bfe60306a045a11777bb6fa378c,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234c2bfe60306a045a11777bb6fa378c, type: 3}
@@ -4626,8 +4716,8 @@ GameObject:
   - component: {fileID: 2010543639}
   - component: {fileID: 2010543638}
   m_Layer: 0
-  m_Name: Pared1 (3)
-  m_TagString: Untagged
+  m_Name: ParedIzqui
+  m_TagString: izquierda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4756,8 +4846,8 @@ GameObject:
   - component: {fileID: 2109683432}
   - component: {fileID: 2109683431}
   m_Layer: 0
-  m_Name: Pared1 (9)
-  m_TagString: Untagged
+  m_Name: ParedDere
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4887,7 +4977,7 @@ GameObject:
   - component: {fileID: 2126116456}
   m_Layer: 0
   m_Name: Suelo
-  m_TagString: Untagged
+  m_TagString: suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
