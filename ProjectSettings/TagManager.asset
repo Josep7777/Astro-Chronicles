@@ -8,6 +8,11 @@ TagManager:
   - izquierda
   - pared
   - trampa
+  tags:
+  - suelo
+  - pared
+  - paredi
+  - izquierda
   layers:
   - Default
   - TransparentFX
