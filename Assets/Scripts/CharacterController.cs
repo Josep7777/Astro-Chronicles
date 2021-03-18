@@ -48,13 +48,10 @@ public class CharacterController : MonoBehaviour
 
     void Saltar()
     {
-        if (Input.GetKey(KeyCode.UpArrow) &&  estaensuelo == true) 
+        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) &&  estaensuelo == true) 
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 1.5f), ForceMode2D.Impulse);
 
-
-         
-           
         }
 
     }
