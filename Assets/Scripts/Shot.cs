@@ -7,10 +7,14 @@ public class Shot : MonoBehaviour
     public GameObject bullet;
     public Transform firePoint;
     public float bulletSpeed = 50;
-
+    public Texture2D cursorArrow;
     Vector2 lookDirection;
     float lookAngle;
 
+    void Start()
+    {
+        Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
+    }
     void Update()
     {
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -25,6 +29,7 @@ public class Shot : MonoBehaviour
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+            Destroy(bulletClone.gameObject, 1f);
         }
     }
 }
