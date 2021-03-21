@@ -17,7 +17,7 @@ public class Shot : MonoBehaviour
     }
     void Update()
     {
-        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
