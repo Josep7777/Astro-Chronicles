@@ -7,6 +7,9 @@ public class CameraController : MonoBehaviour
 
     private Camera camara;
     public float zoom;
+    public GameObject a;
+    public GameObject d;
+    public GameObject w;
     private bool flag_tutorial;
     private GameObject jugador;
 
@@ -20,7 +23,10 @@ public class CameraController : MonoBehaviour
     GameObject paredDere;
     // Start is called before the first frame update
     void Start()
-    {      
+    {
+        a.gameObject.active = true;
+        d.gameObject.active = false;
+        w.gameObject.active = false;
         camara = Camera.main;
         flag_tutorial = true;
         jugador = GameObject.FindGameObjectWithTag("Player");
@@ -73,6 +79,9 @@ public class CameraController : MonoBehaviour
         {
             if (primera_vez==false) {
                 Debug.Log("Muevete derecha");
+                a.gameObject.active = false;
+                d.gameObject.active = true;
+
                 bool_paredIzqui = true;
                 
             } else
@@ -84,6 +93,8 @@ public class CameraController : MonoBehaviour
         if ((paredDere.GetComponent<BoxCollider2D>().IsTouching(jugador.GetComponent<CircleCollider2D>())) && (bool_paredIzqui) && (bool_paredDere==false))
         {
             Debug.Log("Salta");
+            d.gameObject.active = false;
+            w.gameObject.active = true;
             bool_paredDere = true;
 
         }
@@ -98,6 +109,8 @@ public class CameraController : MonoBehaviour
         if (bool_salto)
         {
             Debug.Log("Hola");
+            w.gameObject.active = false;
+            flag_tutorial = false;
             //bool_salto = true;
         }
         /**********************************************************************************/
@@ -107,12 +120,9 @@ public class CameraController : MonoBehaviour
     {
         if (jugador != null)
         {
+            camara.orthographicSize = Mathf.Lerp(camara.orthographicSize, 7f, Time.deltaTime);
             camara.transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y, -10);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("aaa");
-    }
 }
