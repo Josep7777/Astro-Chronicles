@@ -27,23 +27,6 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*  if(Input.GetKey(KeyCode.LeftArrow))
-          {
-              GetComponent<Rigidbody2D>().velocity = new Vector2(-3f, 0);
-          }
-          if (Input.GetKey(KeyCode.RightArrow))
-          {
-              GetComponent<Rigidbody2D>().velocity = new Vector2(3f, 0);
-          }
-          if (Input.GetKey(KeyCode.UpArrow))
-          {
-              GetComponent<Rigidbody2D>().velocity = new Vector2(0, -5f);
-          }
-          if (Input.GetKey(KeyCode.DownArrow))
-          {
-              GetComponent<Rigidbody2D>().velocity = new Vector2(0, -5f);
-          }
-        */
         Saltar();
         Rebotar();
         Rebotari();
@@ -51,6 +34,7 @@ public class CharacterController : MonoBehaviour
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * velocidad;
 
+        /*
         if (flag_rebote_dere == 2 || flag_rebote_izqui == 2)
         {
             if (flag_tiempo == false) { 
@@ -65,7 +49,7 @@ public class CharacterController : MonoBehaviour
         } else
         {
             flag_tiempo = false;
-        }
+        }*/
     }
 
     void Saltar()
@@ -74,7 +58,7 @@ public class CharacterController : MonoBehaviour
         {
             if (flag_salto == false)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7.0f), ForceMode2D.Impulse);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 6.0f), ForceMode2D.Impulse);
                 flag_salto = true;
                 Debug.Log("Salto");
             }
@@ -95,12 +79,13 @@ public class CharacterController : MonoBehaviour
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, 3.0f), ForceMode2D.Impulse);
                 flag_rebote_dere = 1;
+                Debug.Log("Dere");
             }
             
             //rebotari= true;
         } else
         {
-            flag_rebote_dere = 2;
+            flag_rebote_dere = 0;
         }
 
        
@@ -121,7 +106,7 @@ public class CharacterController : MonoBehaviour
             
         } else
         {
-            flag_rebote_izqui = 2;
+            flag_rebote_izqui = 0;
         }
     }
 }

@@ -5,10 +5,16 @@ using UnityEngine;
 public class WeaponRotation : MonoBehaviour
 {
  
-    public GameObject myPlayer;
+    public GameObject jugador;
+    public GameObject suelo;
+    public GameObject paredDere;
+    public GameObject paredIzqui;
 
     private void FixedUpdate()
     {
+        //suelo.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        //paredDere.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        //paredIzqui.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
   
@@ -21,17 +27,17 @@ public class WeaponRotation : MonoBehaviour
         if (rotationZ < -90 || rotationZ > 90)
         {
 
-
-
-            if (myPlayer.transform.eulerAngles.y == 0)
+            if (jugador.transform.eulerAngles.y == 0)
             {
 
 
                 transform.localRotation = Quaternion.Euler(180, 0, -rotationZ);
 
 
+
+
             }
-            else if (myPlayer.transform.eulerAngles.y == 180)
+            else if (jugador.transform.eulerAngles.y == 180)
             {
 
 
