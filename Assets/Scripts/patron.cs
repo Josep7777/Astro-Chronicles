@@ -15,11 +15,14 @@ public class patron : MonoBehaviour
     public GameObject bulletParent;
     private Transform player;
 
+    private Transform A;
+    private Transform B;
 
     void Start()
     {
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        A = GameObject.FindGameObjectWithTag("A").transform;
 
     }
 
@@ -28,15 +31,21 @@ public class patron : MonoBehaviour
     {
 
         float distancia = Vector2.Distance(player.position, transform.position);
+
         if(distancia< area && distancia>areadisparo)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, velocidad * Time.deltaTime);
         }
         else if(distancia <= areadisparo && tiempofire < Time.time){
 
+            transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
+
+            //transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
+
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
             tiempofire = Time.time + fireRate;
 
+          
         }
 
        
