@@ -24,6 +24,17 @@ public class CharacterController : MonoBehaviour
         flag_tiempo = false;
     }
 
+    void FixedUpdate()
+    {
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.magnitude < 0.01) //Comprueba si el jugador no tiene una fuerza aplicada (esta saltando ya)
+        {
+            flag_salto = false;
+        } else
+        {
+            flag_salto = true;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

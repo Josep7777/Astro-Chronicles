@@ -4,26 +4,31 @@ using UnityEngine;
 
 public class WeaponRotation : MonoBehaviour
 {
- 
+
+    //public Vector3 axis;
+    //public float angle;
     public GameObject jugador;
     /*public GameObject suelo;
     public GameObject paredDere;
     public GameObject paredIzqui;*/
 
-    private void FixedUpdate()
+    //private Transform centre;
+    //private Vector3 desiredPos;
+
+    void Start()
     {
-        //suelo.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
-        //paredDere.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
-        //paredIzqui.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        //centre = jugador.transform;
+        //transform.position = (transform.position - centre.position).normalized * 1 + centre.position;
+    }
 
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-  
-        difference.Normalize();
-
-        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-
-        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);
-
+    private void Update()
+    {       
+        Vector3 posicion_raton = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        posicion_raton.Normalize();
+        float angulo = Mathf.Atan2(posicion_raton.y, posicion_raton.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angulo);
+        //transform.RotateAround(jugador.transform.position, new Vector3(0f, 0f, 1f), angle);
+        /*
         if (rotationZ < -90 || rotationZ > 90)
         {
 
@@ -46,8 +51,7 @@ public class WeaponRotation : MonoBehaviour
 
             }
 
-        }
-
+        }*/
     }
 
 }
