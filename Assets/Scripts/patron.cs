@@ -14,7 +14,7 @@ public class patron : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletParent;
     private Transform player;
-
+   // private bool flagb = false;
     private Transform A;
     private Transform B;
 
@@ -23,10 +23,10 @@ public class patron : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
         A = GameObject.FindGameObjectWithTag("A").transform;
-
+        B = GameObject.FindGameObjectWithTag("B").transform;
     }
 
-  
+
     void Update()
     {
 
@@ -36,19 +36,47 @@ public class patron : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, velocidad * Time.deltaTime);
         }
-        else if(distancia <= areadisparo && tiempofire < Time.time){
+        else if(distancia <= areadisparo){
 
-            transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
 
-            //transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
 
-            Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
-            tiempofire = Time.time + fireRate;
 
+           transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
+
+            //if(this.transform.position == A.position)
+            // {
+            //flagb = true;
+
+            //     transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
+
+
+            // }
           
-        }
 
+           // if (flagb)
+           // {
+           //     transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
        
+           // }
+
+           // if (this.transform.position == B.position)
+           // {
+            //    flagb = false;
+//
+
+           // }
+
+
+
+            if (tiempofire < Time.time)
+            {
+                Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
+                tiempofire = Time.time + fireRate;
+
+            }
+        }
+       
+
     }
 
 
