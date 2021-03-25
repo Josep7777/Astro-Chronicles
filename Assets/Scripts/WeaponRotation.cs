@@ -6,9 +6,9 @@ public class WeaponRotation : MonoBehaviour
 {
  
     public GameObject jugador;
-    public GameObject suelo;
+    /*public GameObject suelo;
     public GameObject paredDere;
-    public GameObject paredIzqui;
+    public GameObject paredIzqui;*/
 
     private void FixedUpdate()
     {

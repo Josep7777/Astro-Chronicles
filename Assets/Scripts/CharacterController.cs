@@ -58,7 +58,14 @@ public class CharacterController : MonoBehaviour
         {
             if (flag_salto == false)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 6.0f), ForceMode2D.Impulse);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7.0f), ForceMode2D.Impulse);
+
+                /*
+                if (this.transform.position.y > 7.0f)
+                {
+                    this.transform.position = new Vector2(this.transform.position.x, 7.0f);
+                }*/
+
                 flag_salto = true;
                 Debug.Log("Salto");
             }
@@ -77,7 +84,7 @@ public class CharacterController : MonoBehaviour
         {
             if (flag_rebote_dere==0)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, 3.0f), ForceMode2D.Impulse);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, 4.0f), ForceMode2D.Impulse);
                 flag_rebote_dere = 1;
                 Debug.Log("Dere");
             }
@@ -99,7 +106,7 @@ public class CharacterController : MonoBehaviour
         {
             if (flag_rebote_izqui==0)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, 3.0f), ForceMode2D.Impulse);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, 4.0f), ForceMode2D.Impulse);
                 flag_rebote_izqui = 1;
                 Debug.Log("Izqui");
             }
