@@ -32,6 +32,7 @@ public class ColisionAB : MonoBehaviour
         if (distancia < area) {
             //Debug.Log("aaaaaa1");
             if (flagAB==false) {
+                Debug.Log("Hola");
                 transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
               //  Debug.Log("a: " + this.transform.position.x);
                // Debug.Log(B.position.x);
@@ -40,11 +41,12 @@ public class ColisionAB : MonoBehaviour
             
             if (this.transform.position.x == B.position.x)
             {
-                Debug.Log("aaaaaa2");
+                Debug.Log(posicioninicial);
 
-                transform.position = Vector2.MoveTowards(this.transform.position, new Vector2 (posicioninicial,this.transform.position.y), velocidad * Time.deltaTime);
-                flagAB = true;
-
+                this.transform.position = new Vector2(posicioninicial, this.transform.position.y);
+                //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2 (posicioninicial, 1.26f), velocidad * Time.deltaTime);
+                if (this.transform.position.x == posicioninicial) flagAB = false;
+                else flagAB = true;
             }
         }
        
