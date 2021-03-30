@@ -81,7 +81,7 @@ public class CameraController : MonoBehaviour
         /**********************************************************************************/
 
         /*****************************Comprobar colisiones con gameobjects***********************************/
-        if ((paredIzqui.GetComponent<BoxCollider2D>().IsTouching(jugador.GetComponent<CircleCollider2D>())) && bool_paredIzqui==false)
+        if ((paredIzqui.GetComponent<BoxCollider2D>().IsTouching(jugador.GetComponent<CapsuleCollider2D>())) && bool_paredIzqui==false)
         {
             if (primera_vez==false) {
                 Debug.Log("Muevete derecha");
@@ -96,7 +96,7 @@ public class CameraController : MonoBehaviour
             }
         }
 
-        if ((paredDere.GetComponent<BoxCollider2D>().IsTouching(jugador.GetComponent<CircleCollider2D>())) && (bool_paredIzqui) && (bool_paredDere==false))
+        if ((paredDere.GetComponent<BoxCollider2D>().IsTouching(jugador.GetComponent<CapsuleCollider2D>())) && (bool_paredIzqui) && (bool_paredDere==false))
         {
             Debug.Log("Salta");
             d.gameObject.SetActive(false);
