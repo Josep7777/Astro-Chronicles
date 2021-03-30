@@ -10,8 +10,11 @@ public class CameraController : MonoBehaviour
     public GameObject a;
     public GameObject d;
     public GameObject w;
+    public GameObject puntero;
+    public GameObject raton;
     private bool flag_tutorial;
     private GameObject jugador;
+    private bool flag_puntero;
 
     private bool bool_paredIzqui;
     private bool bool_paredDere;
@@ -24,9 +27,12 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        a.gameObject.active = true;
-        d.gameObject.active = false;
-        w.gameObject.active = false;
+        flag_puntero = false;
+        a.gameObject.SetActive(true);
+        d.gameObject.SetActive(false);
+        w.gameObject.SetActive(false);
+        puntero.gameObject.SetActive(false);
+        raton.gameObject.SetActive(false);
         camara = Camera.main;
         flag_tutorial = true;
         jugador = GameObject.FindGameObjectWithTag("Player");
@@ -79,8 +85,8 @@ public class CameraController : MonoBehaviour
         {
             if (primera_vez==false) {
                 Debug.Log("Muevete derecha");
-                a.gameObject.active = false;
-                d.gameObject.active = true;
+                a.gameObject.SetActive(false);
+                d.gameObject.SetActive(true);
 
                 bool_paredIzqui = true;
                 
@@ -93,8 +99,8 @@ public class CameraController : MonoBehaviour
         if ((paredDere.GetComponent<BoxCollider2D>().IsTouching(jugador.GetComponent<CircleCollider2D>())) && (bool_paredIzqui) && (bool_paredDere==false))
         {
             Debug.Log("Salta");
-            d.gameObject.active = false;
-            w.gameObject.active = true;
+            d.gameObject.SetActive(false);
+            w.gameObject.SetActive(true);
             bool_paredDere = true;
 
         }
@@ -109,9 +115,16 @@ public class CameraController : MonoBehaviour
         if (bool_salto)
         {
             Debug.Log("Hola");
-            w.gameObject.active = false;
-            flag_tutorial = false;
-            //bool_salto = true;
+            w.gameObject.SetActive(false);
+            puntero.gameObject.SetActive(true);
+            raton.gameObject.SetActive(true);
+            puntero.gameObject.transform.position = new Vector2(Mathf.Lerp(-2.5f, 2.5f, Mathf.PingPong(Time.time*0.7f, 1)), puntero.gameObject.transform.position.y);
+            if (Input.GetMouseButtonDown(0))
+            {
+                puntero.gameObject.SetActive(false);
+                raton.gameObject.SetActive(false);
+                flag_tutorial = false;
+            }
         }
         /**********************************************************************************/
     }
