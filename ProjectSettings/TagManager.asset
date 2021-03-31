@@ -8,6 +8,7 @@ TagManager:
   - pared
   - paredi
   - izquierda
+  - Moneda
   layers:
   - Default
   - TransparentFX
