@@ -38,6 +38,9 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (flag_rebote_izqui==1 && estaensuelo) flag_rebote_izqui = 0;
+        if (flag_rebote_dere == 1 && estaensuelo) flag_rebote_dere = 0;
+
         Saltar();
         Rebotar();
         Rebotari();
@@ -101,9 +104,6 @@ public class CharacterController : MonoBehaviour
             }
             
             //rebotari= true;
-        } else
-        {
-            flag_rebote_dere = 0;
         }
 
        
@@ -122,9 +122,6 @@ public class CharacterController : MonoBehaviour
                 Debug.Log("Izqui");
             }
             
-        } else
-        {
-            flag_rebote_izqui = 0;
-        }
+        } 
     }
 }
