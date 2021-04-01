@@ -9,6 +9,8 @@ TagManager:
   - paredi
   - izquierda
   - Moneda
+  - PowerupSalto
+  - PowerupVelocidad
   layers:
   - Default
   - TransparentFX

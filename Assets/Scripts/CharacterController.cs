@@ -6,13 +6,14 @@ public class CharacterController : MonoBehaviour
 {
     // Start is called before the first frame update
     public float velocidad;
-
+    public float velocidad_powerup;
     public bool estaensuelo = false;
     public bool rebotar = false;
     public bool rebotari = false;
+    CoinController coincontroller;
     void Start()
     {
-        
+         coincontroller = this.GetComponent<CoinController>();
     }
 
     // Update is called once per frame
@@ -38,11 +39,14 @@ public class CharacterController : MonoBehaviour
         Saltar();
         Rebotar();
         Rebotari();
-       
-       
-       
-       
+             
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+
+        if (coincontroller.flag_pu_velocidad)
+        {
+            //Debug.Log("Hola");
+            transform.position += movement * Time.deltaTime * velocidad_powerup;
+        } else
         transform.position += movement * Time.deltaTime * velocidad;
     }
 
@@ -50,11 +54,13 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow) &&  estaensuelo == true) 
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 1.5f), ForceMode2D.Impulse);
-
-
-         
-           
+            if (coincontroller.flag_pu_salto)
+            {
+                //Debug.Log("Salta mas");
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 3f), ForceMode2D.Impulse);
+                coincontroller.flag_pu_salto = false;
+            } else
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 1.5f), ForceMode2D.Impulse);      
         }
 
     }
