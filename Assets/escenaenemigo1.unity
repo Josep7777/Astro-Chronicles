@@ -520,7 +520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479448041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 1.26, z: -0.70703125}
+  m_LocalPosition: {x: -2.03, y: 2.5, z: -0.70703125}
   m_LocalScale: {x: -0.18, y: -0.02, z: 0.69}
   m_Children: []
   m_Father: {fileID: 1010532887}
@@ -1236,9 +1236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 3
-  area: 4.55
-  area2: 2.78
-  areadisparo: 2.84
+  area: 5.77
+  area2: 3.75
+  areadisparo: 3.82
   velocidadisparo: 2
   fireRate: 1
   bullet: {fileID: 862368472414036419, guid: b9e7b6cd6a68c854aacf457fc776e4ba, type: 3}
@@ -1327,7 +1327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410462889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.63, y: 4.38, z: 0}
+  m_LocalPosition: {x: 6.28, y: 4.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1651355448}
@@ -1380,8 +1380,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414507926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.14, y: 1.26, z: -0.70703125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.88, y: 2.5, z: -0.70703125}
+  m_LocalScale: {x: -0.38, y: 0.1, z: -2.87}
   m_Children: []
   m_Father: {fileID: 1010532887}
   m_RootOrder: 0
@@ -1396,7 +1396,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

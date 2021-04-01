@@ -19,8 +19,10 @@ public class patron : MonoBehaviour
     // private bool flagb = false;
     private Transform A;
     private Transform B;
+    private float C;
     private bool flagAB = false;
     private Transform enemy;
+  
 
     void Start()
     {
@@ -39,16 +41,42 @@ public class patron : MonoBehaviour
         float distancia = Vector2.Distance(player.position, transform.position);
         float distancia2 = Vector2.Distance(A.position, transform.position);
         float distancia3 = Vector2.Distance(B.position, transform.position);
+       
         if (distancia< area && distancia>areadisparo)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, player.position, velocidad * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
+            // if(this.transform.position == A.position)
+            // {
+            //     flagAB = true;
+            //    Debug.Log(flagAB);
+            ///    Debug.Log("ALGO");
+            //}
+          
         }
-        else if(distancia <= areadisparo){
+        else if(distancia <= areadisparo ){
+        
+
+            transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
+
+         
 
 
+            if (transform.position.x == B.position.x && transform.position.y == B.position.y) //AQUUUIIIIIIIIIIIIIIIIII
+            {
+                flagAB = true;
+                transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
+                //  this.transform.position = new Vector2(Mathf.Lerp(B.position.x, A.position.x, Mathf.PingPong(Time.time, 1)), C);
 
+            }
+            else if(flagAB)
+            {
+                C = player.position.y + 2.5f;
+              
+                this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), C);
+            }
+           
 
-           transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
+           // transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
 
             if (distancia2 < area2)
             {
@@ -56,11 +84,11 @@ public class patron : MonoBehaviour
               //  if (flagAB == false)
                // {
                     Debug.Log("Hola");
-                   // transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
-                    // this.transform.position = new Vector2(posicioninicialB, this.transform.position.x);
-                    //  Debug.Log("a: " + this.transform.position.x);
-                    // Debug.Log(B.position.x);
-                   this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), 2.5f);
+                // transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
+                // this.transform.position = new Vector2(posicioninicialB, this.transform.position.x);
+                //  Debug.Log("a: " + this.transform.position.x);
+                // Debug.Log(B.position.x);
+               
               //  }
 
 
