@@ -23,6 +23,8 @@ public class CoinController : MonoBehaviour
     public GameObject powerup_salto;
     public GameObject powerup_velocidad;
 
+    WeaponController weaponcontroller;
+
     private void Start()
     {
         monedas = 0;
@@ -32,7 +34,7 @@ public class CoinController : MonoBehaviour
         flag_escopeta = false;
         salto_pos = new GameObject();
         velocidad_pos = new GameObject();
-        
+        weaponcontroller = this.GetComponent<WeaponController>();
     }
 
     private void Update()
@@ -105,7 +107,9 @@ public class CoinController : MonoBehaviour
         if (other.gameObject.tag == "Escopeta")
         {
             Destroy(other.gameObject);
+            weaponcontroller.arma_actual = "Escopeta";
             flag_escopeta = true;
+
         }
     }
 }

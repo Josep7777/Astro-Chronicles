@@ -12,11 +12,16 @@ public class Shot : MonoBehaviour
     Vector2 lookDirection;
     float lookAngle;
     CoinController coincontroller;
+    WeaponController weaponcontroller;
+
+    public float recarga_escopeta;
 
     void Start()
     {
         coincontroller = this.GetComponent<CoinController>();
+        weaponcontroller = this.GetComponent<WeaponController>();
         Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
+        recarga_escopeta = 0;
     }
 
     void Pistola()
@@ -34,8 +39,9 @@ public class Shot : MonoBehaviour
 
     void Escopeta()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && recarga_escopeta<=0)
         {
+            recarga_escopeta = 1f;
             GameObject bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -56,17 +62,21 @@ public class Shot : MonoBehaviour
 
             bulletClone3.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y / 2f, firePoint.right.z) * bulletSpeed_shotgun;
             Destroy(bulletClone3.gameObject, 0.07f);
+            if(lookDirection.x > 0f)
+            this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x - 1f, this.transform.position.y), 1f);
+            else this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
         }
     }
 
     void Update()
     {
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Debug.Log(lookDirection);
         lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
-
-        if (coincontroller.flag_escopeta) {
+        recarga_escopeta -= Time.deltaTime;
+        if (weaponcontroller.arma_actual=="Escopeta") {
             Escopeta();
         } else
         {
