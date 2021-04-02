@@ -10,6 +10,7 @@ public class CoinController : MonoBehaviour
 
     public bool flag_pu_salto;
     public bool flag_pu_velocidad;
+    public bool flag_escopeta;
     public Text contador;
     public Text saltoContador;
     public Image saltoImg;
@@ -28,6 +29,7 @@ public class CoinController : MonoBehaviour
         aux = false;
         flag_pu_salto = false;
         flag_pu_velocidad=false;
+        flag_escopeta = false;
         salto_pos = new GameObject();
         velocidad_pos = new GameObject();
         
@@ -98,6 +100,12 @@ public class CoinController : MonoBehaviour
             Destroy(other.gameObject);
             velocidad_timer = 10.0f;
             flag_pu_velocidad = true;
+        }
+
+        if (other.gameObject.tag == "Escopeta")
+        {
+            Destroy(other.gameObject);
+            flag_escopeta = true;
         }
     }
 }

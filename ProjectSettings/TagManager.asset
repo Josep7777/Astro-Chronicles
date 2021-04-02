@@ -11,6 +11,7 @@ TagManager:
   - Moneda
   - PowerupSalto
   - PowerupVelocidad
+  - Escopeta
   layers:
   - Default
   - TransparentFX
