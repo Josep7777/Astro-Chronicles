@@ -8,11 +8,8 @@ TagManager:
   - izquierda
   - pared
   - trampa
-  tags:
-  - suelo
-  - pared
-  - paredi
-  - izquierda
+  - bala
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -22,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
