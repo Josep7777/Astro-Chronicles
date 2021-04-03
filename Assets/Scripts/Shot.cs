@@ -62,16 +62,26 @@ public class Shot : MonoBehaviour
 
             bulletClone3.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y / 2f, firePoint.right.z) * bulletSpeed_shotgun;
             Destroy(bulletClone3.gameObject, 0.07f);
-            if(lookDirection.x > 0f)
-            this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x - 1f, this.transform.position.y), 1f);
-            else this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
-        }
+            if (lookDirection.x > 0f)
+            {
+                this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x - 1f, this.transform.position.y), 1f);
+                //this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.transform.position.x - 1f, this.transform.position.y));
+                //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x - 1f, this.transform.position.y), ForceMode2D.Impulse);
+                //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x - 1f, this.transform.position.y), ForceMode2D.Impulse);
+            }
+            else
+            {
+                Debug.Log("Hola");
+                this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
+                //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x + 1f, this.transform.position.y), ForceMode2D.Impulse);
+            }
+            }
     }
 
     void Update()
     {
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        Debug.Log(lookDirection);
+        //Debug.Log(lookDirection);
         lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
