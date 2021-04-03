@@ -10,6 +10,9 @@ TagManager:
   - trampa
   - bala
   - enemy
+  - A
+  - B
+  - EnemigoA
   layers:
   - Default
   - TransparentFX
