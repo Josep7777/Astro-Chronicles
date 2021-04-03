@@ -83,7 +83,7 @@ public class patron : MonoBehaviour
                 //Debug.Log("aaaaaa1");
               //  if (flagAB == false)
                // {
-                    Debug.Log("Hola");
+                    //Debug.Log("Hola");
                 // transform.position = Vector2.MoveTowards(this.transform.position, B.position, velocidad * Time.deltaTime);
                 // this.transform.position = new Vector2(posicioninicialB, this.transform.position.x);
                 //  Debug.Log("a: " + this.transform.position.x);
