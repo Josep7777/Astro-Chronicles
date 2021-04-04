@@ -80,13 +80,14 @@ public class CharacterController : MonoBehaviour
         {
             if (flag_salto == false)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7.0f), ForceMode2D.Impulse);
-
-                /*
-                if (this.transform.position.y > 7.0f)
+                if (coincontroller.flag_pu_salto)
                 {
-                    this.transform.position = new Vector2(this.transform.position.x, 7.0f);
-                }*/
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 9.0f), ForceMode2D.Impulse);
+                    coincontroller.flag_pu_salto = false;
+                } else
+                {
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7.0f), ForceMode2D.Impulse);
+                }
 
                 flag_salto = true;
                 Debug.Log("Salto");
