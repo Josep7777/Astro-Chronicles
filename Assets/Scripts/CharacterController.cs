@@ -6,10 +6,11 @@ public class CharacterController : MonoBehaviour
 {
     // Start is called before the first frame update
     public float velocidad;
-
+    public float velocidad_powerup;
     public bool estaensuelo = false;
     public bool rebotar = false;
     public bool rebotari = false;
+    CoinController coincontroller;
 
     private bool flag_salto;
     private int flag_rebote_izqui;
@@ -18,6 +19,7 @@ public class CharacterController : MonoBehaviour
     private float tiempo_aux;
     void Start()
     {
+         coincontroller = this.GetComponent<CoinController>();
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
@@ -46,6 +48,12 @@ public class CharacterController : MonoBehaviour
         Rebotari();
 
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+
+        if (coincontroller.flag_pu_velocidad)
+        {
+            //Debug.Log("Hola");
+            transform.position += movement * Time.deltaTime * velocidad_powerup;
+        } else
         transform.position += movement * Time.deltaTime * velocidad;
 
         /*

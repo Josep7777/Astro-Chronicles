@@ -13,6 +13,10 @@ TagManager:
   - pared
   - paredi
   - izquierda
+  - Moneda
+  - PowerupSalto
+  - PowerupVelocidad
+  - Escopeta
   layers:
   - Default
   - TransparentFX
