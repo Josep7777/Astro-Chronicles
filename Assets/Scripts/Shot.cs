@@ -13,11 +13,13 @@ public class Shot : MonoBehaviour
     float lookAngle;
     CoinController coincontroller;
     WeaponController weaponcontroller;
+    CharacterController charactercontroller;
 
     public float recarga_escopeta;
 
     void Start()
     {
+        charactercontroller = this.GetComponent<CharacterController>();
         coincontroller = this.GetComponent<CoinController>();
         weaponcontroller = this.GetComponent<WeaponController>();
         Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
@@ -64,15 +66,22 @@ public class Shot : MonoBehaviour
             Destroy(bulletClone3.gameObject, 0.07f);
             if (lookDirection.x > 0f)
             {
-                this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x - 1f, this.transform.position.y), 1f);
-                //this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.transform.position.x - 1f, this.transform.position.y));
+                Vector2 dir = this.transform.position;
+                //dir.Normalize();
+                //this.GetComponent<Rigidbody2D>().AddForce(-dir*2, ForceMode2D.Impulse);
+                //this.GetComponent<Rigidbody2D>().AddForce(dir*-0.9f, ForceMode2D.Impulse);
+                //this.GetComponent<Rigidbody2D>().AddForce();
+                if(charactercontroller.rebotari==false)
+                    this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x - 1f, this.transform.position.y), 1f);
+                //this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.transform.position.x - 1f, this.transform.position.y)*Time.deltaTime);
                 //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x - 1f, this.transform.position.y), ForceMode2D.Impulse);
                 //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x - 1f, this.transform.position.y), ForceMode2D.Impulse);
             }
             else
             {
                 Debug.Log("Hola");
-                this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
+                if (charactercontroller.rebotar == false)
+                    this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
                 //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x + 1f, this.transform.position.y), ForceMode2D.Impulse);
             }
             }

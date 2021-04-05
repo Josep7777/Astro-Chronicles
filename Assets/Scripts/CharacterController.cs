@@ -43,9 +43,10 @@ public class CharacterController : MonoBehaviour
         if (flag_rebote_izqui==1 && estaensuelo) flag_rebote_izqui = 0;
         if (flag_rebote_dere == 1 && estaensuelo) flag_rebote_dere = 0;
 
-        Saltar();
         Rebotar();
         Rebotari();
+        Saltar();
+            
 
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
 
@@ -76,7 +77,7 @@ public class CharacterController : MonoBehaviour
 
     void Saltar()
     {
-        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) &&  estaensuelo == true) 
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.W)) &&  estaensuelo == true) 
         {
             if (flag_salto == false)
             {
@@ -102,35 +103,37 @@ public class CharacterController : MonoBehaviour
 
     void Rebotar()
     {
-
-        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && rebotar == true)
+        if (rebotar && estaensuelo == false)
         {
-            if (flag_rebote_dere==0)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotar == true)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, 4.0f), ForceMode2D.Impulse);
-                flag_rebote_dere = 1;
-                Debug.Log("Dere");
-            }
-            
-            //rebotari= true;
-        }
+                if (flag_rebote_dere == 0)
+                {
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, 4.0f), ForceMode2D.Impulse);
+                    flag_rebote_dere = 1;
+                    Debug.Log("Dere");
+                }
 
-       
+                //rebotari= true;
+            }
+        }
     }
 
 
     void Rebotari()
     {
-
-        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && rebotari == true)
+        if (rebotari && estaensuelo == false)
         {
-            if (flag_rebote_izqui==0)
+            if ((Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotari == true)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, 4.0f), ForceMode2D.Impulse);
-                flag_rebote_izqui = 1;
-                Debug.Log("Izqui");
+                if (flag_rebote_izqui == 0)
+                {
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, 4.0f), ForceMode2D.Impulse);
+                    flag_rebote_izqui = 1;
+                    Debug.Log("Izqui");
+                }
+
             }
-            
-        } 
+        }
     }
 }
