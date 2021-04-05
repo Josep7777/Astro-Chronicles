@@ -8,14 +8,9 @@ TagManager:
   - izquierda
   - pared
   - trampa
-  tags:
-  - suelo
-  - pared
-  - paredi
-  - izquierda
-  - Moneda
-  - PowerupSalto
   - PowerupVelocidad
+  - PowerupSalto
+  - Moneda
   - Escopeta
   layers:
   - Default
@@ -26,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Panel
   - 
   - 
   - 
@@ -51,6 +46,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tuto
+    uniqueID: 1352612755
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

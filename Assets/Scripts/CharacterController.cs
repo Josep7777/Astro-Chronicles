@@ -10,6 +10,9 @@ public class CharacterController : MonoBehaviour
     public bool estaensuelo = false;
     public bool rebotar = false;
     public bool rebotari = false;
+    public float salto=7.0f;
+    public float salto_powerup=9.0f;
+    public float salto_rebote = 4.0f;
     CoinController coincontroller;
 
     private bool flag_salto;
@@ -83,11 +86,11 @@ public class CharacterController : MonoBehaviour
             {
                 if (coincontroller.flag_pu_salto)
                 {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 9.0f), ForceMode2D.Impulse);
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto_powerup), ForceMode2D.Impulse);
                     coincontroller.flag_pu_salto = false;
                 } else
                 {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7.0f), ForceMode2D.Impulse);
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto), ForceMode2D.Impulse);
                 }
 
                 flag_salto = true;
@@ -109,7 +112,7 @@ public class CharacterController : MonoBehaviour
             {
                 if (flag_rebote_dere == 0)
                 {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, 4.0f), ForceMode2D.Impulse);
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
                     Debug.Log("Dere");
                 }
@@ -128,7 +131,7 @@ public class CharacterController : MonoBehaviour
             {
                 if (flag_rebote_izqui == 0)
                 {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, 4.0f), ForceMode2D.Impulse);
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
                     Debug.Log("Izqui");
                 }
