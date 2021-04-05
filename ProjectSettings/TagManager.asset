@@ -12,6 +12,7 @@ TagManager:
   - PowerupSalto
   - Moneda
   - Escopeta
+  - Final
   layers:
   - Default
   - TransparentFX
