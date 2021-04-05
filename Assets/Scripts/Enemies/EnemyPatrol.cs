@@ -9,19 +9,31 @@ public class EnemyPatrol : MonoBehaviour
     public float distance;
     private Transform player;
     private bool movingRight = true;
-
+    private float speed2;
     public Transform groundDetection;
 
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        speed2 = speed * 3 / 2 ;
     }
 
     private void Update()
     {
         float distancia = Vector2.Distance(player.position, transform.position);
+
+
+
+        if (distancia < area)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed2 * Time.deltaTime);
+
+
+        }
+        else { 
+
+       
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
@@ -37,13 +49,8 @@ public class EnemyPatrol : MonoBehaviour
                 movingRight = true;
             }
         }
-
-        if (distancia < area)
-        {
-            transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
-
-
         }
+
     }
 
     private void OnDrawGizmosSelected()
