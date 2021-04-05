@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float playerMaxHealth;
-    private float playerHealth;
+    public int playerMaxHealth;
+    private int playerHealth;
     private bool patata = false;
+
+    public PlayerHealthbar healthBar;
 
 
 
@@ -31,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag.Equals("enemy") && patata == false)
         {
             playerHealth = playerHealth - 1;
+            healthBar.SetHealth(playerHealth);
             Debug.Log("aaaaa");
             patata = true;
         }
@@ -42,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag.Equals("enemybullet") && patata == false)
         {
             playerHealth = playerHealth - 1;
+            healthBar.SetHealth(playerHealth);
             //Debug.Log(playerMaxHealth);
             Debug.Log(playerHealth);
             patata = true;
