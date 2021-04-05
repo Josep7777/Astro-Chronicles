@@ -1096,7 +1096,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017910779, y: 0}
+  m_Offset: {x: -0.017910779, y: -0.026839584}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1107,7 +1107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.06620872, y: 0.07}
+  m_Size: {x: 0.06620872, y: 0.059264123}
   m_EdgeRadius: 0
 --- !u!1 &609782897
 GameObject:
@@ -5876,7 +5876,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06921834}
+  m_Offset: {x: 0.03220749, y: -0.06921834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5887,7 +5887,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07, y: 0.103040814}
+  m_Size: {x: 0.08073425, y: 0.103040814}
   m_EdgeRadius: 0
 --- !u!1 &1657706492
 GameObject:
@@ -6749,8 +6749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2977633057187381174, guid: 1f0c4fcd8f058bc40a9ad25b765acf91, type: 3}
   firePoint: {fileID: 8543641}
-  bulletSpeed_pistol: 50
-  bulletSpeed_shotgun: 50
+  bulletSpeed_pistol: 30
+  bulletSpeed_shotgun: 30
   cursorArrow: {fileID: 2800000, guid: d84151d3c433a704f8d7970ee0b7537c, type: 3}
   recarga_escopeta: 0
 --- !u!114 &1787721418
@@ -7394,7 +7394,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.012374163}
+  m_Offset: {x: -0.03220749, y: -0.012374163}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7405,7 +7405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07, y: 0.07190347}
+  m_Size: {x: 0.064632416, y: 0.07190347}
   m_EdgeRadius: 0
 --- !u!1001 &1914478933
 PrefabInstance:
