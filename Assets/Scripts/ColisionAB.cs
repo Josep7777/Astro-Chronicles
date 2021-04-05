@@ -13,6 +13,8 @@ public class ColisionAB : MonoBehaviour
     private Transform B;
     private float posicioninicial;
     private bool flagAB = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +28,11 @@ public class ColisionAB : MonoBehaviour
  
 
     // Update is called once per frame
+
     void Update()
     {
         float distancia = Vector2.Distance(enemy.position, transform.position);
+
         if (distancia < area) {
             //Debug.Log("aaaaaa1");
             if (flagAB==false) {
@@ -45,8 +49,9 @@ public class ColisionAB : MonoBehaviour
 
                 this.transform.position = new Vector2(posicioninicial, this.transform.position.y);
                 //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2 (posicioninicial, 1.26f), velocidad * Time.deltaTime);
-                if (this.transform.position.x == posicioninicial) flagAB = false;
-                else flagAB = true;
+              //  if (this.transform.position.x == posicioninicial) flagAB = false;
+              //  else
+                    flagAB = true;
             }
         }
        
