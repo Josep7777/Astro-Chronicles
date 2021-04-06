@@ -5,8 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int playerMaxHealth;
-    private int playerHealth;
-    private bool patata = false;
+    public int playerHealth;
     public float tiempo_inmortal = 1f;
 
     public PlayerHealthbar healthBar;
@@ -37,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
             tiempo_inmortal = 1f;
-            Debug.Log(patata);
+
 
         }
 
@@ -49,7 +48,6 @@ public class PlayerHealth : MonoBehaviour
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
             tiempo_inmortal = 1f;
-            patata = true;
         }
 
     }
