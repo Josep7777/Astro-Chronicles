@@ -1497,6 +1497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 249233073715513280, guid: 0f57fb168f820e6458d44e04f7bdf27d,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 8889761201102886829, guid: 0f57fb168f820e6458d44e04f7bdf27d,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -41,6 +41,7 @@ public class CharacterController : MonoBehaviour
         if (flag_rebote_izqui==1 && estaensuelo) flag_rebote_izqui = 0;
         if (flag_rebote_dere == 1 && estaensuelo) flag_rebote_dere = 0;
 
+        Debug.Log(flag_salto);
         Saltar();
         Rebotar();
         Rebotari();
