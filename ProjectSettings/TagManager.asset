@@ -13,6 +13,12 @@ TagManager:
   - Moneda
   - Escopeta
   - Final
+  - bala
+  - enemy
+  - A
+  - B
+  - EnemigoA
+  - enemybullet
   layers:
   - Default
   - TransparentFX
@@ -23,6 +29,7 @@ TagManager:
   - 
   - 
   - Panel
+  - Player
   - 
   - 
   - 

@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Suelo : MonoBehaviour {
+public class Suelo : MonoBehaviour
+{
 
     GameObject Player;
+    public PlayerHealth ph;
+
 
     void Start()
     {
         Player = gameObject.transform.parent.gameObject;
+        ph = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+
     }
 
 
@@ -18,25 +23,38 @@ public class Suelo : MonoBehaviour {
     }
 
 
-        private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "suelo")
         {
-            if(collision.collider.tag == "suelo")
-            {
             Player.GetComponent<CharacterController>().estaensuelo = true;
-
-            }
         }
-
-        private void OnCollisionExit2D(Collision2D collision)
+        if (collision.collider.tag == "trampa")
         {
-            if (collision.collider.tag == "suelo")
-            {
+            Debug.Log("Daño");
+            Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
+            ph.playerHealth = ph.playerHealth - 1;
+            ph.healthBar.SetHealth(ph.playerHealth);
+            ph.tiempo_inmortal = 1f;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "suelo")
+        {
 
             Player.GetComponent<CharacterController>().estaensuelo = false;
         }
+
+        if (collision.collider.tag == "trampa")
+        {
+            //Debug.Log("Daño");
+            //Player.GetComponent<CharacterController>().estaensuelo = false;
         }
+    }
 
 
 
-   
+
 }
