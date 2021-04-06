@@ -22,10 +22,14 @@ public class Suelo : MonoBehaviour {
         {
             if(collision.collider.tag == "suelo")
             {
-            Player.GetComponent<CharacterController>().estaensuelo = true;
-
+                Player.GetComponent<CharacterController>().estaensuelo = true;
             }
+            if (collision.collider.tag == "trampa")
+            {
+                Debug.Log("Daño");
+            Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
         }
+    }
 
         private void OnCollisionExit2D(Collision2D collision)
         {
@@ -33,8 +37,14 @@ public class Suelo : MonoBehaviour {
             {
 
             Player.GetComponent<CharacterController>().estaensuelo = false;
-        }
-        }
+            }
+
+            if (collision.collider.tag == "trampa")
+            {
+            //Debug.Log("Daño");
+            //Player.GetComponent<CharacterController>().estaensuelo = false;
+            }
+    }
 
 
 
