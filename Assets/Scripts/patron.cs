@@ -24,26 +24,40 @@ public class patron : MonoBehaviour
     private bool flagBA = false;
     private Transform enemy;
     private float cosa;
+    public GameObject activarA;
+    public GameObject activarB;
 
 
     void Start()
     {
         enemy = GameObject.FindGameObjectWithTag("EnemigoA").transform;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        A = GameObject.FindGameObjectWithTag("A").transform;
-        B = GameObject.FindGameObjectWithTag("B").transform;
-        posicioninicial = A.position.x;
-        posicioninicialB = B.position.x;
+        
+        //posicioninicial = A.position.x;
+        //posicioninicialB = B.position.x;
     }
 
 
     void Update()
     {
-
         float distancia = Vector2.Distance(player.position, transform.position);
-        float distancia2 = Vector2.Distance(A.position, transform.position);
-        float distancia3 = Vector2.Distance(B.position, transform.position);
-
+        //float distancia2 = Vector2.Distance(A.position, transform.position);
+        //float distancia3 = Vector2.Distance(B.position, transform.position);
+        
+        if (distancia <= area || distancia <= areadisparo)
+        {
+            activarA.gameObject.SetActive(true);
+            activarB.gameObject.SetActive(true);
+            //Debug.Log("Dentro");
+            A = GameObject.FindGameObjectWithTag("A").transform;
+            B = GameObject.FindGameObjectWithTag("B").transform;
+        } else
+        {
+            activarA.gameObject.SetActive(false);
+            activarB.gameObject.SetActive(false);
+            //Debug.Log("Fuera");
+        }
+        
         if (distancia < area && distancia > areadisparo)
         {
             flagAB = false;
