@@ -24,7 +24,7 @@ public class patron : MonoBehaviour
     private bool flagBA = false;
     private Transform enemy;
     private float cosa;
-  
+
 
     void Start()
     {
@@ -43,7 +43,7 @@ public class patron : MonoBehaviour
         float distancia = Vector2.Distance(player.position, transform.position);
         float distancia2 = Vector2.Distance(A.position, transform.position);
         float distancia3 = Vector2.Distance(B.position, transform.position);
-       
+
         if (distancia < area && distancia > areadisparo)
         {
             flagAB = false;
@@ -51,28 +51,31 @@ public class patron : MonoBehaviour
             //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, B.position.y + 2.5f), velocidad * Time.deltaTime);
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, velocidad * Time.deltaTime);
 
-        } else if(distancia <= areadisparo ) {
+        }
+        else if (distancia <= areadisparo)
+        {
 
 
             if (flagAB == false)
             {
                 transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, player.position.y + 2.5f), velocidad * Time.deltaTime);
             }
-       
-            if (transform.position.x == B.position.x  || flagAB) //AQUUUIIIIIIIIIIIIIIIIII
+
+            if (transform.position.x == B.position.x || flagAB) //AQUUUIIIIIIIIIIIIIIIIII
             {
                 flagAB = true;
                 //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(A.position.x, player.position.y + 2.5f), velocidad * Time.deltaTime);
-                if(transform.position.x == Mathf.Lerp(A.position.x, B.position.x, 0.5f) || flagBA)
+                if (transform.position.x == Mathf.Lerp(A.position.x, B.position.x, 0.5f) || flagBA)
                 {
                     flagBA = true;
                     C = player.position.y + 2.5f;
                     this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), C);
-                } else
+                }
+                else
                 {
                     transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(Mathf.Lerp(A.position.x, B.position.x, 0.5f), player.position.y + 2.5f), velocidad * Time.deltaTime);
                 }
-                
+
                 //transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
                 //  this.transform.position = new Vector2(Mathf.Lerp(B.position.x, A.position.x, Mathf.PingPong(Time.time, 1)), C);
 
@@ -85,7 +88,7 @@ public class patron : MonoBehaviour
                 this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), C);
             }*/
 
-           // transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
+            // transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
 
             if (tiempofire < Time.time)
             {
@@ -94,7 +97,7 @@ public class patron : MonoBehaviour
 
             }
         }
-       
+
 
     }
 

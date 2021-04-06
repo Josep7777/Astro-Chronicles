@@ -10,7 +10,8 @@ public class EnemyPatrol : MonoBehaviour
     private bool movingRight = true;
     private float speed2;
     public Transform groundDetection;
-
+    private Transform player;
+    public float area;
 
     private void Start()
     {
@@ -27,12 +28,8 @@ public class EnemyPatrol : MonoBehaviour
         if (distancia < area)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed2 * Time.deltaTime);
-
-
         }
-        else { 
-
-       
+        else {        
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
@@ -50,5 +47,13 @@ public class EnemyPatrol : MonoBehaviour
         }
         }
 
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.white;
+        //Gizmos.DrawWireSphere(transform.position, area2);
+        Gizmos.DrawWireSphere(transform.position, area);
+        //Gizmos.DrawWireSphere(transform.position, areadisparo);
     }
 }
