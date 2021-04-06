@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cd1024f65810184b94be41b87532297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
+  velocidad: 3
   estaensuelo: 1
   rebotar: 0
   rebotari: 0
@@ -1393,10 +1393,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0eb948f743fca41a4e30891b618179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 3
+  velocidad: 5
   area: 5.77
-  area2: 3.75
-  areadisparo: 3.82
+  areadisparo: 4.81
   velocidadisparo: 2
   fireRate: 1
   bullet: {fileID: 862368472414036419, guid: b9e7b6cd6a68c854aacf457fc776e4ba, type: 3}
