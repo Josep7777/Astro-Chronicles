@@ -16,6 +16,6 @@ public class Muerte : MonoBehaviour
 
 	void TaskOnClick()
 	{
-		SceneManager.LoadScene("NIvel1");
+		SceneManager.LoadScene("Nivel1");
 	}
 }

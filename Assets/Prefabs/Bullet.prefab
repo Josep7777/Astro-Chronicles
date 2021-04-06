@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4043496118222773818}
   - component: {fileID: 9196965382461722761}
   m_Layer: 0
-  m_Name: Bullet
-  m_TagString: Untagged
+  m_Name: bullet
+  m_TagString: bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
