@@ -21,7 +21,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log(tiempo_inmortal);
         tiempo_inmortal -= Time.deltaTime;
         if (playerHealth <= 0)
         {

@@ -19,6 +19,7 @@ TagManager:
   - B
   - EnemigoA
   - enemybullet
+  - gladis
   layers:
   - Default
   - TransparentFX
