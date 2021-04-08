@@ -94,7 +94,7 @@ public class CharacterController : MonoBehaviour
                 }
 
                 flag_salto = true;
-                Debug.Log("Salto");
+                //Debug.Log("Salto");
             }
             //Debug.Log("Entra");
         } else
@@ -114,7 +114,7 @@ public class CharacterController : MonoBehaviour
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
-                    Debug.Log("Dere");
+                    //Debug.Log("Dere");
                 }
 
                 //rebotari= true;
@@ -133,7 +133,7 @@ public class CharacterController : MonoBehaviour
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
-                    Debug.Log("Izqui");
+                    //Debug.Log("Izqui");
                 }
 
             }

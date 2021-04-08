@@ -47,23 +47,26 @@ public class Shot : MonoBehaviour
             GameObject bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
-
+            //Debug.Log(firePoint.position);
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_shotgun;
-            Destroy(bulletClone.gameObject, 0.1f);
+            //Destroy(bulletClone.gameObject, 0.1f);
+            Destroy(bulletClone.gameObject, 1f);
 
             GameObject bulletClone2 = Instantiate(bullet);
             bulletClone2.transform.position = new Vector2(firePoint.position.x, firePoint.position.y + 0.3f);
             //bulletClone2.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 
             bulletClone2.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y*2f, firePoint.right.z) * bulletSpeed_shotgun;
-            Destroy(bulletClone2.gameObject, 0.1f);
+            //Destroy(bulletClone.gameObject, 0.1f);
+            Destroy(bulletClone.gameObject, 1f);
 
             GameObject bulletClone3 = Instantiate(bullet);
             bulletClone3.transform.position = new Vector2(firePoint.position.x, firePoint.position.y - 0.3f);
             //bulletClone3.transform.rotation = Quaternion.Euler(0, -0, lookAngle);
 
             bulletClone3.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y / 2f, firePoint.right.z) * bulletSpeed_shotgun;
-            Destroy(bulletClone3.gameObject, 0.1f);
+            //Destroy(bulletClone.gameObject, 0.1f);
+            Destroy(bulletClone.gameObject, 1f);
             if (lookDirection.x > 0f)
             {
                 Vector2 dir = this.transform.position;
@@ -79,7 +82,7 @@ public class Shot : MonoBehaviour
             }
             else
             {
-                Debug.Log("Hola");
+                //Debug.Log("Hola");
                 if (charactercontroller.rebotar == false)
                     this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
                 //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x + 1f, this.transform.position.y), ForceMode2D.Impulse);
