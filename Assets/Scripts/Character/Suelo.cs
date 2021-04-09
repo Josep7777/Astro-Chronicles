@@ -31,7 +31,7 @@ public class Suelo : MonoBehaviour
         }
         if (collision.collider.tag == "trampa")
         {
-            Debug.Log("Daño");
+            //Debug.Log("Daño");
             Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
             ph.playerHealth = ph.playerHealth - 1;
             ph.healthBar.SetHealth(ph.playerHealth);

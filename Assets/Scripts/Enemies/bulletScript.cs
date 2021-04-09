@@ -7,7 +7,7 @@ public class bulletScript : MonoBehaviour
     GameObject target;
     public float speed;
     Rigidbody2D bullet2;
-    private bool flagSuelo = false;
+    //private bool flagSuelo = false;
 
     void Start()
     {

@@ -18,12 +18,13 @@ public class CameraController : MonoBehaviour
     private GameObject jugador;
 
     private bool flag_tutorial;
-    private bool flag_puntero;
+    //private bool flag_puntero;
     private bool bool_paredIzqui;
     private bool bool_paredDere;
     private bool bool_salto;
-    private bool bool_disparo;
+    //private bool bool_disparo;
     private bool primera_vez;
+    private bool flag_aux = false;
 
     GameObject paredIzqui;
     GameObject paredDere;
@@ -31,7 +32,7 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         flag_tutorial = true;
-        flag_puntero = false;
+        //flag_puntero = false;
 
         a.gameObject.SetActive(true);
         d.gameObject.SetActive(false);
@@ -53,7 +54,7 @@ public class CameraController : MonoBehaviour
         bool_paredIzqui = false;
         bool_paredDere = false;
         bool_salto = false;
-        bool_disparo = false;
+        //bool_disparo = false;
         primera_vez = true;
 
         camara.transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y*2, -10);
@@ -68,8 +69,15 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (flag_tutorial) tutorial();
-        else seguirJugador();
+        if (flag_tutorial && VariablesController.Muerto == false) tutorial();
+        else
+        {
+            if (flag_aux == false) {
+                jugador.transform.position = respawn.transform.position;
+                flag_aux = true;
+            }
+            seguirJugador();
+        }
 
         //camara.fieldOfView = Mathf.Lerp(camara.fieldOfView, zoom, Time.deltaTime);
         
@@ -140,7 +148,7 @@ public class CameraController : MonoBehaviour
             {
                 puntero.gameObject.SetActive(false);
                 raton.gameObject.SetActive(false);
-                jugador.transform.position = respawn.transform.position;
+                //jugador.transform.position = respawn.transform.position;
                 flag_tutorial = false;
             }
         }

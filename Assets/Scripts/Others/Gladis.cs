@@ -21,7 +21,7 @@ public class Gladis : MonoBehaviour
 
     public void AcceptButton()
     {
-        Debug.Log("ola");
+        //Debug.Log("ola");
         if (choiseMade == 0)
         {
             TextBox.GetComponent<Text>().text = "Entendido señor, procesando a restaurar sus puntos de salud.";

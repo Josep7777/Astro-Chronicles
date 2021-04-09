@@ -16,6 +16,7 @@ public class Shot : MonoBehaviour
     CharacterController charactercontroller;
 
     public float recarga_escopeta;
+    public float recarga_pistola;
 
     void Start()
     {
@@ -24,12 +25,14 @@ public class Shot : MonoBehaviour
         weaponcontroller = this.GetComponent<WeaponController>();
         Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
         recarga_escopeta = 0;
+        recarga_pistola=0;
     }
 
     void Pistola()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && recarga_pistola <= 0)
         {
+            recarga_pistola = 0.5f;
             GameObject bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -74,7 +77,7 @@ public class Shot : MonoBehaviour
                 //this.GetComponent<Rigidbody2D>().AddForce(-dir*2, ForceMode2D.Impulse);
                 //this.GetComponent<Rigidbody2D>().AddForce(dir*-0.9f, ForceMode2D.Impulse);
                 //this.GetComponent<Rigidbody2D>().AddForce();
-                if(charactercontroller.rebotari==false)
+                if(charactercontroller.rebotari==false && (lookDirection.x <-1.5f || lookDirection.x>1.5f))
                     this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x - 1f, this.transform.position.y), 1f);
                 //this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.transform.position.x - 1f, this.transform.position.y)*Time.deltaTime);
                 //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x - 1f, this.transform.position.y), ForceMode2D.Impulse);
@@ -83,7 +86,7 @@ public class Shot : MonoBehaviour
             else
             {
                 //Debug.Log("Hola");
-                if (charactercontroller.rebotar == false)
+                if (charactercontroller.rebotar == false && (lookDirection.x < -1.5f || lookDirection.x > 1.5f))
                     this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(this.transform.position.x + 1f, this.transform.position.y), 1f);
                 //this.GetComponent<Rigidbody2D>().AddForce(new Vector2(this.transform.position.x + 1f, this.transform.position.y), ForceMode2D.Impulse);
             }
@@ -93,11 +96,12 @@ public class Shot : MonoBehaviour
     void Update()
     {
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        //Debug.Log(lookDirection);
+        //Debug.Log(lookDirection.x);
         lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
         recarga_escopeta -= Time.deltaTime;
+        recarga_pistola -= Time.deltaTime;
         if (weaponcontroller.arma_actual=="Escopeta") {
             Escopeta();
         } else

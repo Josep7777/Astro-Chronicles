@@ -29,7 +29,7 @@ public class HitEnemies : MonoBehaviour
         if (collision.gameObject.tag.Equals("bala")){
             EnemyHealth--;
             Destroy(collision.gameObject);
-            Debug.Log(EnemyHealth);
+            //Debug.Log(EnemyHealth);
         }
     }
 }

@@ -18,15 +18,15 @@ public class CharacterController : MonoBehaviour
     private bool flag_salto;
     private int flag_rebote_izqui;
     private int flag_rebote_dere;
-    private bool flag_tiempo;
-    private float tiempo_aux;
+    //private bool flag_tiempo;
+    //private float tiempo_aux;
     void Start()
     {
          coincontroller = this.GetComponent<CoinController>();
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
-        flag_tiempo = false;
+        //flag_tiempo = false;
     }
 
     void FixedUpdate()

@@ -10,12 +10,14 @@ public class Muerte : MonoBehaviour
 
 	void Start()
 	{
+		
 		Button btn = yourButton.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
 	}
 
 	void TaskOnClick()
 	{
+		VariablesController.Muerto = true;
 		SceneManager.LoadScene("Nivel1");
 	}
 }
