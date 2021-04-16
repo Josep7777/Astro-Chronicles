@@ -72,7 +72,7 @@ public class patron : MonoBehaviour
 
             if (flagAB == false)
             {
-                transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, player.position.y + 2.5f), velocidad * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, player.position.y + 3.5f), velocidad * Time.deltaTime);
             }
 
             if (transform.position.x == B.position.x || flagAB) //AQUUUIIIIIIIIIIIIIIIIII
@@ -82,12 +82,12 @@ public class patron : MonoBehaviour
                 if (transform.position.x == Mathf.Lerp(A.position.x, B.position.x, 0.5f) || flagBA)
                 {
                     flagBA = true;
-                    C = player.position.y + 2.5f;
+                    C = player.position.y + 3.5f;
                     this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), C);
                 }
                 else
                 {
-                    transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(Mathf.Lerp(A.position.x, B.position.x, 0.5f), player.position.y + 2.5f), velocidad * Time.deltaTime);
+                    transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(Mathf.Lerp(A.position.x, B.position.x, 0.5f), player.position.y + 3.5f), velocidad * Time.deltaTime);
                 }
 
                 //transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);

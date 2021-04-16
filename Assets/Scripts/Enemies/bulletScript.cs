@@ -13,11 +13,9 @@ public class bulletScript : MonoBehaviour
     {
         bullet2 = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player");
-        Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
-        bullet2.velocity = new Vector2(moveDir.x, moveDir.y);
+        Vector2 moveDir = new Vector2(target.transform.position.x - transform.position.x + Random.Range(-1f,1f), target.transform.position.y - transform.position.y).normalized * speed;
+        bullet2.velocity = new Vector2(moveDir.x*0.3f, moveDir.y*0.3f);
         Destroy(this.gameObject, 2);
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

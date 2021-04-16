@@ -79,7 +79,6 @@ public class CoinController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("Ey");
         if (other.gameObject.tag == "Moneda" && this.gameObject.tag!="Untagged")
         {
             Destroy(other.gameObject);

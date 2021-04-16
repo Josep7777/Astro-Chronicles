@@ -14,6 +14,7 @@ public class CharacterController : MonoBehaviour
     public float salto_powerup=9.0f;
     public float salto_rebote = 4.0f;
     CoinController coincontroller;
+    private float tiempo_rebote = 0f;
 
     private bool flag_salto;
     private int flag_rebote_izqui;
@@ -43,39 +44,27 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        tiempo_rebote -= Time.deltaTime;
+
         if (flag_rebote_izqui==1 && estaensuelo) flag_rebote_izqui = 0;
         if (flag_rebote_dere == 1 && estaensuelo) flag_rebote_dere = 0;
 
         Rebotar();
         Rebotari();
         Saltar();
-            
 
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-
-        if (coincontroller.flag_pu_velocidad)
+        if (tiempo_rebote<=0)
         {
-            //Debug.Log("Hola");
-            transform.position += movement * Time.deltaTime * velocidad_powerup;
-        } else
-        transform.position += movement * Time.deltaTime * velocidad;
+            Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
 
-        /*
-        if (flag_rebote_dere == 2 || flag_rebote_izqui == 2)
-        {
-            if (flag_tiempo == false) { 
-                tiempo_aux = Time.deltaTime;
-                flag_tiempo = true;
+            if (coincontroller.flag_pu_velocidad)
+            {
+                //Debug.Log("Hola");
+                transform.position += movement * Time.deltaTime * velocidad_powerup;
             }
-            
-            if (Time.deltaTime > tiempo_aux + 0.4f) {
-                flag_rebote_dere = 0;
-                flag_rebote_izqui = 0;
-            }
-        } else
-        {
-            flag_tiempo = false;
-        }*/
+            else
+                transform.position += movement * Time.deltaTime * velocidad;
+        }
     }
 
     void Saltar()
@@ -114,6 +103,7 @@ public class CharacterController : MonoBehaviour
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
+                    tiempo_rebote = 0.3f;
                     //Debug.Log("Dere");
                 }
 
@@ -133,6 +123,7 @@ public class CharacterController : MonoBehaviour
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
+                    tiempo_rebote = 0.3f;
                     //Debug.Log("Izqui");
                 }
 
