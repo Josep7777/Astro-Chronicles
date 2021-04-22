@@ -6,6 +6,7 @@ public class CharacterController : MonoBehaviour
 {
     // Start is called before the first frame update
     public float velocidad;
+    public float velocidad_baja;
     public float velocidad_powerup;
     public bool estaensuelo = false;
     public bool rebotar = false;
@@ -15,6 +16,7 @@ public class CharacterController : MonoBehaviour
     public float salto_rebote = 4.0f;
     private PlayerCollisionsController pcc;
     private float tiempo_rebote = 0f;
+    private bool flag_rebote_vel = false;
 
     private bool flag_salto;
     private int flag_rebote_izqui;
@@ -53,16 +55,38 @@ public class CharacterController : MonoBehaviour
         Rebotari();
         Saltar();
 
+        if (tiempo_rebote > 0)
+        {
+            flag_rebote_vel = true;
+            velocidad_baja = velocidad - 3f;
+        }
+
         if (tiempo_rebote<=0)
         {
-            Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-
-            if (pcc.flag_pu_velocidad)
+            if (flag_rebote_vel)
             {
-                transform.position += movement * Time.deltaTime * velocidad_powerup;
+                //flag_rebote_vel = false;
+                Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+                transform.position += movement * Time.deltaTime * velocidad_baja;
+                velocidad_baja += Time.deltaTime + 0.05f;
+                if (velocidad_baja>=velocidad)
+                {
+                    flag_rebote_vel = false;
+                }
+
+
             }
             else
-                transform.position += movement * Time.deltaTime * velocidad;
+            {
+                Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+
+                if (pcc.flag_pu_velocidad)
+                {
+                    transform.position += movement * Time.deltaTime * velocidad_powerup;
+                }
+                else
+                    transform.position += movement * Time.deltaTime * velocidad;
+            }
         }
     }
 
@@ -102,7 +126,7 @@ public class CharacterController : MonoBehaviour
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
-                    tiempo_rebote = 0.3f;
+                    tiempo_rebote = 0.4f;
                     //Debug.Log("Dere");
                 }
 
@@ -122,7 +146,7 @@ public class CharacterController : MonoBehaviour
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
-                    tiempo_rebote = 0.3f;
+                    tiempo_rebote = 0.4f;
                     //Debug.Log("Izqui");
                 }
 
