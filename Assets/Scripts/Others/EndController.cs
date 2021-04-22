@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class EndController : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other)
+    private PlayerCollisionsController pcc;
+
+    private void Start()
     {
-        if (other.gameObject.tag == "Final")
-        {
+        pcc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollisionsController>();
+    }
+
+    private void Update()
+    {
+        if (pcc.final_lvl1)
             SceneManager.LoadScene("FinalLvl1");
-        }
     }
 }
+

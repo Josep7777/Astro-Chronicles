@@ -13,7 +13,7 @@ public class CharacterController : MonoBehaviour
     public float salto=7.0f;
     public float salto_powerup=9.0f;
     public float salto_rebote = 4.0f;
-    CoinController coincontroller;
+    private PlayerCollisionsController pcc;
     private float tiempo_rebote = 0f;
 
     private bool flag_salto;
@@ -23,7 +23,7 @@ public class CharacterController : MonoBehaviour
     //private float tiempo_aux;
     void Start()
     {
-         coincontroller = this.GetComponent<CoinController>();
+        pcc = this.GetComponent<PlayerCollisionsController>();
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
@@ -57,9 +57,8 @@ public class CharacterController : MonoBehaviour
         {
             Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
 
-            if (coincontroller.flag_pu_velocidad)
+            if (pcc.flag_pu_velocidad)
             {
-                //Debug.Log("Hola");
                 transform.position += movement * Time.deltaTime * velocidad_powerup;
             }
             else
@@ -73,10 +72,10 @@ public class CharacterController : MonoBehaviour
         {
             if (flag_salto == false)
             {
-                if (coincontroller.flag_pu_salto)
+                if (pcc.flag_pu_salto)
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto_powerup), ForceMode2D.Impulse);
-                    coincontroller.flag_pu_salto = false;
+                    pcc.flag_pu_salto = false;
                 } else
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto), ForceMode2D.Impulse);

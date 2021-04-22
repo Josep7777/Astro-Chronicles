@@ -11,8 +11,8 @@ public class Shot : MonoBehaviour
     public Texture2D cursorArrow;
     Vector2 lookDirection;
     float lookAngle;
-    CoinController coincontroller;
-    WeaponController weaponcontroller;
+    //CoinController coincontroller;
+    private WeaponController weaponcontroller;
     CharacterController charactercontroller;
 
     public float recarga_escopeta;
@@ -21,8 +21,8 @@ public class Shot : MonoBehaviour
     void Start()
     {
         charactercontroller = this.GetComponent<CharacterController>();
-        coincontroller = this.GetComponent<CoinController>();
-        weaponcontroller = this.GetComponent<WeaponController>();
+        //coincontroller = this.GetComponent<CoinController>();
+        weaponcontroller = GameObject.FindGameObjectWithTag("gamecontroller").GetComponent<WeaponController>();
         Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
         recarga_escopeta = 0;
         recarga_pistola=0;

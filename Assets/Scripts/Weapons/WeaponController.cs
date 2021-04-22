@@ -10,13 +10,16 @@ public class WeaponController : MonoBehaviour
     public Image imagen_pistola;
     public Image imagen_escopeta;
     public float tiempo_cambio_arma;
-    CoinController coincontroller;
+    //CoinController coincontroller;
     public RectTransform panel;
     private float medida_original;
     private int medida_max = 100;
+    private bool escopeta=false;
+    //private PlayerCollisionsController player_collisions;
     // Start is called before the first frame update
     void Start()
     {
+        //player_collisions = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollisionsController>();
         medida_original = panel.offsetMin.x;
         panel.gameObject.SetActive(true);
         //vector.Normalize();
@@ -24,7 +27,7 @@ public class WeaponController : MonoBehaviour
         arma_actual = "Pistola";
         imagen_pistola.gameObject.SetActive(false);
         imagen_escopeta.gameObject.SetActive(false);
-        coincontroller = this.GetComponent<CoinController>();
+        //coincontroller = this.GetComponent<CoinController>();
     }
 
     // Update is called once per frame
@@ -38,6 +41,7 @@ public class WeaponController : MonoBehaviour
                 break;
 
             case "Escopeta":
+                escopeta = true;
                 imagen_escopeta.gameObject.SetActive(true);
                 imagen_pistola.gameObject.SetActive(false);
                 break;
@@ -45,8 +49,6 @@ public class WeaponController : MonoBehaviour
 
         tiempo_cambio_arma -= Time.deltaTime;
         
-        //lol.offsetMax = new Vector2(-100f, lol.offsetMax.y);
-        //vector.Normalize();
         if (tiempo_cambio_arma>=0)
         {
             //Debug.Log(medida_original);
@@ -56,7 +58,7 @@ public class WeaponController : MonoBehaviour
         }
         
 
-        if (Input.GetKey("1") && tiempo_cambio_arma <= 0)
+        if (Input.GetKey("1") && tiempo_cambio_arma <= 0 && arma_actual!="Pistola")
         {
             tiempo_cambio_arma = 1f;
             arma_actual = "Pistola";
@@ -64,8 +66,9 @@ public class WeaponController : MonoBehaviour
             imagen_pistola.gameObject.SetActive(false);
             panel.offsetMax = new Vector2(medida_original, panel.offsetMax.y);
 
-        }   
-        if (Input.GetKey("2") && tiempo_cambio_arma<=0 && coincontroller.flag_escopeta)
+        }
+
+        if (Input.GetKey("2") && tiempo_cambio_arma<=0 && escopeta && arma_actual != "Escopeta")
         {
             tiempo_cambio_arma = 1f;
             arma_actual = "Escopeta";
