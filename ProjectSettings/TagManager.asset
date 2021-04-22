@@ -33,8 +33,8 @@ TagManager:
   - Panel
   - Player
   - Balas
-  - 
-  - 
+  - ImgFondo
+  - MenuBoton
   - 
   - 
   - 
@@ -55,6 +55,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: MenuBoton
+    uniqueID: 1326212433
+    locked: 0
+  - name: ImgFondo
+    uniqueID: 2233648559
+    locked: 0
   - name: Tuto
     uniqueID: 1352612755
     locked: 0
