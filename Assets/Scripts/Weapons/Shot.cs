@@ -5,8 +5,10 @@ using UnityEngine;
 public class Shot : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject bullet_machine_gun;
     public Transform firePoint;
     public float bulletSpeed_pistol = 50;
+    public float bulletSpeed_machine_gun = 50;
     public float bulletSpeed_shotgun = 10;
     public Texture2D cursorArrow;
     Vector2 lookDirection;
@@ -91,11 +93,11 @@ public class Shot : MonoBehaviour
         if (Input.GetMouseButton(0) && recarga_ametralladora <= 0)
         {
             recarga_ametralladora = 0.2f;
-            GameObject bulletClone = Instantiate(bullet);
+            GameObject bulletClone = Instantiate(bullet_machine_gun);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
-            Debug.Log("Hola");
-            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_pistol;
+            //Debug.Log("Hola");
+            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_machine_gun;
             Destroy(bulletClone.gameObject, 1f);
         }
     }
