@@ -9,12 +9,14 @@ public class WeaponController : MonoBehaviour
     public string arma_actual;
     public Image imagen_pistola;
     public Image imagen_escopeta;
+    public Image imagen_ametralladora;
     public float tiempo_cambio_arma;
     //CoinController coincontroller;
     public RectTransform panel;
     private float medida_original;
     private int medida_max = 100;
     private bool escopeta=false;
+    private bool ametralladora = false;
     //private PlayerCollisionsController player_collisions;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class WeaponController : MonoBehaviour
         arma_actual = "Pistola";
         imagen_pistola.gameObject.SetActive(false);
         imagen_escopeta.gameObject.SetActive(false);
+        imagen_ametralladora.gameObject.SetActive(false);
         //coincontroller = this.GetComponent<CoinController>();
     }
 
@@ -38,13 +41,23 @@ public class WeaponController : MonoBehaviour
             case "Pistola":
                 imagen_escopeta.gameObject.SetActive(false);
                 imagen_pistola.gameObject.SetActive(true);
+                imagen_ametralladora.gameObject.SetActive(false);
                 break;
 
             case "Escopeta":
                 escopeta = true;
                 imagen_escopeta.gameObject.SetActive(true);
                 imagen_pistola.gameObject.SetActive(false);
+                imagen_ametralladora.gameObject.SetActive(false);
                 break;
+
+            case "Ametralladora":
+                ametralladora = true;
+                imagen_ametralladora.gameObject.SetActive(true);
+                imagen_pistola.gameObject.SetActive(false);
+                imagen_escopeta.gameObject.SetActive(false);
+                break;
+
         }
 
         tiempo_cambio_arma -= Time.deltaTime;
@@ -62,8 +75,8 @@ public class WeaponController : MonoBehaviour
         {
             tiempo_cambio_arma = 1f;
             arma_actual = "Pistola";
-            imagen_escopeta.gameObject.SetActive(true);
-            imagen_pistola.gameObject.SetActive(false);
+            //imagen_escopeta.gameObject.SetActive(true);
+            //imagen_pistola.gameObject.SetActive(false);
             panel.offsetMax = new Vector2(medida_original, panel.offsetMax.y);
 
         }
@@ -72,8 +85,17 @@ public class WeaponController : MonoBehaviour
         {
             tiempo_cambio_arma = 1f;
             arma_actual = "Escopeta";
-            imagen_escopeta.gameObject.SetActive(true);
-            imagen_pistola.gameObject.SetActive(false);
+            //imagen_escopeta.gameObject.SetActive(true);
+            //imagen_pistola.gameObject.SetActive(false);
+            panel.offsetMax = new Vector2(medida_original, panel.offsetMax.y);
+        }
+
+        if (Input.GetKey("3") && tiempo_cambio_arma <= 0 && ametralladora && arma_actual != "Ametralladora")
+        {
+            tiempo_cambio_arma = 1f;
+            arma_actual = "Ametralladora";
+            //imagen_escopeta.gameObject.SetActive(true);
+            //imagen_pistola.gameObject.SetActive(false);
             panel.offsetMax = new Vector2(medida_original, panel.offsetMax.y);
         }
     }

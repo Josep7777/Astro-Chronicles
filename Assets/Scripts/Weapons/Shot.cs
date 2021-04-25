@@ -17,6 +17,7 @@ public class Shot : MonoBehaviour
 
     public float recarga_escopeta;
     public float recarga_pistola;
+    public float recarga_ametralladora;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class Shot : MonoBehaviour
         Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
         recarga_escopeta = 0;
         recarga_pistola=0;
+        recarga_ametralladora = 0;
     }
 
     void Pistola()
@@ -84,6 +86,20 @@ public class Shot : MonoBehaviour
             }
     }
 
+    void Ametralladora()
+    {
+        if (Input.GetMouseButton(0) && recarga_ametralladora <= 0)
+        {
+            recarga_ametralladora = 0.2f;
+            GameObject bulletClone = Instantiate(bullet);
+            bulletClone.transform.position = firePoint.position;
+            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+            Debug.Log("Hola");
+            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_pistol;
+            Destroy(bulletClone.gameObject, 1f);
+        }
+    }
+
     void Update()
     {
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -92,8 +108,13 @@ public class Shot : MonoBehaviour
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
         recarga_escopeta -= Time.deltaTime;
         recarga_pistola -= Time.deltaTime;
+        recarga_ametralladora -= Time.deltaTime;
+
         if (weaponcontroller.arma_actual=="Escopeta") {
             Escopeta();
+        } else if (weaponcontroller.arma_actual == "Ametralladora")
+        {
+            Ametralladora();
         } else
         {
             Pistola();
