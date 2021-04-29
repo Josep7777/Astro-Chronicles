@@ -21,6 +21,7 @@ TagManager:
   - enemybullet
   - gladis
   - gamecontroller
+  - Pincho
   layers:
   - Default
   - TransparentFX

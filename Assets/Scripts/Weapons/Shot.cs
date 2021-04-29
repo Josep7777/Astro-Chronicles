@@ -92,12 +92,12 @@ public class Shot : MonoBehaviour
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
         recarga_escopeta -= Time.deltaTime;
         recarga_pistola -= Time.deltaTime;
-        if (weaponcontroller.arma_actual=="Escopeta") {
+        /*if (weaponcontroller.arma_actual=="Escopeta") {
             Escopeta();
         } else
-        {
+        {*/
             Pistola();
-        }
+        //}
         
     }
 }
