@@ -62,6 +62,9 @@ TagManager:
   - name: Fondo_nave
     uniqueID: 3888474469
     locked: 0
+  - name: Fondo_nave_2
+    uniqueID: 2474507457
+    locked: 0
   - name: Tuto
     uniqueID: 1352612755
     locked: 0
