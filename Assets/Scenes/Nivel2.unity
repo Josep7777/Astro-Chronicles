@@ -5301,7 +5301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687656652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.5, y: 12.6, z: 0}
+  m_LocalPosition: {x: -5.58, y: -2.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 890944633}
@@ -6375,6 +6375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plataforma3
+      objectReference: {fileID: 0}
+    - target: {fileID: 249233073715513280, guid: 0f57fb168f820e6458d44e04f7bdf27d,
+        type: 3}
+      propertyPath: m_TagString
+      value: suelo
       objectReference: {fileID: 0}
     - target: {fileID: 5664934300105624891, guid: 0f57fb168f820e6458d44e04f7bdf27d,
         type: 3}
