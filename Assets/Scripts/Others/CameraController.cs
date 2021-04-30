@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -31,48 +32,54 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        flag_tutorial = true;
-        //flag_puntero = false;
+        if(SceneManager.GetActiveScene().name == "Nivel1")
+        {
+            flag_tutorial = true;
+            //flag_puntero = false;
 
-        a.gameObject.SetActive(true);
-        d.gameObject.SetActive(false);
-        w.gameObject.SetActive(false);
-        puntero.gameObject.SetActive(false);
-        raton.gameObject.SetActive(false);
+            a.gameObject.SetActive(true);
+            d.gameObject.SetActive(false);
+            w.gameObject.SetActive(false);
+            puntero.gameObject.SetActive(false);
+            raton.gameObject.SetActive(false);
+            paredIzqui = new GameObject("ParedIzqui");
+            paredDere = new GameObject("ParedDere");
+            paredIzqui.AddComponent<BoxCollider2D>();
+            paredDere.AddComponent<BoxCollider2D>();
+            paredIzqui.GetComponent<BoxCollider2D>().isTrigger = true;
+            paredDere.GetComponent<BoxCollider2D>().isTrigger = true;
+
+            bool_paredIzqui = false;
+            bool_paredDere = false;
+            bool_salto = false;
+            //bool_disparo = false;
+            primera_vez = true;
+            a.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.5f);
+            d.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.5f);
+            w.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.5f);
+            puntero.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.7f);
+            raton.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.3f);
+        }
+        
         
         camara = Camera.main;
         
         jugador = GameObject.FindGameObjectWithTag("Player");
 
-        paredIzqui = new GameObject("ParedIzqui");
-        paredDere = new GameObject("ParedDere");
-        paredIzqui.AddComponent<BoxCollider2D>();
-        paredDere.AddComponent<BoxCollider2D>();
-        paredIzqui.GetComponent<BoxCollider2D>().isTrigger = true;
-        paredDere.GetComponent<BoxCollider2D>().isTrigger = true;
-
-        bool_paredIzqui = false;
-        bool_paredDere = false;
-        bool_salto = false;
-        //bool_disparo = false;
-        primera_vez = true;
+       
 
         camara.transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y*2, -10);
-        a.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.5f);
-        d.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.5f);
-        w.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.5f);
-        puntero.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.7f);
-        raton.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.3f);
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (flag_tutorial && VariablesController.Muerto == false) tutorial();
+        if (flag_tutorial && VariablesController.Muerto == false && SceneManager.GetActiveScene().name == "Nivel1") tutorial();
         else
         {
-            if (flag_aux == false) {
+            if (flag_aux == false && SceneManager.GetActiveScene().name == "Nivel1") {
                 jugador.transform.position = respawn.transform.position;
                 flag_aux = true;
             }
