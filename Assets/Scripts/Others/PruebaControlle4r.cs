@@ -5,6 +5,7 @@ using UnityEngine;
 public class PruebaControlle4r : MonoBehaviour
 {
     private float contador = 1;
+    private float contador_ataque1 = 0;
     private bool flag_rot_dere = false;
     private bool flag_rot_izqui = false;
     private bool aux = false;
@@ -17,51 +18,8 @@ public class PruebaControlle4r : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (aux)
-        {
-            flag_rot_izqui = false;
-            flag_rot_dere = true;
-            contador += Time.deltaTime;
-            if (contador >= 1) aux = false;
-        }
-        else
-        {
-            flag_rot_dere = false;
-            flag_rot_izqui = true;
-            contador -= Time.deltaTime;
-            if (contador <= -10) aux = true;
-        }
-
-        if (flag_rot_izqui)
-        {*/
-        if (contador <= 0.5 && flag_rot_izqui)
-        {
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 5), ForceMode2D.Impulse);
-            contador += Time.deltaTime;
-            //contador -= Time.deltaTime;
-        } else if (contador <= 0.5 && flag_rot_izqui==false)
-        {
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 5), ForceMode2D.Impulse);
-            contador += Time.deltaTime;
-        }
-        //}
-        /*
-        if (flag_rot_dere)
-        {
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 5), ForceMode2D.Impulse);
-            contador += Time.deltaTime;
-            //contador -= Time.deltaTime;
-        }*/
-        /*
-        if (contador<=0.5)
-        {
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 5), ForceMode2D.Impulse);
-            contador += Time.deltaTime;
-        } */
-
-
-
+        //Ataque1();
+        //Ataque2();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -83,6 +41,21 @@ public class PruebaControlle4r : MonoBehaviour
             //final_lvl1 = true;
             Debug.Log("Hola");
             //SceneManager.LoadScene("FinalLvl1");
+        }
+    }
+
+    void Ataque1()
+    {
+        if (contador <= 0.5 && flag_rot_izqui)
+        {
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f, 5), ForceMode2D.Impulse);
+            contador += Time.deltaTime;
+            //contador -= Time.deltaTime;
+        }
+        else if (contador <= 0.5 && flag_rot_izqui == false)
+        {
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f, 5), ForceMode2D.Impulse);
+            contador += Time.deltaTime;
         }
     }
 }
