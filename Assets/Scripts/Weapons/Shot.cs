@@ -6,6 +6,7 @@ public class Shot : MonoBehaviour
 {
     public GameObject bullet;
     public GameObject bullet_machine_gun;
+    public AudioSource pistolSoundEffect;
     public Transform firePoint;
     public float bulletSpeed_pistol = 50;
     public float bulletSpeed_machine_gun = 50;
@@ -36,11 +37,11 @@ public class Shot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && recarga_pistola <= 0)
         {
+            pistolSoundEffect.Play();
             recarga_pistola = 0.5f;
             GameObject bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
-
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_pistol;
             Destroy(bulletClone.gameObject, 1f);
         }

@@ -14,7 +14,7 @@ public class PlayerCollisionsController : MonoBehaviour
     public bool flag_ametralladora = false;
     public bool final_lvl1 = false;
     private WeaponController wp;
-
+    public AudioSource collectCoinSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,7 @@ public class PlayerCollisionsController : MonoBehaviour
         {
             Destroy(other.gameObject);
             monedas++;
+            collectCoinSound.Play();
             //contador.text = monedas.ToString();
         }
 
