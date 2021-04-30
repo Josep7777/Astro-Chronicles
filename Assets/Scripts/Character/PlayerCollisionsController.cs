@@ -13,6 +13,7 @@ public class PlayerCollisionsController : MonoBehaviour
     public bool flag_escopeta=false;
     public bool final_lvl1 = false;
     private WeaponController wp;
+    public GameObject jp;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +60,14 @@ public class PlayerCollisionsController : MonoBehaviour
             Destroy(other.gameObject);
             wp.arma_actual = "Escopeta";
             flag_escopeta = true;
+
+        }
+
+        if (other.gameObject.tag == "jetpack")
+        {
+            Destroy(other.gameObject);
+            // wp.arma_actual = "Escopeta";
+            jp.SetActive(true);
 
         }
 
