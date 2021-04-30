@@ -27,7 +27,7 @@ public class HitEnemies : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("bala")){
-            EnemyHealth--;
+            EnemyHealth-=collision.gameObject.GetComponent<BulletController>().daño;
             Destroy(collision.gameObject);
             //Debug.Log(EnemyHealth);
         }

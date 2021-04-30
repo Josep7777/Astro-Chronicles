@@ -21,6 +21,7 @@ TagManager:
   - enemybullet
   - gladis
   - gamecontroller
+  - Ametralladora
   layers:
   - Default
   - TransparentFX

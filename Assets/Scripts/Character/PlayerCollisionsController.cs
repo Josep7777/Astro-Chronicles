@@ -11,6 +11,7 @@ public class PlayerCollisionsController : MonoBehaviour
     public float velocidad_timer=0;
     public GameObject velocidad_pos;
     public bool flag_escopeta=false;
+    public bool flag_ametralladora = false;
     public bool final_lvl1 = false;
     private WeaponController wp;
 
@@ -59,6 +60,14 @@ public class PlayerCollisionsController : MonoBehaviour
             Destroy(other.gameObject);
             wp.arma_actual = "Escopeta";
             flag_escopeta = true;
+
+        }
+
+        if (other.gameObject.tag == "Ametralladora")
+        {
+            Destroy(other.gameObject);
+            wp.arma_actual = "Ametralladora";
+            flag_ametralladora = true;
 
         }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4043496118222773818}
   - component: {fileID: 9196965382461722761}
   m_Layer: 10
-  m_Name: Bullet
+  m_Name: Bullet_Machine_Gun
   m_TagString: bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2977633057187381174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.92, y: 0.6, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.5}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd56f294074261458e41f318e11bb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "da\xF1o": 1
+  "da\xF1o": 0.5
   ps: {fileID: 5208629319737664755, guid: cd011c20c3a20b441bc53a68d469cce4, type: 3}
 --- !u!58 &9196965382461722761
 CircleCollider2D:
