@@ -20,13 +20,14 @@ public class HitEnemies : MonoBehaviour
         
         if (EnemyHealth <= 0)
         {
-            /*
+            
             if (gameObject.tag.Equals("enemy") || gameObject.tag.Equals("EnemigoA"))
             {
                 RobotDeathSoundEffect.Play();
+                Destroy(gameObject);
             }
-            */
-            Destroy(gameObject); 
+            
+            
         }
     }
 

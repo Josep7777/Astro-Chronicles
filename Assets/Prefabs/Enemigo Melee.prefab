@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 7913171324028217851}
   - component: {fileID: 7913171324028217844}
   - component: {fileID: 7913171324028217845}
-  - component: {fileID: -3085074823215578111}
   m_Layer: 0
   m_Name: Enemigo Melee
   m_TagString: enemy
@@ -194,17 +193,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyMaxHealth: 5
   EnemyHealth: 0
---- !u!114 &-3085074823215578111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7913171324028217846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0292c983a95a2948a82e3e0552a0620, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitRobot: {fileID: 0}
-  robotDeath: {fileID: 0}
+  RobotDeathSoundEffect: {fileID: 8088073425162485616, guid: 9b214eb6366a1314a8ec078e53bb44cf,
+    type: 3}

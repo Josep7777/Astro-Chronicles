@@ -163,6 +163,7 @@ MonoBehaviour:
   bulletParent: {fileID: 170435324228590635}
   activarA: {fileID: 0}
   activarB: {fileID: 0}
+  enemyShootSoundEffect: {fileID: 0}
 --- !u!50 &170435324328250960
 Rigidbody2D:
   serializedVersion: 4
@@ -197,3 +198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyMaxHealth: 3
+  EnemyHealth: 0
+  RobotDeathSoundEffect: {fileID: 8088073425162485616, guid: 9b214eb6366a1314a8ec078e53bb44cf,
+    type: 3}

@@ -24,6 +24,7 @@ public class CharacterController : MonoBehaviour
     //private bool flag_tiempo;
     //private float tiempo_aux;
     public AudioSource jumpSoundEffect;
+    public AudioSource superJumpSoundEffect;
     void Start()
     {
         pcc = this.GetComponent<PlayerCollisionsController>();
@@ -100,6 +101,7 @@ public class CharacterController : MonoBehaviour
                 if (pcc.flag_pu_salto)
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto_powerup), ForceMode2D.Impulse);
+                    superJumpSoundEffect.Play();
                     pcc.flag_pu_salto = false;
                 } else
                 {

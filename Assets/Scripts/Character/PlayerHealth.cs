@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int playerMaxHealth;
     public int playerHealth;
     public float tiempo_inmortal = 1f;
+    public AudioSource damageSoundEffect;
 
     public PlayerHealthbar healthBar;
 
@@ -36,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
+            damageSoundEffect.Play();
             tiempo_inmortal = 1f;
 
         }
@@ -49,6 +51,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
+            damageSoundEffect.Play();
             tiempo_inmortal = 1f;
         }
 
@@ -60,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
+            damageSoundEffect.Play();
             tiempo_inmortal = 1f;
         }
 

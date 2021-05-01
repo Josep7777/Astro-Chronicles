@@ -9,7 +9,7 @@ public class Gladis : MonoBehaviour
     public GameObject TextBox;
     public GameObject Accept;
     public int choiseMade;
-    public int firstAsk;
+    public bool firstAsk;
     public PlayerHealth ph;
     public GameObject jugador;
     public AudioSource gladisHeal;
@@ -21,6 +21,7 @@ public class Gladis : MonoBehaviour
         Panel.gameObject.SetActive(false);
         choiseMade = 0;
         jugador = GameObject.FindGameObjectWithTag("Player");
+        firstAsk = false;
     }
 
     public void AcceptButton()
@@ -33,7 +34,6 @@ public class Gladis : MonoBehaviour
             ph.playerHealth = ph.playerMaxHealth;
             ph.healthBar.SetHealth(ph.playerHealth);
             choiseMade = 1;
-            firstAsk = 0;
         }
         else
         {
@@ -48,10 +48,10 @@ public class Gladis : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Panel.gameObject.SetActive(true);
-            if(firstAsk == 0)
+            if(firstAsk == false)
             {
                 gladisQuestion.Play();
-                firstAsk = 1;
+                firstAsk = true;
             }
 
             
