@@ -5,8 +5,8 @@ using UnityEngine;
 public class HitEnemies : MonoBehaviour
 {
     public float EnemyMaxHealth;
-    private float EnemyHealth;
-
+    public float EnemyHealth;
+    public AudioSource RobotDeathSoundEffect;
 
 
     void Start()
@@ -20,6 +20,12 @@ public class HitEnemies : MonoBehaviour
         
         if (EnemyHealth <= 0)
         {
+            /*
+            if (gameObject.tag.Equals("enemy") || gameObject.tag.Equals("EnemigoA"))
+            {
+                RobotDeathSoundEffect.Play();
+            }
+            */
             Destroy(gameObject); 
         }
     }

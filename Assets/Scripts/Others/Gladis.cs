@@ -9,8 +9,12 @@ public class Gladis : MonoBehaviour
     public GameObject TextBox;
     public GameObject Accept;
     public int choiseMade;
+    public int firstAsk;
     public PlayerHealth ph;
     public GameObject jugador;
+    public AudioSource gladisHeal;
+    public AudioSource gladisSad;
+    public AudioSource gladisQuestion;
     void Start()
     {
         ph = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
@@ -25,13 +29,16 @@ public class Gladis : MonoBehaviour
         if (choiseMade == 0)
         {
             TextBox.GetComponent<Text>().text = "Entendido señor, procesando a restaurar sus puntos de salud.";
+            gladisHeal.Play();
             ph.playerHealth = ph.playerMaxHealth;
             ph.healthBar.SetHealth(ph.playerHealth);
             choiseMade = 1;
+            firstAsk = 0;
         }
         else
         {
             TextBox.GetComponent<Text>().text = "Lo siento mi señor, no tengo la suficiente bateria para poder ayudarle.";
+            gladisSad.Play();
         }
 
     }
@@ -41,6 +48,13 @@ public class Gladis : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Panel.gameObject.SetActive(true);
+            if(firstAsk == 0)
+            {
+                gladisQuestion.Play();
+                firstAsk = 1;
+            }
+
+            
         }
     }
 
