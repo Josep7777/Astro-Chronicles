@@ -8,7 +8,6 @@ public class Suelo : MonoBehaviour
     GameObject Player;
     public PlayerHealth ph;
 
-
     void Start()
     {
         Player = gameObject.transform.parent.gameObject;
@@ -34,6 +33,7 @@ public class Suelo : MonoBehaviour
             //Debug.Log("Daño");
             Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
             ph.playerHealth = ph.playerHealth - 1;
+            ph.damageSoundEffect.Play();
             ph.healthBar.SetHealth(ph.playerHealth);
             ph.tiempo_inmortal = 1f;
         }

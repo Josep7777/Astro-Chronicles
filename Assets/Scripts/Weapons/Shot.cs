@@ -6,6 +6,9 @@ public class Shot : MonoBehaviour
 {
     public GameObject bullet;
     public GameObject bullet_machine_gun;
+    public AudioSource pistolSoundEffect;
+    public AudioSource machinegunSoundEffect;
+    public AudioSource shotgunSoundEffect;
     public Transform firePoint;
     public float bulletSpeed_pistol = 50;
     public float bulletSpeed_machine_gun = 50;
@@ -36,11 +39,11 @@ public class Shot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && recarga_pistola <= 0)
         {
+            pistolSoundEffect.Play();
             recarga_pistola = 0.5f;
             GameObject bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
-
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_pistol;
             Destroy(bulletClone.gameObject, 1f);
         }
@@ -73,6 +76,7 @@ public class Shot : MonoBehaviour
 
             bulletClone3.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y / 2f, firePoint.right.z) * bulletSpeed_shotgun;
             //Destroy(bulletClone.gameObject, 0.1f);
+            shotgunSoundEffect.Play();
             Destroy(bulletClone.gameObject, 1f);
             if (lookDirection.x > 0f)
             {
@@ -98,6 +102,7 @@ public class Shot : MonoBehaviour
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
             //Debug.Log("Hola");
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed_machine_gun;
+            machinegunSoundEffect.Play();
             Destroy(bulletClone.gameObject, 1f);
         }
     }

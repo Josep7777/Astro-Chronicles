@@ -192,3 +192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyMaxHealth: 5
+  EnemyHealth: 0
+  RobotDeathSoundEffect: {fileID: 8088073425162485616, guid: 9b214eb6366a1314a8ec078e53bb44cf,
+    type: 3}

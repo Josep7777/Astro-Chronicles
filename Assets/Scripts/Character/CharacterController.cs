@@ -23,6 +23,8 @@ public class CharacterController : MonoBehaviour
     private int flag_rebote_dere;
     //private bool flag_tiempo;
     //private float tiempo_aux;
+    public AudioSource jumpSoundEffect;
+    public AudioSource superJumpSoundEffect;
     void Start()
     {
         pcc = this.GetComponent<PlayerCollisionsController>();
@@ -98,11 +100,13 @@ public class CharacterController : MonoBehaviour
             {
                 if (pcc.flag_pu_salto)
                 {
+                    superJumpSoundEffect.Play();
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto_powerup), ForceMode2D.Impulse);
                     pcc.flag_pu_salto = false;
                 } else
                 {
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto), ForceMode2D.Impulse);
+                    jumpSoundEffect.Play();
                 }
 
                 flag_salto = true;
@@ -124,6 +128,7 @@ public class CharacterController : MonoBehaviour
             {
                 if (flag_rebote_dere == 0)
                 {
+                    jumpSoundEffect.Play();
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
                     tiempo_rebote = 0.4f;
@@ -144,6 +149,7 @@ public class CharacterController : MonoBehaviour
             {
                 if (flag_rebote_izqui == 0)
                 {
+                    jumpSoundEffect.Play();
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
                     tiempo_rebote = 0.4f;

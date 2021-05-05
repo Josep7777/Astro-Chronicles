@@ -24,6 +24,7 @@ public class PickUpsController : MonoBehaviour
     public GameObject powerup_velocidad;
 
     private PlayerCollisionsController pcc;
+
     //WeaponController weaponcontroller;
 
     private void Start()

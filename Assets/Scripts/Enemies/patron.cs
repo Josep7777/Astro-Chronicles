@@ -26,7 +26,7 @@ public class patron : MonoBehaviour
     private float cosa;
     public GameObject activarA;
     public GameObject activarB;
-
+    public AudioSource enemyShootSoundEffect;
 
     void Start()
     {
@@ -108,7 +108,7 @@ public class patron : MonoBehaviour
             {
                 Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
                 tiempofire = Time.time + fireRate;
-
+                enemyShootSoundEffect.Play();
             }
         }
 
