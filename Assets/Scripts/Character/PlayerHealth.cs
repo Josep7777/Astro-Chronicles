@@ -35,10 +35,11 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.gameObject.tag.Equals("enemy") && tiempo_inmortal <= 0)
         {
+            damageSoundEffect.Play();
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
-            damageSoundEffect.Play();
             tiempo_inmortal = 1f;
+
 
         }
 
@@ -50,8 +51,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag.Equals("enemy") && tiempo_inmortal <= 0)
         {
             playerHealth = playerHealth - 1;
-            healthBar.SetHealth(playerHealth);
-            damageSoundEffect.Play();
+            healthBar.SetHealth(playerHealth);           
             tiempo_inmortal = 1f;
         }
 
@@ -61,9 +61,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("enemybullet") && tiempo_inmortal <= 0)
         {
+            damageSoundEffect.Play();
             playerHealth = playerHealth - 1;
             healthBar.SetHealth(playerHealth);
-            damageSoundEffect.Play();
             tiempo_inmortal = 1f;
         }
 

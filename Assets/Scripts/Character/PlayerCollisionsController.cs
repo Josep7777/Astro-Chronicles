@@ -15,6 +15,7 @@ public class PlayerCollisionsController : MonoBehaviour
     public bool final_lvl1 = false;
     private WeaponController wp;
     public AudioSource collectCoinSound;
+        public AudioSource getPowerUpSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,7 @@ public class PlayerCollisionsController : MonoBehaviour
             salto_pos.transform.position = other.gameObject.transform.position;
             Destroy(other.gameObject);
             flag_pu_salto = true;
+            getPowerUpSound.Play();
         }
 
         if (other.gameObject.tag == "PowerupVelocidad")
@@ -54,6 +56,7 @@ public class PlayerCollisionsController : MonoBehaviour
             Destroy(other.gameObject);
             velocidad_timer = 10.0f;
             flag_pu_velocidad = true;
+            getPowerUpSound.Play();
         }
 
         if (other.gameObject.tag == "Escopeta")

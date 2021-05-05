@@ -100,8 +100,8 @@ public class CharacterController : MonoBehaviour
             {
                 if (pcc.flag_pu_salto)
                 {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto_powerup), ForceMode2D.Impulse);
                     superJumpSoundEffect.Play();
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, salto_powerup), ForceMode2D.Impulse);
                     pcc.flag_pu_salto = false;
                 } else
                 {
