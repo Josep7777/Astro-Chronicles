@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!1 &22016525
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!58 &50914800
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -482,7 +484,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -686,6 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!58 &81157923
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -760,7 +763,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2362,6 +2365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!58 &498518064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2436,7 +2440,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2835,6 +2839,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!4 &630823608
 Transform:
   m_ObjectHideFlags: 0
@@ -3108,9 +3116,10 @@ GameObject:
   - component: {fileID: 754702593}
   - component: {fileID: 754702597}
   - component: {fileID: 754702598}
+  - component: {fileID: 754702599}
   m_Layer: 11
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3130,7 +3139,7 @@ Rigidbody2D:
   m_Mass: 15
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 20
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3143,7 +3152,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754702592}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3245,7 +3254,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cd_ataques: 0
-  ataque1: 0
+  ataque_acabado: 1
+  cadena: {fileID: 852306813}
+--- !u!70 &754702599
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754702592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007868409, y: 0}
+  m_Size: {x: 0.5908396, y: 1}
+  m_Direction: 0
 --- !u!1 &763662024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3572,6 +3598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!58 &852306816
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4155,6 +4182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!50 &923243998
 Rigidbody2D:
   serializedVersion: 4
@@ -4170,7 +4198,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -4708,6 +4736,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!114 &993910241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4720,6 +4752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!1 &999259563
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,6 +5228,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!4 &1120800298
 Transform:
   m_ObjectHideFlags: 0
@@ -5246,6 +5283,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!4 &1129231088
 Transform:
   m_ObjectHideFlags: 0
@@ -5976,6 +6017,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!1 &1295751558
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,6 +6744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada5e19cd803394080c72ce7dbe6629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_ataque1: 3
 --- !u!58 &1327120769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6773,7 +6819,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -7362,6 +7408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!4 &1340839195
 Transform:
   m_ObjectHideFlags: 0
@@ -7888,6 +7938,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 754702596}
+  contador: 1
+  flag_rot_dere: 0
+  flag_rot_izqui: 0
+  aux: 0
 --- !u!4 &1391953466
 Transform:
   m_ObjectHideFlags: 0
