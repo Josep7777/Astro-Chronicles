@@ -1,0 +1,2048 @@
+fileFormatVersion: 2
+guid: fcbad95c6a53dcd469a76b7f97b4fe0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9122243836941541079
+    second: midi-mm8_0
+  - first:
+      213: -8200596275636103734
+    second: midi-mm8_1
+  - first:
+      213: -6266580893067567118
+    second: midi-mm8_2
+  - first:
+      213: -489456274519955927
+    second: midi-mm8_3
+  - first:
+      213: -7929950850418548255
+    second: midi-mm8_4
+  - first:
+      213: 8032634602102363439
+    second: midi-mm8_5
+  - first:
+      213: 4033540928188845052
+    second: midi-mm8_6
+  - first:
+      213: 7499438742472099157
+    second: midi-mm8_7
+  - first:
+      213: 4232767997941193084
+    second: midi-mm8_8
+  - first:
+      213: -7325362362680245990
+    second: midi-mm8_9
+  - first:
+      213: 7131845040571573222
+    second: midi-mm8_10
+  - first:
+      213: -1113414206413967393
+    second: midi-mm8_11
+  - first:
+      213: -7837731867424177742
+    second: midi-mm8_12
+  - first:
+      213: 6932190094231535897
+    second: midi-mm8_13
+  - first:
+      213: -2240473891767710023
+    second: midi-mm8_14
+  - first:
+      213: -6869754379968873687
+    second: midi-mm8_15
+  - first:
+      213: 2984890906283865957
+    second: midi-mm8_16
+  - first:
+      213: -803677195438811411
+    second: midi-mm8_17
+  - first:
+      213: -7484314355995594556
+    second: midi-mm8_18
+  - first:
+      213: -4388970367726905531
+    second: midi-mm8_19
+  - first:
+      213: 953047145491201629
+    second: midi-mm8_20
+  - first:
+      213: -8647147897219454626
+    second: midi-mm8_21
+  - first:
+      213: 3157572083725872503
+    second: midi-mm8_22
+  - first:
+      213: 8488791322073330711
+    second: midi-mm8_23
+  - first:
+      213: -4994612860774530391
+    second: midi-mm8_24
+  - first:
+      213: -6837490455286816896
+    second: midi-mm8_25
+  - first:
+      213: 3225368310419251083
+    second: midi-mm8_26
+  - first:
+      213: -1031434141260467497
+    second: midi-mm8_27
+  - first:
+      213: 6025871878964970123
+    second: midi-mm8_28
+  - first:
+      213: -5960066974802482289
+    second: midi-mm8_29
+  - first:
+      213: -1266263634147406505
+    second: midi-mm8_30
+  - first:
+      213: 926721698628884088
+    second: midi-mm8_31
+  - first:
+      213: -1111849316448252083
+    second: midi-mm8_32
+  - first:
+      213: 2890565073721914260
+    second: midi-mm8_33
+  - first:
+      213: 3804060739457145196
+    second: midi-mm8_34
+  - first:
+      213: -669001040785443477
+    second: midi-mm8_35
+  - first:
+      213: 6983420776296308710
+    second: midi-mm8_36
+  - first:
+      213: -2848160719841534528
+    second: midi-mm8_37
+  - first:
+      213: 8061014140951299590
+    second: midi-mm8_38
+  - first:
+      213: -3057028736813247213
+    second: midi-mm8_39
+  - first:
+      213: 4944593984538839890
+    second: midi-mm8_40
+  - first:
+      213: 8339891493261135733
+    second: midi-mm8_41
+  - first:
+      213: -5501031997610861235
+    second: midi-mm8_42
+  - first:
+      213: 3054793040553972646
+    second: midi-mm8_43
+  - first:
+      213: -6815693545167073197
+    second: midi-mm8_44
+  - first:
+      213: -2342576422448095866
+    second: midi-mm8_45
+  - first:
+      213: 1420766687432094928
+    second: midi-mm8_46
+  - first:
+      213: 6360157281905843194
+    second: midi-mm8_47
+  - first:
+      213: -4559493758062267222
+    second: midi-mm8_48
+  - first:
+      213: -1967055157337469637
+    second: midi-mm8_49
+  - first:
+      213: 1834833415008536309
+    second: midi-mm8_50
+  - first:
+      213: 115120233896167337
+    second: midi-mm8_51
+  - first:
+      213: -7147389940606051057
+    second: midi-mm8_52
+  - first:
+      213: 7113524722409953788
+    second: midi-mm8_53
+  - first:
+      213: 6054390507754506979
+    second: midi-mm8_54
+  - first:
+      213: 5146904442755132588
+    second: midi-mm8_55
+  - first:
+      213: 7048570914097294009
+    second: midi-mm8_56
+  - first:
+      213: 7617331175450618158
+    second: midi-mm8_57
+  - first:
+      213: -3123101601628080572
+    second: midi-mm8_58
+  - first:
+      213: 3219507249018928227
+    second: midi-mm8_59
+  - first:
+      213: 2870204597088479862
+    second: midi-mm8_60
+  - first:
+      213: -4270161305913840843
+    second: midi-mm8_61
+  - first:
+      213: -7086376291640643600
+    second: midi-mm8_62
+  - first:
+      213: -8256466223790318580
+    second: midi-mm8_63
+  - first:
+      213: 3705224594944563833
+    second: midi-mm8_64
+  - first:
+      213: -817496044172457701
+    second: midi-mm8_65
+  - first:
+      213: 8271580531053940693
+    second: midi-mm8_66
+  - first:
+      213: -6371416470242193258
+    second: midi-mm8_67
+  - first:
+      213: -4724333495726226837
+    second: midi-mm8_68
+  - first:
+      213: 7017316157691378097
+    second: midi-mm8_69
+  - first:
+      213: -5100522886613164068
+    second: midi-mm8_70
+  - first:
+      213: -341663927763134588
+    second: midi-mm8_71
+  - first:
+      213: 8545626621702639348
+    second: midi-mm8_72
+  - first:
+      213: -6098963104345097983
+    second: midi-mm8_73
+  - first:
+      213: 6585464517885762826
+    second: midi-mm8_74
+  - first:
+      213: 5944952644132946039
+    second: midi-mm8_75
+  - first:
+      213: 3195207248535881523
+    second: midi-mm8_76
+  - first:
+      213: -8991903051349781690
+    second: midi-mm8_77
+  - first:
+      213: -6399520830058744956
+    second: midi-mm8_78
+  - first:
+      213: 5076744781020658295
+    second: midi-mm8_79
+  - first:
+      213: -5252632330378105004
+    second: midi-mm8_80
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: midi-mm8_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 421
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9216a90ef87476180800000000000000
+      internalID: -9122243836941541079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 422
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5915cc221a13e80800000000000000
+      internalID: -8200596275636103734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 422
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff157821e1a809a0800000000000000
+      internalID: -6266580893067567118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 423
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926e6209c1a1539f0800000000000000
+      internalID: -489456274519955927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 430
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1ee7a57b723f190800000000000000
+      internalID: -7929950850418548255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 428
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2592d4ac96a97f60800000000000000
+      internalID: 8032634602102363439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 429
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb02b38a140af730800000000000000
+      internalID: 4033540928188845052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 428
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5550ad37dcb531860800000000000000
+      internalID: 7499438742472099157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 380
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c791de56110ddba30800000000000000
+      internalID: 4232767997941193084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 380
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a118d691eb5175a90800000000000000
+      internalID: -7325362362680245990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 380
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3666c374769f260800000000000000
+      internalID: 7131845040571573222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 381
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf62daadab5c80f0800000000000000
+      internalID: -1113414206413967393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_12
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 381
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b14c658468ca3390800000000000000
+      internalID: -7837731867424177742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 381
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91107229926143060800000000000000
+      internalID: 6932190094231535897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_14
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 381
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be06a0bddc38e0e0800000000000000
+      internalID: -2240473891767710023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 381
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b75c7f9cab9a0a0800000000000000
+      internalID: -6869754379968873687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 381
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567f752f6767c6920800000000000000
+      internalID: 2984890906283865957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 339
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de699cb49d3c8d4f0800000000000000
+      internalID: -803677195438811411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 337
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0b68f2fbf522890800000000000000
+      internalID: -7484314355995594556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 339
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5471ced44be3713c0800000000000000
+      internalID: -4388970367726905531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 336
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ef3315457e93d00800000000000000
+      internalID: 953047145491201629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_21
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 335
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59e7f15dc82ff780800000000000000
+      internalID: -8647147897219454626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_22
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 335
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dab23a413f1db20800000000000000
+      internalID: 3157572083725872503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_23
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 334
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714799c5bbe3ec570800000000000000
+      internalID: 8488791322073330711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_24
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 333
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2cfe2d0129faab0800000000000000
+      internalID: -4994612860774530391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 291
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f518158aa5c11a0800000000000000
+      internalID: -6837490455286816896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 290
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f575cb36fc2cc20800000000000000
+      internalID: 3225368310419251083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_27
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 290
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2b5f00d1c9fa1f0800000000000000
+      internalID: -1031434141260467497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_28
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 289
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8209b72c8230a350800000000000000
+      internalID: 6025871878964970123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_29
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 287
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b6c590aa6994da0800000000000000
+      internalID: -5960066974802482289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_30
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 287
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d06a60fe35d6ee0800000000000000
+      internalID: -1266263634147406505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_31
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 287
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876db6499706cdc00800000000000000
+      internalID: 926721698628884088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 235
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f475100fae190f0800000000000000
+      internalID: -1111849316448252083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 238
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4937853ae995d1820800000000000000
+      internalID: 2890565073721914260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_34
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 235
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695a57761dbac430800000000000000
+      internalID: 3804060739457145196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_35
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 238
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65fd91191b37b6f0800000000000000
+      internalID: -669001040785443477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 240
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef593042381ae060800000000000000
+      internalID: 6983420776296308710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cddf9e5aec4978d0800000000000000
+      internalID: -2848160719841534528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_38
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 260
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6068dc0f6a97edf60800000000000000
+      internalID: 8061014140951299590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_39
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 259
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315d51a8f804395d0800000000000000
+      internalID: -3057028736813247213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 241
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b88f6080abe9440800000000000000
+      internalID: 4944593984538839890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_41
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 240
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fc121602f3db370800000000000000
+      internalID: 8339891493261135733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 188
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dd85c3b8868a3b0800000000000000
+      internalID: -5501031997610861235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_43
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 187
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a31e8cd51ec46a20800000000000000
+      internalID: 3054793040553972646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_44
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 187
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350d46ee4dac961a0800000000000000
+      internalID: -6815693545167073197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_45
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 184
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d96c0c72f7d7fd0800000000000000
+      internalID: -2342576422448095866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 185
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4391156c397b310800000000000000
+      internalID: 1420766687432094928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_47
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 184
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb9c9fa951d34850800000000000000
+      internalID: 6360157281905843194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_48
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 185
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa47613959c69b0c0800000000000000
+      internalID: -4559493758062267222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_49
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 184
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dcc4d91cd93b4e0800000000000000
+      internalID: -1967055157337469637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_50
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 137
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6c9930543a67910800000000000000
+      internalID: 1834833415008536309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_51
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 137
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a747d72e3df89100800000000000000
+      internalID: 115120233896167337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_52
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 137
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dd9fea7be5fcc90800000000000000
+      internalID: -7147389940606051057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_53
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 137
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf95434cb0158b260800000000000000
+      internalID: 7113524722409953788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_54
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 136
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea443ad614850450800000000000000
+      internalID: 6054390507754506979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_55
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 135
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacac4b325a7d6740800000000000000
+      internalID: 5146904442755132588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_56
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 136
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba6be4c6ed81d160800000000000000
+      internalID: 7048570914097294009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_57
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 136
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e292e31885236b960800000000000000
+      internalID: 7617331175450618158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_58
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 98
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4463185e3a388a4d0800000000000000
+      internalID: -3123101601628080572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_59
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 99
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c719909ccfdac20800000000000000
+      internalID: 3219507249018928227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_60
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 92
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae622cfd305d720800000000000000
+      internalID: 2870204597088479862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_61
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 92
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b2363aae65db4c0800000000000000
+      internalID: -4270161305913840843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_62
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 92
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff6208de4228ad90800000000000000
+      internalID: -7086376291640643600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_63
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 92
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c97fec6b32b6d80800000000000000
+      internalID: -8256466223790318580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_64
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 92
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a16b2532a9b6330800000000000000
+      internalID: 3705224594944563833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_65
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 96
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1940d9ddaba7a4f0800000000000000
+      internalID: -817496044172457701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_66
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 99
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfc1841bae8ac270800000000000000
+      internalID: 8271580531053940693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_67
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 105
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690142f3a7e2497a0800000000000000
+      internalID: -6371416470242193258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_68
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 107
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6242ca57bbcf6eb0800000000000000
+      internalID: -4724333495726226837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_69
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 37
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9bdc7bdd3826160800000000000000
+      internalID: 7017316157691378097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_70
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 37
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf1ca6557d4739b0800000000000000
+      internalID: -5100522886613164068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_71
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 37
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4871d19c77a224bf0800000000000000
+      internalID: -341663927763134588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_72
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 37
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe05b1c22a289670800000000000000
+      internalID: 8545626621702639348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_73
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 37
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109fb4bce512c5ba0800000000000000
+      internalID: -6098963104345097983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_74
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 37
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d15857615446b50800000000000000
+      internalID: 6585464517885762826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_75
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 37
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7704010aee6b08250800000000000000
+      internalID: 5944952644132946039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_76
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 37
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3370cb84018a75c20800000000000000
+      internalID: 3195207248535881523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_77
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6439b81e0d7563380800000000000000
+      internalID: -8991903051349781690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483b2af06b55037a0800000000000000
+      internalID: -6399520830058744956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_79
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 7
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77afd080b78347640800000000000000
+      internalID: 5076744781020658295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midi-mm8_80
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 3
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fa414a9b6ea17b0800000000000000
+      internalID: -5252632330378105004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
