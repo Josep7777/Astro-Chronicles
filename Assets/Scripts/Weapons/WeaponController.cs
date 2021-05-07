@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WeaponController : MonoBehaviour
 {
@@ -36,6 +37,11 @@ public class WeaponController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(SceneManager.GetActiveScene().name != "Nivel1")
+        {
+            escopeta = true;
+        }
+
         switch (arma_actual)
         {
             case "Pistola":
