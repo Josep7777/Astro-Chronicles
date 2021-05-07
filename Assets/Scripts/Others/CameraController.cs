@@ -32,7 +32,13 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Nivel1") {
+        camara = Camera.main;
+
+        jugador = GameObject.FindGameObjectWithTag("Player");
+
+        camara.transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y * 2, -10);
+
+        if (SceneManager.GetActiveScene().name == "NIvel1") {
             flag_tutorial = true;
             //flag_puntero = false;
 
@@ -64,21 +70,17 @@ public class CameraController : MonoBehaviour
             puntero.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.7f);
             raton.transform.position = new Vector2(camara.transform.position.x, camara.transform.position.y * 1.3f);
     }
-        camara = Camera.main;
-
-        jugador = GameObject.FindGameObjectWithTag("Player");
-
-        camara.transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y * 2, -10);
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (flag_tutorial && VariablesController.Muerto == false && SceneManager.GetActiveScene().name == "Nivel1") tutorial();
+        if (flag_tutorial && VariablesController.Muerto == false && SceneManager.GetActiveScene().name == "NIvel1") tutorial();
         else
         {
-            if (flag_aux == false && SceneManager.GetActiveScene().name == "Nivel1") {
+            if (flag_aux == false && SceneManager.GetActiveScene().name == "NIvel1") {
                 jugador.transform.position = respawn.transform.position;
                 flag_aux = true;
             }
