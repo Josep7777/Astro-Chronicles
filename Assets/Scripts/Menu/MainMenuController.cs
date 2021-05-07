@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
+
 
 public class MainMenuController : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class MainMenuController : MonoBehaviour
     public Dropdown dropdown;
     private List<string> resoluciones = new List<string>();
     private int index;
-
+    public AudioMixer am;
     private void Start()
     {
         resoluciones_disponibles = Screen.resolutions;
@@ -39,6 +41,11 @@ public class MainMenuController : MonoBehaviour
     {
         Resolution r = resoluciones_disponibles[i];
         Screen.SetResolution(r.width, r.height, Screen.fullScreen);
+    }
+
+    public void Volumen(float volumen)
+    {
+        am.SetFloat("Volumen", volumen);
     }
 
     public void NuevoJuego()
