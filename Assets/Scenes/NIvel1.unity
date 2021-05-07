@@ -4599,6 +4599,11 @@ PrefabInstance:
       propertyPath: activarB
       value: 
       objectReference: {fileID: 590957285}
+    - target: {fileID: 170435324328250975, guid: 4de147cb85f26f54191a9c44d5a4621b,
+        type: 3}
+      propertyPath: enemyShootSoundEffect
+      value: 
+      objectReference: {fileID: 267977122}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4de147cb85f26f54191a9c44d5a4621b, type: 3}
 --- !u!4 &914878984 stripped
@@ -13168,6 +13173,11 @@ PrefabInstance:
       propertyPath: activarA
       value: 
       objectReference: {fileID: 1329110031}
+    - target: {fileID: 170435324328250975, guid: 4de147cb85f26f54191a9c44d5a4621b,
+        type: 3}
+      propertyPath: enemyShootSoundEffect
+      value: 
+      objectReference: {fileID: 267977122}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4de147cb85f26f54191a9c44d5a4621b, type: 3}
 --- !u!1 &2017415230
@@ -14137,7 +14147,7 @@ PrefabInstance:
     - target: {fileID: 6647972605576561040, guid: 695c403af3b225346aaef46607804154,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9136852700733441168, guid: 695c403af3b225346aaef46607804154,
         type: 3}
