@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alarm : MonoBehaviour
+public class SecondAlarm : MonoBehaviour
 {
-    public AudioSource alarmSound;
     private Vector3 posA;
     private Vector3 posB;
     private Vector3 nextPos;
@@ -27,9 +26,9 @@ public class Alarm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(alarmTrap == true)
+        if (alarmTrap == true)
         {
-           Move();
+            Move();
         }
 
     }
@@ -43,7 +42,6 @@ public class Alarm : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            alarmSound.Play();
             alarmTrap = true;
         }
     }

@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alarm : MonoBehaviour
+public class PlattaformMovementV2 : MonoBehaviour
 {
-    public AudioSource alarmSound;
     private Vector3 posA;
     private Vector3 posB;
     private Vector3 nextPos;
-    private bool alarmTrap;
+
 
     public float speed;
 
@@ -18,8 +17,7 @@ public class Alarm : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        alarmTrap = false;
-        posB = childTransform.localPosition;
+        posA = childTransform.localPosition;
         posB = transformB.localPosition;
         nextPos = posB;
     }
@@ -27,24 +25,11 @@ public class Alarm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(alarmTrap == true)
-        {
-           Move();
-        }
-
+        Move();
     }
 
     private void Move()
     {
         childTransform.localPosition = Vector3.MoveTowards(childTransform.localPosition, nextPos, speed * Time.deltaTime);
-
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            alarmSound.Play();
-            alarmTrap = true;
-        }
     }
 }
