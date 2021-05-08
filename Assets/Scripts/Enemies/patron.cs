@@ -64,15 +64,15 @@ public class patron : MonoBehaviour
             flagBA = false;
             //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, B.position.y + 2.5f), velocidad * Time.deltaTime);
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, velocidad * Time.deltaTime);
-
+            //Debug.Log("1");
         }
         else if (distancia <= areadisparo)
         {
 
-
             if (flagAB == false)
             {
                 transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, player.position.y + 3.5f), velocidad * Time.deltaTime);
+                //Debug.Log("2");
             }
 
             if (transform.position.x == B.position.x || flagAB) //AQUUUIIIIIIIIIIIIIIIIII
@@ -84,10 +84,12 @@ public class patron : MonoBehaviour
                     flagBA = true;
                     C = player.position.y + 3.5f;
                     this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), C);
+                    //Debug.Log("3");
                 }
                 else
                 {
                     transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(Mathf.Lerp(A.position.x, B.position.x, 0.5f), player.position.y + 3.5f), velocidad * Time.deltaTime);
+                    //Debug.Log("4");
                 }
 
                 //transform.position = Vector2.MoveTowards(this.transform.position, A.position, velocidad * Time.deltaTime);
