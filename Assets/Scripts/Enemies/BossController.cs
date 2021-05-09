@@ -36,11 +36,10 @@ public class BossController : MonoBehaviour
                     break;
 
                 case 1:
-                    //cd_ataques = Random.Range(2, 5);
-                    //contador = 0.5f;
-                    ataque2 = true;
-                    ataque_acabado = false;
-                    Embestida();
+                    cd_ataques = Random.Range(1, 5);
+                    //ataque2 = true;
+                    //ataque_acabado = false;
+                    //Embestida();
                     Debug.Log("B");
                     break;
 
@@ -65,7 +64,7 @@ public class BossController : MonoBehaviour
 
         contador += Time.deltaTime;
 
-        if (contador >= 0.3f)
+        if (contador >= 0.5f)
         {
             ataque2 = false;
             contador = 0;

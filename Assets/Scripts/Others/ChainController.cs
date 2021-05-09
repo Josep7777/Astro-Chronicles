@@ -59,17 +59,16 @@ public class ChainController : MonoBehaviour
 
     void Ataque1()
     {
-        if (contador <= 0.5 && flag_rot_izqui)
+        if (contador <= 0.5f && flag_rot_izqui)
         {
+            Debug.Log("a");
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
             contador += Time.deltaTime;
             
-
-            //Debug.Log("Dere");
-            //contador -= Time.deltaTime;
         }
-        else if (contador <= 0.5 && flag_rot_izqui == false)
+        else if (contador <= 0.5f && flag_rot_izqui == false)
         {
+            Debug.Log("b");
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f, 5), ForceMode2D.Impulse);
             contador += Time.deltaTime;
             

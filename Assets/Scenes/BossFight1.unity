@@ -2838,11 +2838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!4 &630823608
 Transform:
   m_ObjectHideFlags: 0
@@ -3132,7 +3127,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754702592}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3670,7 +3665,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -4735,11 +4730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!114 &993910241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5227,11 +5217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!4 &1120800298
 Transform:
   m_ObjectHideFlags: 0
@@ -5282,11 +5267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!4 &1129231088
 Transform:
   m_ObjectHideFlags: 0
@@ -6016,11 +5996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!1 &1295751558
 GameObject:
   m_ObjectHideFlags: 0
@@ -7407,11 +7382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!4 &1340839195
 Transform:
   m_ObjectHideFlags: 0
@@ -7937,11 +7907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c75956603276a46a0aa2ea830a8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 754702596}
-  contador: 1
-  flag_rot_dere: 0
-  flag_rot_izqui: 0
-  aux: 0
 --- !u!4 &1391953466
 Transform:
   m_ObjectHideFlags: 0
