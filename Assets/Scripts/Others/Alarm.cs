@@ -5,6 +5,7 @@ using UnityEngine;
 public class Alarm : MonoBehaviour
 {
     public AudioSource alarmSound;
+    public CameraController cameraController;
     private Vector3 posA;
     private Vector3 posB;
     private Vector3 nextPos;
@@ -43,8 +44,10 @@ public class Alarm : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            
             alarmSound.Play();
             alarmTrap = true;
+            cameraController.gameMusic.Stop();
         }
     }
 }
