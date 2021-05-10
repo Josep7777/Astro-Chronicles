@@ -25,7 +25,7 @@ public class BossController : MonoBehaviour
     {
         if (cd_ataques <= 0)
         {
-            if(ataque2==false) ataque = Random.Range(0, 2);
+            if (ataque2 == false) ataque = 2; //ataque = Random.Range(0, 3);
 
             switch (ataque)
             {
@@ -46,7 +46,8 @@ public class BossController : MonoBehaviour
 
                 case 2:
                     //Embestida();
-                    cd_ataques = Random.Range(1, 5);
+                    cc.ataque3 = true;
+                    //cd_ataques = Random.Range(1, 5);
                     Debug.Log("C");
                     break;
             }

@@ -12,6 +12,8 @@ public class ChainController : MonoBehaviour
     public int num_ataque1 = 0;
     private BossController bc;
     private bool no_repetir = false;
+    public bool ataque3 = false;
+    private float contador2 = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +34,17 @@ public class ChainController : MonoBehaviour
             bc.ataque_acabado = true;
             no_repetir = false;
         }
+
+        if (ataque3)
+        {
+            Ataque3();
+        }
         //Ataque2();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "suelo")
+        if (other.gameObject.tag == "suelo" || other.gameObject.tag == "izquierda" || other.gameObject.tag == "pared")
         {
             if (!flag_rot_izqui)
             {
@@ -71,6 +78,18 @@ public class ChainController : MonoBehaviour
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f, 5), ForceMode2D.Impulse);
             contador += Time.deltaTime;
             
+        }
+    }
+
+    void Ataque3()
+    {
+        contador2 += Time.deltaTime;
+        if (contador2 <= 2.0f)
+        {
+            this.transform.localScale = new Vector2(5f + contador2, 5f + contador2);
+        } else if(contador2<=2.3f)
+        {
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-5f, 5), ForceMode2D.Impulse);
         }
     }
 }
