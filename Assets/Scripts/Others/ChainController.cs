@@ -52,23 +52,22 @@ public class ChainController : MonoBehaviour
                 contador = 0;
             }
 
-            //final_lvl1 = true;
-            //SceneManager.LoadScene("FinalLvl1");
         }
     }
 
     void Ataque1()
     {
-        if (contador <= 0.5f && flag_rot_izqui)
+        if (contador <= 0.3f && flag_rot_izqui)
         {
-            Debug.Log("a");
+            //Debug.Log("a");
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
+            //this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 2, ForceMode2D.Impulse);
             contador += Time.deltaTime;
             
         }
-        else if (contador <= 0.5f && flag_rot_izqui == false)
+        else if (contador <= 0.3f && flag_rot_izqui == false)
         {
-            Debug.Log("b");
+            //Debug.Log("b");
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f, 5), ForceMode2D.Impulse);
             contador += Time.deltaTime;
             

@@ -9,6 +9,7 @@ public class BossController : MonoBehaviour
     public bool ataque_acabado = true;
     private GameObject jugador;
     public GameObject cadena;
+    public GameObject cadena_entera;
     private ChainController cc;
     private float contador=0;
     private bool ataque2=false;
@@ -24,7 +25,7 @@ public class BossController : MonoBehaviour
     {
         if (cd_ataques <= 0)
         {
-            if(ataque2==false) ataque = Random.Range(0, 3);
+            if(ataque2==false) ataque = Random.Range(0, 2);
 
             switch (ataque)
             {
@@ -36,10 +37,10 @@ public class BossController : MonoBehaviour
                     break;
 
                 case 1:
-                    cd_ataques = Random.Range(1, 5);
-                    //ataque2 = true;
-                    //ataque_acabado = false;
-                    //Embestida();
+                    //cd_ataques = Random.Range(1, 5);
+                    ataque2 = true;
+                    ataque_acabado = false;
+                    Embestida();
                     Debug.Log("B");
                     break;
 
@@ -59,17 +60,23 @@ public class BossController : MonoBehaviour
 
     public void Embestida()
     {
-        Debug.Log("EA");
-        this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(jugador.transform.position.x*2, 0), ForceMode2D.Impulse);
-
+        //Debug.Log("EA");
+        this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(jugador.transform.position.x*2f, 0), ForceMode2D.Impulse);
+        this.transform.position = Vector2.MoveTowards(transform.position, new Vector2(jugador.transform.position.x,this.transform.position.y), 5*Time.deltaTime);
+        //cadena_entera.transform.position = Vector2.MoveTowards(transform.position, jugador.transform.position, 5 * Time.deltaTime);
         contador += Time.deltaTime;
 
-        if (contador >= 0.5f)
+        if (contador >= 1f)
         {
+            Debug.Log("Wa");
+            this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            //this.gameObject.GetComponent<Rigidbody2D>().angularVelocity = 0f;
             ataque2 = false;
             contador = 0;
             cd_ataques = Random.Range(1, 5);
             ataque_acabado = true;
+            this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         }
     }
 }
