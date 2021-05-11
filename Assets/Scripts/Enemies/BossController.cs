@@ -10,6 +10,7 @@ public class BossController : MonoBehaviour
     private GameObject jugador;
     public GameObject cadena;
     public GameObject cadena_entera;
+    public GameObject[] cadenas_techo = new GameObject[5];
     private ChainController cc;
     private float contador=0;
     private bool ataque2=false;

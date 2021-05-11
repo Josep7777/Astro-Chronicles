@@ -3288,6 +3288,12 @@ MonoBehaviour:
   ataque_acabado: 1
   cadena: {fileID: 852306813}
   cadena_entera: {fileID: 993910238}
+  cadenas_techo:
+  - {fileID: 630823606}
+  - {fileID: 1391953464}
+  - {fileID: 1120800296}
+  - {fileID: 1340839193}
+  - {fileID: 1129231086}
 --- !u!70 &754702599
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -13389,6 +13395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Particula disparo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5208629319737664755, guid: cd011c20c3a20b441bc53a68d469cce4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5208629319737664756, guid: cd011c20c3a20b441bc53a68d469cce4,
         type: 3}
