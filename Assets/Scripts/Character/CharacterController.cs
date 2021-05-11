@@ -11,7 +11,7 @@ public class CharacterController : MonoBehaviour
     public bool estaensuelo = false;
     public bool rebotar = false;
     public bool rebotari = false;
-    public float salto=7.0f;
+    public float salto=7.5f;
     public float salto_powerup=9.0f;
     public float salto_rebote = 4.0f;
     public Animator animator;

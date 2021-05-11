@@ -28,6 +28,16 @@ public class EnemyPatrol : MonoBehaviour
         if (distancia < area)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(player.position.x, this.transform.position.y), speed2 * Time.deltaTime);
+            Debug.Log(this.transform.position.x-player.position.x);
+            if(this.transform.position.x - player.position.x < 0)
+            {
+                movingRight = true;
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            } else
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            }
             //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(player.position.x, player.position.y), speed2 * Time.deltaTime);
         }
         else {        
