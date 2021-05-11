@@ -28,7 +28,7 @@ public class EnemyPatrol : MonoBehaviour
         if (distancia < area)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(player.position.x, this.transform.position.y), speed2 * Time.deltaTime);
-            Debug.Log(this.transform.position.x-player.position.x);
+            //Debug.Log(this.transform.position.x-player.position.x);
             if(this.transform.position.x - player.position.x < 0)
             {
                 movingRight = true;
