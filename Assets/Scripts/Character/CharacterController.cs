@@ -90,15 +90,23 @@ public class CharacterController : MonoBehaviour
 
                 animator.SetFloat("velocidad", Mathf.Abs(horizontalmove));
 
-                if ((Input.GetKeyDown(KeyCode.A)))
+                if ((Input.GetKey(KeyCode.D)))
+                {
+                    animator.SetBool("Derecha", true);
+                }
+                else
+                {
+                    animator.SetBool("Derecha", false);
+                }
+
+                if ((Input.GetKey(KeyCode.A)))
                 {
                     animator.SetBool("izquierda", true);
-
                 }
                 else
                 {
                     animator.SetBool("izquierda", false);
-               }
+                }
 
 
                 if (pcc.flag_pu_velocidad)
