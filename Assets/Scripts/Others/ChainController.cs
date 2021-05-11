@@ -14,6 +14,7 @@ public class ChainController : MonoBehaviour
     private bool no_repetir = false;
     public bool ataque3 = false;
     private float contador2 = 0;
+    public GameObject onda;
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +91,15 @@ public class ChainController : MonoBehaviour
         } else if(contador2<=2.3f)
         {
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-5f, 5), ForceMode2D.Impulse);
+            onda.transform.position = new Vector2(this.transform.position.x - 1, -2f);
+
+        } else
+        {
+            
+            onda.SetActive(true);
+            //onda.GetComponent<Rigidbody2D>().AddForce(new Vector2(-10f, 0), ForceMode2D.Impulse);
+            onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(-50f, -2f), 8 * Time.deltaTime);
+            Debug.Log("HOlaaa");
         }
     }
 }

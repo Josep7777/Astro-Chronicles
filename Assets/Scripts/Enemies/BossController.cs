@@ -49,7 +49,7 @@ public class BossController : MonoBehaviour
                     //Embestida();
                     cc.ataque3 = true;
                     //cd_ataques = Random.Range(1, 5);
-                    Debug.Log("C");
+                    //Debug.Log("C");
                     break;
             }
         } else
