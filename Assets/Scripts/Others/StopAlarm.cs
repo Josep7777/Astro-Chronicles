@@ -5,7 +5,7 @@ using UnityEngine;
 public class StopAlarm : MonoBehaviour
 {
     public Alarm alarm;
-    public CameraController DefaultMusic;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class StopAlarm : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             alarm.alarmSound.Stop();
+            alarm.runMusic.Stop();
         }
     }
 }

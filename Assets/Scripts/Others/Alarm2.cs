@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alarm : MonoBehaviour
+public class Alarm2 : MonoBehaviour
 {
-    public AudioSource alarmSound;
-    public CameraController cameraController;
+
     private Vector3 posA;
     private Vector3 posB;
     private Vector3 nextPos;
@@ -14,7 +13,6 @@ public class Alarm : MonoBehaviour
     public float speed;
 
     public Transform childTransform;
-    public AudioSource runMusic;
     public Transform transformB;
     // Start is called before the first frame update
     void Start()
@@ -28,9 +26,9 @@ public class Alarm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(alarmTrap == true)
+        if (alarmTrap == true)
         {
-           Move();
+            Move();
         }
 
     }
@@ -44,10 +42,8 @@ public class Alarm : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            runMusic.Play();
-            alarmSound.Play();
             alarmTrap = true;
-            cameraController.gameMusic.Stop();
+
         }
     }
 }
