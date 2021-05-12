@@ -9,13 +9,14 @@ public class Alarm : MonoBehaviour
     private Vector3 posA;
     private Vector3 posB;
     private Vector3 nextPos;
-    private bool alarmTrap;
+    public bool alarmTrap;
 
     public float speed;
 
     public Transform childTransform;
     public AudioSource runMusic;
     public Transform transformB;
+    public GameObject alarmLights;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class Alarm : MonoBehaviour
         posB = childTransform.localPosition;
         posB = transformB.localPosition;
         nextPos = posB;
+        alarmLights.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class Alarm : MonoBehaviour
         if(alarmTrap == true)
         {
            Move();
+           alarmLights.SetActive(true);
         }
 
     }
