@@ -47,10 +47,14 @@ public class Alarm : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            runMusic.Play();
-            alarmSound.Play();
-            alarmTrap = true;
-            cameraController.gameMusic.Stop();
+            if(alarmTrap == false)
+            {
+                runMusic.Play();
+                alarmSound.Play();
+                alarmTrap = true;
+                cameraController.gameMusic.Stop();
+            }
+
         }
     }
 }

@@ -43,8 +43,12 @@ public class CloseDoor : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            closeDoor = true;
-            closeDoorSound.Play();
+            if(closeDoor == false)
+            {
+                closeDoor = true;
+                closeDoorSound.Play();
+            }
+
         }
     }
 
