@@ -28,15 +28,15 @@ public class WeaponRotation : MonoBehaviour
         float angulo = Mathf.Atan2(posicion_raton.y, posicion_raton.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angulo);
         //transform.RotateAround(jugador.transform.position, new Vector3(0f, 0f, 1f), angle);
-        /*
-        if (rotationZ < -90 || rotationZ > 90)
+        
+        if (angulo < -90 || angulo > 90)
         {
 
             if (jugador.transform.eulerAngles.y == 0)
             {
 
 
-                transform.localRotation = Quaternion.Euler(180, 0, -rotationZ);
+                transform.localRotation = Quaternion.Euler(180, 0, -angulo);
 
 
 
@@ -46,12 +46,12 @@ public class WeaponRotation : MonoBehaviour
             {
 
 
-                transform.localRotation = Quaternion.Euler(180, 180, -rotationZ);
+                transform.localRotation = Quaternion.Euler(180, 180, -angulo);
 
 
             }
 
-        }*/
+        }
     }
 
 }

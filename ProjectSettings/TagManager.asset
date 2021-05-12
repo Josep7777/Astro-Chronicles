@@ -71,3 +71,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Arma
+    uniqueID: 3210083665
+    locked: 0
