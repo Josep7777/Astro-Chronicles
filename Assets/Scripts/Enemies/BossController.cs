@@ -18,11 +18,13 @@ public class BossController : MonoBehaviour
     private float contador=0;
     private bool ataque2=false;
     public int probabilidad_cadenas = 0;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         jugador = GameObject.FindGameObjectWithTag("Player");
         cc = cadena.gameObject.GetComponent<ChainController>();
+        anim = gameObject.GetComponent<Animator>();
         for (int i=0;i<cadenas_tiradas.Length;i++)
         {
             cadenas_tiradas[i] = false;
@@ -32,6 +34,9 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        anim.SetFloat("Direccion", this.transform.position.x - jugador.transform.position.x);
+
         probabilidad_cadenas = Random.Range(0,15000);
 
         if (probabilidad_cadenas==10 && cadenas_tiradas[0] == false)
@@ -109,6 +114,7 @@ public class BossController : MonoBehaviour
     public void Embestida()
     {
         //Debug.Log("EA");
+        anim.SetBool("Embestir", true);
         this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(jugador.transform.position.x*2f, 0), ForceMode2D.Impulse);
         this.transform.position = Vector2.MoveTowards(transform.position, new Vector2(jugador.transform.position.x,this.transform.position.y), 5*Time.deltaTime);
@@ -119,6 +125,7 @@ public class BossController : MonoBehaviour
         if (contador >= 1f)
         {
             //Debug.Log("Wa");
+            anim.SetBool("Embestir", false);
             this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             //this.gameObject.GetComponent<Rigidbody2D>().angularVelocity = 0f;
             ataque2 = false;
