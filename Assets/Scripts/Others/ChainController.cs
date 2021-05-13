@@ -135,9 +135,9 @@ public class ChainController : MonoBehaviour
             onda.SetActive(true);
             //onda.GetComponent<Rigidbody2D>().AddForce(new Vector2(-10f, 0), ForceMode2D.Impulse);
             if (dere == false)
-                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(-50f, -2f), 8 * Time.deltaTime);
+                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(-50f, -2f), 10 * Time.deltaTime);
             else
-                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(50f, -2f), 8 * Time.deltaTime);
+                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(50f, -2f), 10 * Time.deltaTime);
             //Debug.Log("HOlaaa");
         }
         else //Eliminar la onda y volver a escalar arma

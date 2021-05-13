@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 50914801}
   - component: {fileID: 50914800}
   - component: {fileID: 50914799}
+  - component: {fileID: 50914805}
   m_Layer: 0
   m_Name: Pincho
   m_TagString: Untagged
@@ -547,6 +548,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &50914805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50914797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831032ad72a9b0947b554ac63628bdc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &63735747
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +674,7 @@ GameObject:
   - component: {fileID: 81157924}
   - component: {fileID: 81157923}
   - component: {fileID: 81157922}
+  - component: {fileID: 81157928}
   m_Layer: 0
   m_Name: Pincho
   m_TagString: Untagged
@@ -829,6 +843,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &81157928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81157920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831032ad72a9b0947b554ac63628bdc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &137576853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2399,7 @@ GameObject:
   - component: {fileID: 498518065}
   - component: {fileID: 498518064}
   - component: {fileID: 498518063}
+  - component: {fileID: 498518069}
   m_Layer: 0
   m_Name: Pincho
   m_TagString: Untagged
@@ -2541,6 +2568,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &498518069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498518061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831032ad72a9b0947b554ac63628bdc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &514101794
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,11 +3338,13 @@ MonoBehaviour:
   cadena: {fileID: 852306813}
   cadena_entera: {fileID: 993910238}
   cadenas_techo:
-  - {fileID: 630823606}
-  - {fileID: 1391953464}
-  - {fileID: 1120800296}
-  - {fileID: 1340839193}
-  - {fileID: 1129231086}
+  - {fileID: 897807389}
+  - {fileID: 191811701}
+  - {fileID: 1247319297}
+  - {fileID: 1295751558}
+  - {fileID: 722297076}
+  cadenas_tiradas: 0000000000
+  probabilidad_cadenas: 0
 --- !u!70 &754702599
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4142,6 +4183,7 @@ GameObject:
   - component: {fileID: 923243995}
   - component: {fileID: 923243994}
   - component: {fileID: 923243997}
+  - component: {fileID: 923244000}
   m_Layer: 0
   m_Name: Pincho
   m_TagString: Untagged
@@ -4310,6 +4352,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &923244000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923243992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831032ad72a9b0947b554ac63628bdc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &924557202
 GameObject:
   m_ObjectHideFlags: 0
@@ -6759,6 +6813,7 @@ GameObject:
   - component: {fileID: 1327120770}
   - component: {fileID: 1327120769}
   - component: {fileID: 1327120768}
+  - component: {fileID: 1327120774}
   m_Layer: 0
   m_Name: Pincho
   m_TagString: Untagged
@@ -6927,6 +6982,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1327120774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327120766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831032ad72a9b0947b554ac63628bdc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1332954358
 GameObject:
   m_ObjectHideFlags: 0
