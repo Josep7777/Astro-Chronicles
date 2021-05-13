@@ -57,6 +57,11 @@ public class CharacterController : MonoBehaviour
         Rebotari();
         Saltar();
 
+        if (estaensuelo)
+        {
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 1F;
+        }
+
         if (tiempo_rebote > 0)
         {
             flag_rebote_vel = true;
@@ -132,7 +137,20 @@ public class CharacterController : MonoBehaviour
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
                     tiempo_rebote = 0.4f;
+                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.6f;
                     //Debug.Log("Dere");
+                    if ((Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotari == true)
+                    {
+                        if (flag_rebote_izqui == 0)
+                        {
+
+                            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
+                            //  flag_rebote_izqui = 1;
+                            tiempo_rebote = 0.4f;
+                            //Debug.Log("Izqui");
+                        }
+
+                    }
                 }
 
                 //rebotari= true;
@@ -153,7 +171,22 @@ public class CharacterController : MonoBehaviour
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
                     tiempo_rebote = 0.4f;
+                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.6f;
                     //Debug.Log("Izqui");
+
+                    if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotar == true)
+                    {
+                        if (flag_rebote_dere == 0)
+                        {
+                            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
+                            //  flag_rebote_dere = 1;
+                            tiempo_rebote = 0.4f;
+                            //Debug.Log("Dere");
+
+                        }
+
+                        //rebotari= true;
+                    }
                 }
 
             }
