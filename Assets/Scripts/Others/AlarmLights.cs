@@ -20,10 +20,4 @@ public class AlarmLights : MonoBehaviour
             alarmLights.SetActive(true);
         }
     }
-
-    private void StartAlarmLights()
-    {
-
-
-    }
 }
