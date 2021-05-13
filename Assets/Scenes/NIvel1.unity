@@ -5017,6 +5017,13 @@ MonoBehaviour:
   imagen_ametralladora: {fileID: 1182224197}
   tiempo_cambio_arma: 0
   panel: {fileID: 223515342}
+  cannon: {fileID: 2145721044}
+  s_pistola: {fileID: -6719443226536523859, guid: 1ec7b659f9375204d9cf2cfc8410e99c,
+    type: 3}
+  s_escopeta: {fileID: -4512076554651643499, guid: 1ec7b659f9375204d9cf2cfc8410e99c,
+    type: 3}
+  s_metralleta: {fileID: -5081810741936700843, guid: 1ec7b659f9375204d9cf2cfc8410e99c,
+    type: 3}
 --- !u!4 &766245423
 Transform:
   m_ObjectHideFlags: 0
@@ -18171,7 +18178,7 @@ Transform:
   m_GameObject: {fileID: 2145721044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0404, y: 0.039, z: 0}
-  m_LocalScale: {x: 0.4950667, y: 0.5174834, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 8543641}
   m_Father: {fileID: 2057847076}
@@ -18273,7 +18280,7 @@ PrefabInstance:
     - target: {fileID: 6647972605576561040, guid: 695c403af3b225346aaef46607804154,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9136852700733441168, guid: 695c403af3b225346aaef46607804154,
         type: 3}
