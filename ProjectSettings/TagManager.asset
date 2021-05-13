@@ -62,9 +62,21 @@ TagManager:
   - name: ImgFondo
     uniqueID: 2233648559
     locked: 0
+  - name: Fondo
+    uniqueID: 776957569
+    locked: 0
+  - name: Fondo_nave
+    uniqueID: 3888474469
+    locked: 0
+  - name: Fondo_nave_2
+    uniqueID: 2474507457
+    locked: 0
   - name: Tuto
     uniqueID: 1352612755
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Arma
+    uniqueID: 3210083665
     locked: 0

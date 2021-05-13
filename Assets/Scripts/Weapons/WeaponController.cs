@@ -18,6 +18,10 @@ public class WeaponController : MonoBehaviour
     private int medida_max = 100;
     private bool escopeta=false;
     private bool ametralladora = false;
+    public GameObject cannon;
+    public Sprite s_pistola;
+    public Sprite s_escopeta;
+    public Sprite s_metralleta;
     //private PlayerCollisionsController player_collisions;
     // Start is called before the first frame update
     void Start()
@@ -45,6 +49,7 @@ public class WeaponController : MonoBehaviour
         switch (arma_actual)
         {
             case "Pistola":
+                cannon.GetComponent<SpriteRenderer>().sprite = s_pistola;
                 imagen_escopeta.gameObject.SetActive(false);
                 imagen_pistola.gameObject.SetActive(true);
                 imagen_ametralladora.gameObject.SetActive(false);
@@ -52,12 +57,14 @@ public class WeaponController : MonoBehaviour
 
             case "Escopeta":
                 escopeta = true;
+                cannon.GetComponent<SpriteRenderer>().sprite = s_escopeta;
                 imagen_escopeta.gameObject.SetActive(true);
                 imagen_pistola.gameObject.SetActive(false);
                 imagen_ametralladora.gameObject.SetActive(false);
                 break;
 
             case "Ametralladora":
+                cannon.GetComponent<SpriteRenderer>().sprite = s_metralleta;
                 ametralladora = true;
                 imagen_ametralladora.gameObject.SetActive(true);
                 imagen_pistola.gameObject.SetActive(false);
