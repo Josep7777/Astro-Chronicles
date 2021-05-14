@@ -18,6 +18,6 @@ public class Muerte : MonoBehaviour
 	void TaskOnClick()
 	{
 		VariablesController.Muerto = true;
-		SceneManager.LoadScene("Nivel1");
+		SceneManager.LoadScene("MenuInicial");
 	}
 }
