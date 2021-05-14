@@ -26,7 +26,6 @@ public class Gladis : MonoBehaviour
 
     public void AcceptButton()
     {
-        //Debug.Log("ola");
         if (choiseMade == 0)
         {
             TextBox.GetComponent<Text>().text = "Entendido señor, procesando a restaurar sus puntos de salud.";
@@ -34,6 +33,7 @@ public class Gladis : MonoBehaviour
             ph.playerHealth = ph.playerMaxHealth;
             ph.healthBar.SetHealth(ph.playerHealth);
             choiseMade = 1;
+            
         }
         else
         {
