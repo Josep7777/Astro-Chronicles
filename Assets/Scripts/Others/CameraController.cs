@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     public GameObject respawn;
 
     private GameObject jugador;
-
+    public AudioSource gameMusic;
     private bool flag_tutorial;
     //private bool flag_puntero;
     private bool bool_paredIzqui;
@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         camara = Camera.main;
-
+        gameMusic.Play();
         jugador = GameObject.FindGameObjectWithTag("Player");
 
         camara.transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y * 2, -10);
