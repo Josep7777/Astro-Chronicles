@@ -23,6 +23,7 @@ TagManager:
   - gamecontroller
   - Pincho
   - Boss
+  - Onda
   layers:
   - Default
   - TransparentFX

@@ -37,6 +37,14 @@ public class Suelo : MonoBehaviour
             ph.healthBar.SetHealth(ph.playerHealth);
             ph.tiempo_inmortal = 1f;
         }
+        if (collision.collider.tag == "Boss")
+        {
+            //Debug.Log("Daño");
+            Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 6f), ForceMode2D.Impulse);
+            //ph.playerHealth = ph.playerHealth - 1;
+            //ph.healthBar.SetHealth(ph.playerHealth);
+            //ph.tiempo_inmortal = 1f;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)

@@ -21,6 +21,7 @@ public class ChainController : MonoBehaviour
     private bool dere=false;
     public GameObject particulas;
     private bool particula_una = false;
+    private bool una_vez = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -117,7 +118,8 @@ public class ChainController : MonoBehaviour
             if (this.transform.position.x - jugador.transform.position.x > 0) //Hacer golpe a la izquierda
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-4f, 5), ForceMode2D.Impulse);
-                onda.transform.position = new Vector2(this.transform.position.x - 1, -2f);
+                onda.transform.eulerAngles = new Vector3(0, -180, 0);
+                onda.transform.position = new Vector2(this.transform.position.x - 1, -2.5f);
                 dere = false;
             }
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
@@ -125,23 +127,29 @@ public class ChainController : MonoBehaviour
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.2f, 0.5f), ForceMode2D.Impulse);
                 //Debug.Log("aaaaaaaaaaaaa");
-                onda.transform.position = new Vector2(this.transform.position.x + 1, -2f);
+                onda.transform.eulerAngles = new Vector3(0, 0, 0);
+                onda.transform.position = new Vector2(this.transform.position.x + 1, -2.5f);
                 dere = true;
             }
 
         }
         else if (contador2 <= 4f) //Hacer la onda
         {
-            onda.SetActive(true);
-            //onda.GetComponent<Rigidbody2D>().AddForce(new Vector2(-10f, 0), ForceMode2D.Impulse);
+            if (una_vez == false)
+            {
+                onda.SetActive(true);
+                una_vez = true;
+            }
+
             if (dere == false)
                 onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(-50f, -2f), 10 * Time.deltaTime);
             else
                 onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(50f, -2f), 10 * Time.deltaTime);
-            //Debug.Log("HOlaaa");
+            
         }
         else //Eliminar la onda y volver a escalar arma
         {
+            una_vez = false;
             onda.SetActive(false);
             contador3 += Time.deltaTime;
             if (contador3 <= 2.0f)
