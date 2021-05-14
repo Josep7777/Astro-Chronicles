@@ -28,7 +28,7 @@ public class Suelo : MonoBehaviour
         {
             Player.GetComponent<CharacterController>().estaensuelo = true;
         }
-        if (collision.collider.tag == "trampa")
+        /*if (collision.collider.tag == "trampa")
         {
             //Debug.Log("Daño");
             Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
@@ -36,7 +36,7 @@ public class Suelo : MonoBehaviour
             ph.damageSoundEffect.Play();
             ph.healthBar.SetHealth(ph.playerHealth);
             ph.tiempo_inmortal = 1f;
-        }
+        }*/
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -47,11 +47,11 @@ public class Suelo : MonoBehaviour
             Player.GetComponent<CharacterController>().estaensuelo = false;
         }
 
-        if (collision.collider.tag == "trampa")
+        /*if (collision.collider.tag == "trampa")
         {
             //Debug.Log("Daño");
             //Player.GetComponent<CharacterController>().estaensuelo = false;
-        }
+        }*/
     }
 
 

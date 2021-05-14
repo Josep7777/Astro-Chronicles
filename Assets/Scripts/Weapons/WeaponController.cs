@@ -41,7 +41,7 @@ public class WeaponController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name != "Nivel1")
+        if(SceneManager.GetActiveScene().name != "NIvel1")
         {
             escopeta = true;
         }

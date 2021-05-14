@@ -16,12 +16,16 @@ public class PlayerCollisionsController : MonoBehaviour
     private WeaponController wp;
     public AudioSource collectCoinSound;
         public AudioSource getPowerUpSound;
+    public PlayerHealth ph;
+    //GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
         wp = GameObject.FindGameObjectWithTag("gamecontroller").GetComponent<WeaponController>();
         salto_pos = new GameObject();
         velocidad_pos = new GameObject();
+        //Player = gameObject.transform.parent.gameObject;
+        ph = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -81,5 +85,21 @@ public class PlayerCollisionsController : MonoBehaviour
             //SceneManager.LoadScene("FinalLvl1");
         }
 
+        
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "trampa")
+        {
+            //Debug.Log("Daño");
+            this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
+            ph.playerHealth = ph.playerHealth - 1;
+            ph.damageSoundEffect.Play();
+            ph.healthBar.SetHealth(ph.playerHealth);
+            ph.tiempo_inmortal = 1f;
+        }
+        
     }
 }
