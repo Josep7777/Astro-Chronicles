@@ -130,18 +130,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000014901161, y: -0.0033001304}
+  m_Offset: {x: -0.0033001006, y: -0.006600216}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.46}
+    oldSize: {x: 0.515625, y: 0.359375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6831901, y: 0.518185}
+  m_Size: {x: 0.50498456, y: 0.35318002}
   m_EdgeRadius: 0
 --- !u!114 &170435324328250975
 MonoBehaviour:
@@ -199,6 +199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyMaxHealth: 3
+  EnemyHealth: 0
+  RobotDeathSoundEffect: {fileID: 0}
 --- !u!95 &5283920012510988687
 Animator:
   serializedVersion: 3

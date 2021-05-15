@@ -88,7 +88,7 @@ public class PlayerCollisionsController : MonoBehaviour
         
 
     }
-
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "trampa")
@@ -101,5 +101,5 @@ public class PlayerCollisionsController : MonoBehaviour
             ph.tiempo_inmortal = 1f;
         }
         
-    }
+    }*/
 }

@@ -10,7 +10,7 @@ public class TrapController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            trampa.SetActive(true); ;
+            trampa.SetActive(true);
 
         }
     }
