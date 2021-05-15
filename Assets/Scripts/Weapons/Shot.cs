@@ -123,9 +123,9 @@ public class Shot : MonoBehaviour
         {
             Ametralladora();
         } else
-        {
+        {*/
             Pistola();
-        }
+        //}
         
     }
 }
