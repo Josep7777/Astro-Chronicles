@@ -27353,22 +27353,22 @@ PrefabInstance:
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1685176016747210097, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.5
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
@@ -27832,22 +27832,22 @@ PrefabInstance:
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1685176016747210097, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.5
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
@@ -28808,22 +28808,22 @@ PrefabInstance:
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1685176016747210097, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.5
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
