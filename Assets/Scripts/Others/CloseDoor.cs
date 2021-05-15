@@ -10,6 +10,7 @@ public class CloseDoor : MonoBehaviour
     private bool closeDoor;
     public AudioSource closeDoorSound;
 
+
     public float speed;
 
     public Transform childTransform;

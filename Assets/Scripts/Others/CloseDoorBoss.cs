@@ -9,6 +9,8 @@ public class CloseDoorBoss : MonoBehaviour
     private Vector3 nextPos;
     private bool closeDoor;
     public AudioSource closeDoorSound;
+    public AudioSource bossVoiceLine;
+    public AudioSource bossMusic;
 
     public BossController boss;
     public float speed;
@@ -50,6 +52,8 @@ public class CloseDoorBoss : MonoBehaviour
                 closeDoor = true;
                 closeDoorSound.Play();
                 boss.entrada = true;
+                bossVoiceLine.Play();
+                bossMusic.Play();
             }
 
         }

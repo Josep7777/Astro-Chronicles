@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChainController : MonoBehaviour
 {
+    public AudioSource ataqueCadena;
     private float contador = 1;
     private float contador_ataque1 = 0;
     private bool flag_rot_dere = false;
@@ -88,14 +89,16 @@ public class ChainController : MonoBehaviour
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 2, ForceMode2D.Impulse);
             contador += Time.deltaTime;
-            
+            ataqueCadena.Play();
+
         }
         else if (contador <= 0.3f && flag_rot_izqui == false)
         {
             //Debug.Log("b");
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f, 5), ForceMode2D.Impulse);
             contador += Time.deltaTime;
-            
+            ataqueCadena.Play();
+
         }
     }
 

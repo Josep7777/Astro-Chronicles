@@ -21,6 +21,8 @@ public class BossController : MonoBehaviour
     private Animator anim;
     public bool entrada = false;
     public GameObject zona_jefe;
+    public AudioSource caidaCadena;
+    public AudioSource ataqueRango;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,30 +50,35 @@ public class BossController : MonoBehaviour
                 Debug.Log("Wa");
                 cadenas_techo[0].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[0] = true;
+                caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 500 && cadenas_tiradas[1] == false)
             {
                 Debug.Log("Wa");
                 cadenas_techo[1].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[1] = true;
+                caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 230 && cadenas_tiradas[2] == false)
             {
                 Debug.Log("Wa");
                 cadenas_techo[2].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[2] = true;
+                caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 23 && cadenas_tiradas[3] == false)
             {
                 Debug.Log("Wa");
                 cadenas_techo[3].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[3] = true;
+                caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 687 && cadenas_tiradas[4] == false)
             {
                 Debug.Log("Wa");
                 cadenas_techo[4].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[4] = true;
+                caidaCadena.Play();
             }
 
             if (cd_ataques <= 0)
@@ -85,6 +92,7 @@ public class BossController : MonoBehaviour
                         ataque_acabado1 = false;
                         cc.num_ataque1 = 3;
                         //Debug.Log("A");
+                        
                         break;
 
                     case 1:
@@ -108,6 +116,7 @@ public class BossController : MonoBehaviour
                         ataque_acabado3 = false;
                         cc.ataque3 = true;
                         cd_ataques = Random.Range(0.5f, 2);
+                        ataqueRango.Play();
                         //Debug.Log("C");
                         break;
                 }
