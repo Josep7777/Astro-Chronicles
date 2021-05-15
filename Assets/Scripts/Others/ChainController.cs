@@ -119,7 +119,7 @@ public class ChainController : MonoBehaviour
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-4f, 5), ForceMode2D.Impulse);
                 onda.transform.eulerAngles = new Vector3(0, -180, 0);
-                onda.transform.position = new Vector2(this.transform.position.x - 1, -2.5f);
+                onda.transform.position = new Vector2(this.transform.position.x - 1, 11.3f);
                 dere = false;
             }
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
@@ -128,7 +128,7 @@ public class ChainController : MonoBehaviour
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.2f, 0.5f), ForceMode2D.Impulse);
                 //Debug.Log("aaaaaaaaaaaaa");
                 onda.transform.eulerAngles = new Vector3(0, 0, 0);
-                onda.transform.position = new Vector2(this.transform.position.x + 1, -2.5f);
+                onda.transform.position = new Vector2(this.transform.position.x + 1, 11.3f);
                 dere = true;
             }
 
@@ -142,9 +142,9 @@ public class ChainController : MonoBehaviour
             }
 
             if (dere == false)
-                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(-50f, -2f), 10 * Time.deltaTime);
+                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(-200f, 11.3f), 10 * Time.deltaTime);
             else
-                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(50f, -2f), 10 * Time.deltaTime);
+                onda.transform.position = Vector2.MoveTowards(onda.transform.position, new Vector2(200f, 11.3f), 10 * Time.deltaTime);
             
         }
         else //Eliminar la onda y volver a escalar arma

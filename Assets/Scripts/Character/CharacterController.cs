@@ -11,7 +11,7 @@ public class CharacterController : MonoBehaviour
     public bool estaensuelo = false;
     public bool rebotar = false;
     public bool rebotari = false;
-    public float salto=7.5f;
+    public float salto=6.5f;
     public float salto_powerup=9.0f;
     public float salto_rebote = 4.0f;
     public Animator animator;
@@ -195,9 +195,9 @@ public class CharacterController : MonoBehaviour
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_dere = 1;
                     tiempo_rebote = 0.4f;
-                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.6f;
+                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.7f;
                     //Debug.Log("Dere");
-                    if ((Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotari == true)
+                    /*if ((Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotari == true)
                     {
                         if (flag_rebote_izqui == 0)
                         {
@@ -208,7 +208,7 @@ public class CharacterController : MonoBehaviour
                             //Debug.Log("Izqui");
                         }
 
-                    }
+                    }*/
                 }
 
                 //rebotari= true;
@@ -229,10 +229,10 @@ public class CharacterController : MonoBehaviour
                     gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2.0f, salto_rebote), ForceMode2D.Impulse);
                     flag_rebote_izqui = 1;
                     tiempo_rebote = 0.4f;
-                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.6f;
+                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.7f;
                     //Debug.Log("Izqui");
 
-                    if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotar == true)
+                    /*if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && rebotar == true)
                     {
                         if (flag_rebote_dere == 0)
                         {
@@ -244,7 +244,7 @@ public class CharacterController : MonoBehaviour
                         }
 
                         //rebotari= true;
-                    }
+                    }*/
                 }
 
             }

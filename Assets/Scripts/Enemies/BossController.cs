@@ -19,6 +19,8 @@ public class BossController : MonoBehaviour
     private bool ataque2=false;
     public int probabilidad_cadenas = 0;
     private Animator anim;
+    public bool entrada = false;
+    public GameObject zona_jefe;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,78 +36,86 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (entrada)
+        {
+            zona_jefe.SetActive(true);
+            anim.SetFloat("Direccion", this.transform.position.x - jugador.transform.position.x);
 
-        anim.SetFloat("Direccion", this.transform.position.x - jugador.transform.position.x);
+            probabilidad_cadenas = Random.Range(0, 15000);
 
-        probabilidad_cadenas = Random.Range(0,15000);
-
-        if (probabilidad_cadenas==10 && cadenas_tiradas[0] == false)
-        {
-            Debug.Log("Wa");
-            cadenas_techo[0].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            cadenas_tiradas[0] = true;
-        } else if(probabilidad_cadenas == 500 && cadenas_tiradas[1] == false)
-        {
-            Debug.Log("Wa");
-            cadenas_techo[1].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            cadenas_tiradas[1] = true;
-        } else if(probabilidad_cadenas == 230 && cadenas_tiradas[2] == false)
-        {
-            Debug.Log("Wa");
-            cadenas_techo[2].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            cadenas_tiradas[2] = true;
-        } else if (probabilidad_cadenas == 23 && cadenas_tiradas[3] == false)
-        {
-            Debug.Log("Wa");
-            cadenas_techo[3].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            cadenas_tiradas[3] = true;
-        } else if (probabilidad_cadenas == 687 && cadenas_tiradas[4] == false)
-        {
-            Debug.Log("Wa");
-            cadenas_techo[4].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            cadenas_tiradas[4] = true;
-        }
-
-        if (cd_ataques <= 0)
-        {
-            if (ataque2 == false) ataque = Random.Range(0, 4); //ataque = 1; //ataque = Random.Range(0, 3); //ataque = 2; //
-
-            switch (ataque)
+            if (probabilidad_cadenas == 10 && cadenas_tiradas[0] == false)
             {
-                case 0:
-                    cd_ataques = Random.Range(1,2);
-                    ataque_acabado1 = false;
-                    cc.num_ataque1 = 3;
-                    //Debug.Log("A");
-                    break;
-
-                case 1:
-                    //Debug.Log("B");
-                    //cd_ataques = Random.Range(1, 5);
-                    ataque2 = true;
-                    ataque_acabado2 = false;
-                    Embestida();
-                    break;
-
-                case 2:
-                    //Debug.Log("B");
-                    //cd_ataques = Random.Range(1, 5);
-                    ataque2 = true;
-                    ataque_acabado2 = false;
-                    Embestida();
-                    break;
-
-                case 3:
-                    //Embestida();
-                    ataque_acabado3 = false;
-                    cc.ataque3 = true;
-                    cd_ataques = Random.Range(1, 2);
-                    //Debug.Log("C");
-                    break;
+                Debug.Log("Wa");
+                cadenas_techo[0].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                cadenas_tiradas[0] = true;
             }
-        } else
-        {
-            if(ataque_acabado1 && ataque_acabado2 && ataque_acabado3) cd_ataques -= Time.deltaTime;
+            else if (probabilidad_cadenas == 500 && cadenas_tiradas[1] == false)
+            {
+                Debug.Log("Wa");
+                cadenas_techo[1].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                cadenas_tiradas[1] = true;
+            }
+            else if (probabilidad_cadenas == 230 && cadenas_tiradas[2] == false)
+            {
+                Debug.Log("Wa");
+                cadenas_techo[2].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                cadenas_tiradas[2] = true;
+            }
+            else if (probabilidad_cadenas == 23 && cadenas_tiradas[3] == false)
+            {
+                Debug.Log("Wa");
+                cadenas_techo[3].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                cadenas_tiradas[3] = true;
+            }
+            else if (probabilidad_cadenas == 687 && cadenas_tiradas[4] == false)
+            {
+                Debug.Log("Wa");
+                cadenas_techo[4].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                cadenas_tiradas[4] = true;
+            }
+
+            if (cd_ataques <= 0)
+            {
+                if (ataque2 == false) ataque = Random.Range(0, 4); //ataque = 1; //ataque = Random.Range(0, 3); //ataque = 2; //
+
+                switch (ataque)
+                {
+                    case 0:
+                        cd_ataques = Random.Range(0.5f, 2);
+                        ataque_acabado1 = false;
+                        cc.num_ataque1 = 3;
+                        //Debug.Log("A");
+                        break;
+
+                    case 1:
+                        //Debug.Log("B");
+                        //cd_ataques = Random.Range(1, 5);
+                        ataque2 = true;
+                        ataque_acabado2 = false;
+                        Embestida();
+                        break;
+
+                    case 2:
+                        //Debug.Log("B");
+                        //cd_ataques = Random.Range(1, 5);
+                        ataque2 = true;
+                        ataque_acabado2 = false;
+                        Embestida();
+                        break;
+
+                    case 3:
+                        //Embestida();
+                        ataque_acabado3 = false;
+                        cc.ataque3 = true;
+                        cd_ataques = Random.Range(0.5f, 2);
+                        //Debug.Log("C");
+                        break;
+                }
+            }
+            else
+            {
+                if (ataque_acabado1 && ataque_acabado2 && ataque_acabado3) cd_ataques -= Time.deltaTime;
+            }
         }
 
         //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(jugador.transform.position.x*2, 0), ForceMode2D.Impulse);
@@ -130,7 +140,7 @@ public class BossController : MonoBehaviour
             //this.gameObject.GetComponent<Rigidbody2D>().angularVelocity = 0f;
             ataque2 = false;
             contador = 0;
-            cd_ataques = Random.Range(1, 2);
+            cd_ataques = Random.Range(0.5f, 2);
             ataque_acabado2 = true;
             this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         }

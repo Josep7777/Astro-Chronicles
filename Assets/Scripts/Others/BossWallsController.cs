@@ -9,7 +9,7 @@ public class BossWallsController : MonoBehaviour
     {
         if (other.gameObject.tag == "Onda")
         {
-            Debug.Log("AA");
+            //Debug.Log("AA");
             other.gameObject.SetActive(false);
         }
 

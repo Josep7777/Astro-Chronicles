@@ -40,6 +40,8 @@ public class Suelo : MonoBehaviour
         if (collision.collider.tag == "Boss")
         {
             //Debug.Log("Daño");
+            Player.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+
             Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 6f), ForceMode2D.Impulse);
             //ph.playerHealth = ph.playerHealth - 1;
             //ph.healthBar.SetHealth(ph.playerHealth);

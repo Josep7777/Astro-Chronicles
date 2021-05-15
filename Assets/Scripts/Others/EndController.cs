@@ -5,17 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class EndController : MonoBehaviour
 {
-    private PlayerCollisionsController pcc;
-
-    private void Start()
+    public bool flag = false;
+    private float tiempo = 0;
+    
+    // Start is called before the first frame update
+    void Start()
     {
-        pcc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollisionsController>();
+        
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (pcc.final_lvl1)
-            SceneManager.LoadScene("FinalLvl1");
+        if (flag)
+        {
+            if(tiempo>=1.5f)
+                SceneManager.LoadScene("FinalLvl1");
+            tiempo += Time.deltaTime;
+        }
     }
 }
-

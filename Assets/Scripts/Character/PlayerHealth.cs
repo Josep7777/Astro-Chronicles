@@ -43,6 +43,16 @@ public class PlayerHealth : MonoBehaviour
 
         }
 
+        if (collision.gameObject.tag.Equals("Pincho") && tiempo_inmortal <= 0)
+        {
+            damageSoundEffect.Play();
+            playerHealth = playerHealth - 3;
+            healthBar.SetHealth(playerHealth);
+            tiempo_inmortal = 1f;
+
+
+        }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -63,6 +73,14 @@ public class PlayerHealth : MonoBehaviour
         {
             damageSoundEffect.Play();
             playerHealth = playerHealth - 1;
+            healthBar.SetHealth(playerHealth);
+            tiempo_inmortal = 1f;
+        }
+
+        if (collision.gameObject.tag.Equals("Onda") && tiempo_inmortal <= 0)
+        {
+            damageSoundEffect.Play();
+            playerHealth = playerHealth - 2;
             healthBar.SetHealth(playerHealth);
             tiempo_inmortal = 1f;
         }

@@ -8,6 +8,7 @@ public class BossHPController : MonoBehaviour
     public float EnemyMaxHealth;
     private float EnemyHealth;
     public Slider barra_vida;
+    public GameObject gc;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class BossHPController : MonoBehaviour
     {
         if (EnemyHealth <= 0)
         {
+            gc.GetComponent<EndController>().flag = true;
             Destroy(gameObject);
         }
     }
