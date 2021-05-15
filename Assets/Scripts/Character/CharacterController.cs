@@ -68,7 +68,7 @@ public class CharacterController : MonoBehaviour
         if (tiempo_rebote > 0)
         {
             flag_rebote_vel = true;
-            velocidad_baja = velocidad - 3f;
+            velocidad_baja = 0;
         }
 
         if (tiempo_rebote<=0)
@@ -80,10 +80,14 @@ public class CharacterController : MonoBehaviour
                 transform.position += movement * Time.deltaTime * velocidad_baja;
                 velocidad_baja += Time.deltaTime + 0.05f;
 
-               
-                    //transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
+                if (estaensuelo)
+                {
+                    velocidad_baja = velocidad;
+                }
 
-                    if (velocidad_baja>=velocidad)
+                //transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
+
+                if (velocidad_baja>=velocidad)
                 {
                     flag_rebote_vel = false;
                 }

@@ -47,35 +47,35 @@ public class BossController : MonoBehaviour
 
             if (probabilidad_cadenas == 10 && cadenas_tiradas[0] == false)
             {
-                Debug.Log("Wa");
+                //Debug.Log("Wa");
                 cadenas_techo[0].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[0] = true;
                 caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 500 && cadenas_tiradas[1] == false)
             {
-                Debug.Log("Wa");
+                //Debug.Log("Wa");
                 cadenas_techo[1].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[1] = true;
                 caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 230 && cadenas_tiradas[2] == false)
             {
-                Debug.Log("Wa");
+                //Debug.Log("Wa");
                 cadenas_techo[2].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[2] = true;
                 caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 23 && cadenas_tiradas[3] == false)
             {
-                Debug.Log("Wa");
+                //Debug.Log("Wa");
                 cadenas_techo[3].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[3] = true;
                 caidaCadena.Play();
             }
             else if (probabilidad_cadenas == 687 && cadenas_tiradas[4] == false)
             {
-                Debug.Log("Wa");
+                //Debug.Log("Wa");
                 cadenas_techo[4].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 cadenas_tiradas[4] = true;
                 caidaCadena.Play();
