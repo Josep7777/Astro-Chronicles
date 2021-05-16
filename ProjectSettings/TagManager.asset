@@ -25,6 +25,7 @@ TagManager:
   - Pincho
   - Boss
   - Onda
+  - Cosa
   layers:
   - Default
   - TransparentFX
@@ -40,8 +41,6 @@ TagManager:
   - ImgFondo
   - MenuBoton
   - Boss
-  - 
-  - 
   - 
   - 
   - 

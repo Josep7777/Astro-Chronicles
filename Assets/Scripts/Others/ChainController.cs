@@ -67,6 +67,7 @@ public class ChainController : MonoBehaviour
         {
             if (!flag_rot_izqui)
             {
+                //Debug.Log("Lol");
                 //flag_rot_dere = false;
                 flag_rot_izqui = true;
                 contador = 0;
@@ -78,6 +79,20 @@ public class ChainController : MonoBehaviour
                 contador = 0;
             }
 
+        }
+
+    }
+
+    
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Cosa")
+        {
+            //Debug.Log("Cosa");
+            if (flag_rot_izqui)
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
+            else
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f, 5), ForceMode2D.Impulse);
         }
     }
 
