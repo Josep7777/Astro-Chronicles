@@ -23,9 +23,11 @@ public class Shot : MonoBehaviour
     public float recarga_escopeta;
     public float recarga_pistola;
     public float recarga_ametralladora;
+    private PauseManager pm;
 
     void Start()
     {
+        pm = GameObject.FindGameObjectWithTag("gamecontroller").GetComponent<PauseManager>();
         charactercontroller = this.GetComponent<CharacterController>();
         //coincontroller = this.GetComponent<CoinController>();
         weaponcontroller = GameObject.FindGameObjectWithTag("gamecontroller").GetComponent<WeaponController>();
@@ -109,23 +111,28 @@ public class Shot : MonoBehaviour
 
     void Update()
     {
-        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
-
-        firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
-        recarga_escopeta -= Time.deltaTime;
-        recarga_pistola -= Time.deltaTime;
-        recarga_ametralladora -= Time.deltaTime;
-
-        if (weaponcontroller.arma_actual=="Escopeta") {
-            Escopeta();
-        } else if (weaponcontroller.arma_actual == "Ametralladora")
+        if (!pm.pausa) //Si el juego no esta en pausa
         {
-            Ametralladora();
-        } else
-        {
-            Pistola();
+            lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+
+            firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
+            recarga_escopeta -= Time.deltaTime;
+            recarga_pistola -= Time.deltaTime;
+            recarga_ametralladora -= Time.deltaTime;
+
+            if (weaponcontroller.arma_actual == "Escopeta")
+            {
+                Escopeta();
+            }
+            else if (weaponcontroller.arma_actual == "Ametralladora")
+            {
+                Ametralladora();
+            }
+            else
+            {
+                Pistola();
+            }
         }
-        
     }
 }

@@ -14,6 +14,9 @@ public class MainMenuController : MonoBehaviour
     private List<string> resoluciones = new List<string>();
     private int index;
     public AudioMixer am;
+    public Toggle fs;
+    public Slider vol;
+    public float vol_aux;
     private void Start()
     {
         resoluciones_disponibles = Screen.resolutions;
@@ -36,6 +39,14 @@ public class MainMenuController : MonoBehaviour
         dropdown.RefreshShownValue();
     }
 
+    private void Update()
+    {
+        if (Screen.fullScreen) fs.isOn = true;
+        else fs.isOn = false;
+
+        am.GetFloat("Volumen", out vol_aux);
+        vol.value = vol_aux;
+    }
 
     public void Resoluciones(int i)
     {
