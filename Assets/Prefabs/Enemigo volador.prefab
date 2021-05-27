@@ -155,7 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0eb948f743fca41a4e30891b618179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
+  velocidad: 4
+  velocidad_rebote: 0.5
   area: 5.77
   areadisparo: 4.81
   velocidadisparo: 2

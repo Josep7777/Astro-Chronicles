@@ -5,13 +5,13 @@ using UnityEngine;
 public class pared : MonoBehaviour
 {
 
-    GameObject Player2;
+    //GameObject Player2;
   
   
 
     void Start()
     {
-        Player2 = gameObject.transform.parent.gameObject;
+        //Player2 = gameObject.transform.parent.gameObject;
       
     }
 
@@ -26,12 +26,12 @@ public class pared : MonoBehaviour
     {
         if (collision.collider.tag == "pared")
         {
-            Player2.GetComponent<CharacterController>().rebotar = true;
+            this.GetComponent<CharacterController>().rebotar = true;
 
         }
         if (collision.collider.tag == "izquierda")
         {
-            Player2.GetComponent<CharacterController>().rebotari = true;
+            this.GetComponent<CharacterController>().rebotari = true;
 
         }
 
@@ -42,12 +42,12 @@ public class pared : MonoBehaviour
         if (collision.collider.tag == "pared")
         {
 
-            Player2.GetComponent<CharacterController>().rebotar = false;
+            this.GetComponent<CharacterController>().rebotar = false;
         }
         if (collision.collider.tag == "izquierda")
         {
 
-            Player2.GetComponent<CharacterController>().rebotari = false;
+            this.GetComponent<CharacterController>().rebotari = false;
         }
     }
 

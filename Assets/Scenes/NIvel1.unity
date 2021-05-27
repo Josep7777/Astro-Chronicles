@@ -1207,7 +1207,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: bc53df1fbd6c7874f8d191ecc06d6030, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.85
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15073,7 +15073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1618625513
 Transform:
   m_ObjectHideFlags: 0
@@ -16550,6 +16550,7 @@ GameObject:
   - component: {fileID: 1787721417}
   - component: {fileID: 1787721427}
   - component: {fileID: 1787721418}
+  - component: {fileID: 1787721419}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -16602,6 +16603,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1787721419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787721416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a262a2a04879bd14ea475343befcc486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &1787721420
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -17684,7 +17697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1906626956
 Transform:
   m_ObjectHideFlags: 0
