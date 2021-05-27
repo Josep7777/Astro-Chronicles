@@ -6,6 +6,7 @@ public class patron : MonoBehaviour
 {
 
     public float velocidad;
+    public float velocidad_rebote=0.5f;
     public float area;
     //public float area2;
     public float areadisparo;
@@ -83,7 +84,7 @@ public class patron : MonoBehaviour
                 {
                     flagBA = true;
                     C = player.position.y + 3.5f;
-                    this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time, 1)), C);
+                    this.transform.position = new Vector2(Mathf.Lerp(A.position.x, B.position.x, Mathf.PingPong(Time.time * velocidad_rebote, 1)), C);
                     //Debug.Log("3");
                 }
                 else

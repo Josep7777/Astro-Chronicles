@@ -2518,12 +2518,12 @@ PrefabInstance:
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1685176016747210097, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
@@ -2931,7 +2931,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.063
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4194,7 +4194,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.39108276, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4205,7 +4205,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 1.1804962, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &247046344
 MonoBehaviour:
@@ -7284,7 +7284,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -20995,8 +20995,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02530148, y: 0}
-  m_Size: {x: 0.12939706, y: 0.3}
+  m_Offset: {x: 0.02530148, y: -0.0183049}
+  m_Size: {x: 0.12939706, y: 0.2633902}
   m_Direction: 0
 --- !u!114 &1244909436
 MonoBehaviour:
@@ -21102,7 +21102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244909430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.9, y: 12.2, z: 0}
+  m_LocalPosition: {x: -8.11, y: -4.38, z: 0}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_Children:
   - {fileID: 746292369}
@@ -24016,7 +24016,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.31
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -28426,7 +28426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849321640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0, z: 0}
   m_LocalScale: {x: 4.285714, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 870621449}
