@@ -34,7 +34,7 @@ public class Enemy3Patrol : MonoBehaviour
     {
         float distancia = Vector2.Distance(player.position, transform.position);
 
-        if (distancia < areadisparo)
+        if (distancia < areadisparo) //disparar
         {
 
                    
@@ -49,7 +49,7 @@ public class Enemy3Patrol : MonoBehaviour
 
 
         }
-         if (distancia < area)
+         if (distancia < area) //embestir
         {
             transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(player.position.x, this.transform.position.y), speed2 * Time.deltaTime);
         }
