@@ -64,7 +64,7 @@ public class Shot : MonoBehaviour
 
             GameObject bulletClone2 = Instantiate(bullet);
             bulletClone2.transform.position = new Vector2(firePoint.position.x, firePoint.position.y + 0.3f);
-            //bulletClone2.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+            bulletClone2.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 
             bulletClone2.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y*2f, firePoint.right.z) * bulletSpeed_shotgun;
             //Destroy(bulletClone.gameObject, 0.1f);
@@ -72,7 +72,7 @@ public class Shot : MonoBehaviour
 
             GameObject bulletClone3 = Instantiate(bullet);
             bulletClone3.transform.position = new Vector2(firePoint.position.x, firePoint.position.y - 0.3f);
-            //bulletClone3.transform.rotation = Quaternion.Euler(0, -0, lookAngle);
+            bulletClone3.transform.rotation = Quaternion.Euler(0, -0, lookAngle);
 
             bulletClone3.GetComponent<Rigidbody2D>().velocity = new Vector3(firePoint.right.x, firePoint.right.y / 2f, firePoint.right.z) * bulletSpeed_shotgun;
             //Destroy(bulletClone.gameObject, 0.1f);
