@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 17309239}
   m_Layer: 0
   m_Name: SueloCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7282,7 +7282,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: bc53df1fbd6c7874f8d191ecc06d6030, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.85
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8438,7 +8438,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 82ebafc2d68926a4fa5fc7ff6c81dbf2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -19155,7 +19155,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08498287, y: 1.2399704}
+  m_Offset: {x: 0.1094017, y: 1.2399704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19166,7 +19166,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2155056, y: 0.1277709}
+  m_Size: {x: 0.5562401, y: 0.1277709}
   m_EdgeRadius: 0
 --- !u!95 &1091680347
 Animator:
@@ -21103,7 +21103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244909430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.11, y: -4.38, z: 0}
+  m_LocalPosition: {x: -6.51, y: -4.27, z: 0}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_Children:
   - {fileID: 746292369}
@@ -21838,6 +21838,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1304290527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828878343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1304290531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304290527}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09be8c9b3ffde9540b4c26e098274b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1313257385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
@@ -24027,7 +24045,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5a80b9fa5e570534f83f9c769dc27b19, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.31
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -25151,7 +25169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540142261}
   - component: {fileID: 1540142262}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: A
   m_TagString: A
   m_Icon: {fileID: 0}
@@ -25166,8 +25184,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540142260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.565, y: 0.45, z: 0}
-  m_LocalScale: {x: -0.17999999, y: -0.02, z: 0.69}
+  m_LocalPosition: {x: -0.565, y: 0.6, z: 0}
+  m_LocalScale: {x: -0.2, y: 0.1, z: 0.69}
   m_Children: []
   m_Father: {fileID: 1244909439}
   m_RootOrder: 6
@@ -25187,7 +25205,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.57
+  m_Radius: 0.2
 --- !u!4 &1545645027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
@@ -26260,9 +26278,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1656992300}
   - component: {fileID: 1656992301}
+  - component: {fileID: 1656992302}
   m_Layer: 0
   m_Name: MovingPlataform3
-  m_TagString: Untagged
+  m_TagString: MovPlat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26298,6 +26317,32 @@ MonoBehaviour:
   speed: 5
   childTransform: {fileID: 1676008841}
   transformB: {fileID: 1734499232}
+--- !u!61 &1656992302
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656992299}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 11.867842, y: 5.2399015}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 2, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0010033, y: 1.0369663}
+  m_EdgeRadius: 0
 --- !u!1 &1674498870
 GameObject:
   m_ObjectHideFlags: 0
@@ -27997,6 +28042,11 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4952891575707799130, guid: aa0fa67888f993249ba3d6436b88e443,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1685176016747210097, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_Size.x
@@ -28079,7 +28129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832750352}
   - component: {fileID: 1832750353}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: B
   m_TagString: B
   m_Icon: {fileID: 0}
@@ -28094,8 +28144,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832750351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.632, y: 0.45, z: 0}
-  m_LocalScale: {x: -0.38, y: 0.099999994, z: -2.87}
+  m_LocalPosition: {x: 0.632, y: 0.6, z: 0}
+  m_LocalScale: {x: -0.2, y: 0.1, z: -2.87}
   m_Children: []
   m_Father: {fileID: 1244909439}
   m_RootOrder: 5
@@ -28115,7 +28165,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.2
 --- !u!1001 &1835210800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29772,7 +29822,7 @@ GameObject:
   - component: {fileID: 1988211235}
   m_Layer: 0
   m_Name: MovingPlataform3
-  m_TagString: Untagged
+  m_TagString: MovPlat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30623,7 +30673,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2039646554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31521,6 +31571,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1131861432}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2087736690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6524138314387615626, guid: aa0fa67888f993249ba3d6436b88e443,
+    type: 3}
+  m_PrefabInstance: {fileID: 834921895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2087736691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087736690}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09be8c9b3ffde9540b4c26e098274b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2089400204
 GameObject:
   m_ObjectHideFlags: 0

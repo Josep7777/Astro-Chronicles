@@ -28,6 +28,13 @@ public class Suelo : MonoBehaviour
         {
             Player.GetComponent<CharacterController>().estaensuelo = true;
         }
+
+        /*if (collision.collider.tag == "MovPlat")
+        {
+            Debug.Log("Wa");
+            //Player.GetComponent<CharacterController>().estaensuelo = true;
+        }*/
+
         if (collision.collider.tag == "trampa")
         {
             //Debug.Log("Daño");

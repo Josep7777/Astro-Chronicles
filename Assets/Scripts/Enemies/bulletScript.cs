@@ -28,6 +28,13 @@ public class bulletScript : MonoBehaviour
 
         }
 
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            Destroy(this.gameObject);
+            //Debug.Log("suelo");
+
+        }
+
     }
 
 }

@@ -83,9 +83,9 @@ public class BossController : MonoBehaviour
 
             if (cd_ataques <= 0)
             {
-                if (ataque2 == false) ataque = Random.Range(0, 4); //ataque = 1; //ataque = Random.Range(0, 3); //ataque = 2; //
+                if (ataque2 == false) ataque = Random.Range(0, 4); //ataque = 0; //ataque = Random.Range(0, 4); //ataque = 1; //ataque = Random.Range(0, 3); //ataque = 2; //
 
-                switch (ataque)
+                    switch (ataque)
                 {
                     case 0:
                         cd_ataques = Random.Range(0.5f, 2);

@@ -98,19 +98,20 @@ public class ChainController : MonoBehaviour
 
     void Ataque1()
     {
-        if (contador <= 0.3f && flag_rot_izqui)
+        if (contador <= 0.4f && flag_rot_izqui)
         {
             //Debug.Log("a");
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500f, 600) * Time.deltaTime, ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
+            //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 400) * Time.deltaTime, ForceMode2D.Impulse);
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 2, ForceMode2D.Impulse);
             contador += Time.deltaTime;
             ataqueCadena.Play();
 
         }
-        else if (contador <= 0.3f && flag_rot_izqui == false)
+        else if (contador <= 0.4f && flag_rot_izqui == false)
         {
             //Debug.Log("b");
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f, 5), ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(100f, 400) * Time.deltaTime, ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
             contador += Time.deltaTime;
             ataqueCadena.Play();
 
