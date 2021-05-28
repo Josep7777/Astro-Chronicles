@@ -75,7 +75,7 @@ public class patron : MonoBehaviour
                 transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(B.position.x, player.position.y + 2.5f), velocidad * Time.deltaTime);
             }
 
-            if (transform.position.x == B.position.x || flagAB) //AQUUUIIIIIIIIIIIIIIIIII
+            if (transform.position.x == B.position.x || flagAB) 
             {
                 flagAB = true;
                 //transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(A.position.x, player.position.y + 2.5f), velocidad * Time.deltaTime);
