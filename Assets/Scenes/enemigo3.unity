@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b726c9eaba6fad1419edce1a32cefa96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   distance: 1
   velocidad: 2
   groundDetection: {fileID: 629227042}
