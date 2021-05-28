@@ -101,7 +101,7 @@ public class ChainController : MonoBehaviour
         if (contador <= 0.4f && flag_rot_izqui)
         {
             //Debug.Log("a");
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500f, 600) * Time.deltaTime, ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-600f, 600) * 1.2f * Time.deltaTime, ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 400) * Time.deltaTime, ForceMode2D.Impulse);
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 2, ForceMode2D.Impulse);
             contador += Time.deltaTime;
@@ -111,7 +111,7 @@ public class ChainController : MonoBehaviour
         else if (contador <= 0.4f && flag_rot_izqui == false)
         {
             //Debug.Log("b");
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(100f, 400) * Time.deltaTime, ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(100f, 400) * 1.2f * Time.deltaTime, ForceMode2D.Impulse); //Multiplicar el vector por deltatime, y cambiar las fuerzas
             contador += Time.deltaTime;
             ataqueCadena.Play();
 
@@ -132,11 +132,11 @@ public class ChainController : MonoBehaviour
             
             this.transform.localScale = new Vector2(5f + contador2, 5f + contador2); //Escalar
         }
-        else if (contador2 <= 2.3f)
+        else if (contador2 <= 2.4f)
         {
             if (this.transform.position.x - jugador.transform.position.x > 0) //Hacer golpe a la izquierda
             {
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.2f, 0.5f) * Time.deltaTime, ForceMode2D.Impulse);
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500f, 600) * Time.deltaTime, ForceMode2D.Impulse);
                 onda.transform.eulerAngles = new Vector3(0, -180, 0);
                 onda.transform.position = new Vector2(this.transform.position.x - 1, 11.3f);
                 dere = false;
