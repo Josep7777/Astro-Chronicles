@@ -136,7 +136,7 @@ public class ChainController : MonoBehaviour
         {
             if (this.transform.position.x - jugador.transform.position.x > 0) //Hacer golpe a la izquierda
             {
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-4f, 5), ForceMode2D.Impulse);
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.2f, 0.5f) * Time.deltaTime, ForceMode2D.Impulse);
                 onda.transform.eulerAngles = new Vector3(0, -180, 0);
                 onda.transform.position = new Vector2(this.transform.position.x - 1, 11.3f);
                 dere = false;
@@ -144,7 +144,7 @@ public class ChainController : MonoBehaviour
             //this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2f, 5), ForceMode2D.Impulse);
             else //Hacer golpe a la derecha
             {
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.2f, 0.5f), ForceMode2D.Impulse);
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.2f, 0.5f) * Time.deltaTime, ForceMode2D.Impulse);
                 //Debug.Log("aaaaaaaaaaaaa");
                 onda.transform.eulerAngles = new Vector3(0, 0, 0);
                 onda.transform.position = new Vector2(this.transform.position.x + 1, 11.3f);
