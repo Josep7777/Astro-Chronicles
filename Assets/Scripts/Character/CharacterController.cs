@@ -13,7 +13,7 @@ public class CharacterController : MonoBehaviour
     public bool rebotari = false;
     public float salto=6.5f;
     public float salto_powerup=9.0f;
-    public float salto_rebote = 4.0f;
+    public float salto_rebote = 5.0f;
     public Animator animator;
     private PlayerCollisionsController pcc;
     private float tiempo_rebote = 0f;

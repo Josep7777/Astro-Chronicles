@@ -5149,7 +5149,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
-  m_Radius: 0.5
 --- !u!1 &604295918
 GameObject:
   m_ObjectHideFlags: 0
@@ -18437,7 +18436,7 @@ MonoBehaviour:
   rebotari: 0
   salto: 7.5
   salto_powerup: 9
-  salto_rebote: 3.5
+  salto_rebote: 4
   animator: {fileID: 1787721418}
   jumpSoundEffect: {fileID: 864063285}
   superJumpSoundEffect: {fileID: 1432744968}
