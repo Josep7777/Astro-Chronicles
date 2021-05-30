@@ -22,6 +22,7 @@ public class CharacterController : MonoBehaviour
     private bool flag_salto;
     private int flag_rebote_izqui;
     private int flag_rebote_dere;
+    public bool cutscene = false;
     //private bool flag_tiempo;
     //private float tiempo_aux;
     public AudioSource jumpSoundEffect;
@@ -51,82 +52,90 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tiempo_rebote -= Time.deltaTime;
-
-        if (flag_rebote_izqui==1 && estaensuelo) flag_rebote_izqui = 0;
-        if (flag_rebote_dere == 1 && estaensuelo) flag_rebote_dere = 0;
-
-        Rebotar();
-        Rebotari();
-        Saltar();
-
-        if (estaensuelo)
+        if (cutscene == false)
         {
-            gameObject.GetComponent<Rigidbody2D>().gravityScale = 1F;
-        }
+            tiempo_rebote -= Time.deltaTime;
 
-        if (tiempo_rebote > 0)
-        {
-            flag_rebote_vel = true;
-            velocidad_baja = 0;
-        }
+            if (flag_rebote_izqui == 1 && estaensuelo) flag_rebote_izqui = 0;
+            if (flag_rebote_dere == 1 && estaensuelo) flag_rebote_dere = 0;
 
-        if (tiempo_rebote<=0)
-        {
-            if (flag_rebote_vel)
+            Rebotar();
+            Rebotari();
+            Saltar();
+
+            if (estaensuelo)
             {
-                //flag_rebote_vel = false;
-                Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-                transform.position += movement * Time.deltaTime * velocidad_baja;
-                velocidad_baja += Time.deltaTime + 0.05f;
-
-                if (estaensuelo)
-                {
-                    velocidad_baja = velocidad;
-                }
-
-                //transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
-
-                if (velocidad_baja>=velocidad)
-                {
-                    flag_rebote_vel = false;
-                }
-
-
+                gameObject.GetComponent<Rigidbody2D>().gravityScale = 1F;
             }
-            else
+
+            if (tiempo_rebote > 0)
             {
-                Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-                horizontalmove = Input.GetAxis("Horizontal") * velocidad;
-
-                animator.SetFloat("velocidad", Mathf.Abs(horizontalmove));
-
-                if ((Input.GetKey(KeyCode.D)))
-                {
-                    animator.SetBool("Derecha", true);
-                }
-                else
-                {
-                    animator.SetBool("Derecha", false);
-                }
-
-                if ((Input.GetKey(KeyCode.A)))
-                {
-                    animator.SetBool("izquierda", true);
-                }
-                else
-                {
-                    animator.SetBool("izquierda", false);
-                }
-
-
-                if (pcc.flag_pu_velocidad)
-                {
-                    transform.position += movement * Time.deltaTime * velocidad_powerup;
-                }
-                else
-                    transform.position += movement * Time.deltaTime * velocidad;
+                flag_rebote_vel = true;
+                velocidad_baja = 0;
             }
+
+            if (tiempo_rebote <= 0)
+            {
+                if (flag_rebote_vel)
+                {
+                    //flag_rebote_vel = false;
+                    Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+                    transform.position += movement * Time.deltaTime * velocidad_baja;
+                    velocidad_baja += Time.deltaTime + 0.05f;
+
+                    if (estaensuelo)
+                    {
+                        velocidad_baja = velocidad;
+                    }
+
+                    //transform.Rotate(Vector3.forward * speedRotate * Time.deltaTime);
+
+                    if (velocidad_baja >= velocidad)
+                    {
+                        flag_rebote_vel = false;
+                    }
+
+
+                }
+                else
+                {
+                    Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+                    horizontalmove = Input.GetAxis("Horizontal") * velocidad;
+
+                    animator.SetFloat("velocidad", Mathf.Abs(horizontalmove));
+
+                    if ((Input.GetKey(KeyCode.D)))
+                    {
+                        animator.SetBool("Derecha", true);
+                    }
+                    else
+                    {
+                        animator.SetBool("Derecha", false);
+                    }
+
+                    if ((Input.GetKey(KeyCode.A)))
+                    {
+                        animator.SetBool("izquierda", true);
+                    }
+                    else
+                    {
+                        animator.SetBool("izquierda", false);
+                    }
+
+
+                    if (pcc.flag_pu_velocidad)
+                    {
+                        transform.position += movement * Time.deltaTime * velocidad_powerup;
+                    }
+                    else
+                        transform.position += movement * Time.deltaTime * velocidad;
+                }
+            }
+        } else
+        {
+            animator.SetBool("Derecha", false);
+            animator.SetBool("izquierda", false);
+            this.GetComponent<Animator>().enabled = false;
         }
     }
 
