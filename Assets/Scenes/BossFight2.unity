@@ -4855,6 +4855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1956797082}
+  cutscene: 0
 --- !u!1 &1326361898
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,6 +5255,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posCamara: {fileID: 637376891}
   gameMusic: {fileID: 1718166328}
+  sprite_jugador: {fileID: -9122243836941541079, guid: fcbad95c6a53dcd469a76b7f97b4fe0d,
+    type: 3}
+  rotacion: {fileID: 1321483852}
 --- !u!1 &1397643926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7353,6 +7357,7 @@ MonoBehaviour:
   bulletSpeed_machine_gun: 50
   bulletSpeed_shotgun: 30
   cursorArrow: {fileID: 2800000, guid: 64be13ffb7552e248b8eb2b85e67a0c7, type: 3}
+  cutscene: 0
   recarga_escopeta: 0
   recarga_pistola: 0
   recarga_ametralladora: 0

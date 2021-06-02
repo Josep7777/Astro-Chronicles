@@ -7,21 +7,27 @@ public class CutSceneController : MonoBehaviour
     private GameObject camara;
     public Transform posCamara;
     bool camaraOn = false;
-    private CharacterController cc;
+    private GameObject jugador;
     public AudioSource gameMusic;
+    public Sprite sprite_jugador;
+    public GameObject rotacion;
 
     private void Start()
     {
         camara = GameObject.FindGameObjectWithTag("MainCamera");
-        cc = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
+        //jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
     {
         if (camaraOn)
         {
-            camara.transform.position = Vector3.MoveTowards(camara.transform.position, new Vector3(-1.51f, camara.transform.position.y, camara.transform.position.z), 2f * Time.deltaTime);
-            cc.cutscene = true;
+            camara.transform.position = Vector3.MoveTowards(camara.transform.position, new Vector3(-1.51f, camara.transform.position.y, camara.transform.position.z), 2f * Time.deltaTime); //Mueve la camara
+            jugador.GetComponent<SpriteRenderer>().sprite = sprite_jugador; //Pone el sprite por default
+            jugador.GetComponent<CharacterController>().cutscene = true; //Evita que el jugador se mueva
+            jugador.GetComponent<Shot>().cutscene = true; //Evita que el jugador dispare
+            rotacion.GetComponent<WeaponRotation>().cutscene = true; //Evita la rotacion del arma
         }
 
     }

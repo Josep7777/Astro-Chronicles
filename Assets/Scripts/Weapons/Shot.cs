@@ -19,6 +19,7 @@ public class Shot : MonoBehaviour
     //CoinController coincontroller;
     private WeaponController weaponcontroller;
     CharacterController charactercontroller;
+    public bool cutscene = false;
 
     public float recarga_escopeta;
     public float recarga_pistola;
@@ -111,7 +112,7 @@ public class Shot : MonoBehaviour
 
     void Update()
     {
-        if (!pm.pausa) //Si el juego no esta en pausa
+        if (!pm.pausa && !cutscene) //Si el juego no esta en pausa ni en la cinematica
         {
             lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
