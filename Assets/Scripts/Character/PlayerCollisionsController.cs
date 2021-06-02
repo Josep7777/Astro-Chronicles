@@ -14,6 +14,8 @@ public class PlayerCollisionsController : MonoBehaviour
     public bool final_lvl1 = false;
     private WeaponController wp;
     public GameObject jp;
+    Rigidbody2D rb;
+    public bool jetPackFlag;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,7 @@ public class PlayerCollisionsController : MonoBehaviour
         wp = GameObject.FindGameObjectWithTag("gamecontroller").GetComponent<WeaponController>();
         salto_pos = new GameObject();
         velocidad_pos = new GameObject();
+        jetPackFlag = false;
     }
 
     // Update is called once per frame
@@ -68,6 +71,7 @@ public class PlayerCollisionsController : MonoBehaviour
             Destroy(other.gameObject);
             // wp.arma_actual = "Escopeta";
             jp.SetActive(true);
+            jetPackFlag = true;
 
         }
 

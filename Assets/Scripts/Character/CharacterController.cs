@@ -11,6 +11,7 @@ public class CharacterController : MonoBehaviour
     public bool estaensuelo = false;
     public bool rebotar = false;
     public bool rebotari = false;
+    public float saltoJet;
     public float salto=7.0f;
     public float salto_powerup=9.0f;
     public float salto_rebote = 4.0f;
@@ -21,6 +22,10 @@ public class CharacterController : MonoBehaviour
     private bool flag_salto;
     private int flag_rebote_izqui;
     private int flag_rebote_dere;
+
+
+    Rigidbody2D rb;
+
     //private bool flag_tiempo;
     //private float tiempo_aux;
     void Start()
@@ -29,6 +34,7 @@ public class CharacterController : MonoBehaviour
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
+        rb = GetComponent<Rigidbody2D>();
         //flag_tiempo = false;
     }
 
@@ -54,6 +60,7 @@ public class CharacterController : MonoBehaviour
         Rebotar();
         Rebotari();
         Saltar();
+        JetPack();
 
         if (tiempo_rebote > 0)
         {
@@ -152,5 +159,18 @@ public class CharacterController : MonoBehaviour
 
             }
         }
+    }
+
+    void JetPack()
+    {
+
+            if ((Input.GetKey(KeyCode.F)))
+            {
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime , ForceMode2D.Impulse);
+  
+                //rebotari= true;
+            }
+
+        
     }
 }
