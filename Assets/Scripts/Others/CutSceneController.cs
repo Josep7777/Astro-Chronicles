@@ -8,6 +8,7 @@ public class CutSceneController : MonoBehaviour
     public Transform posCamara;
     bool camaraOn = false;
     private CharacterController cc;
+    public AudioSource gameMusic;
 
     private void Start()
     {
@@ -29,6 +30,8 @@ public class CutSceneController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            camara.GetComponent<CameraController>().gameMusic.Stop();
+            //gameMusic.Stop;
             camara.GetComponent<CameraController>().enabled = false;
             //camara.transform.position = new Vector3(-1.51f, camara.transform.position.y, camara.transform.position.z); //Vector3.MoveTowards(camara.transform.position, new Vector3(-1.5f, camara.transform.position.y, camara.transform.position.z), 2f*Time.deltaTime);
             camaraOn = true;

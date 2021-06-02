@@ -2094,7 +2094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637376890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -0.64100176, z: 0}
+  m_LocalPosition: {x: -2.07, y: -0.64100176, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5253,6 +5253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posCamara: {fileID: 637376891}
+  gameMusic: {fileID: 1718166328}
 --- !u!1 &1397643926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7410,6 +7411,7 @@ MonoBehaviour:
   salto_powerup: 9
   salto_rebote: 4
   animator: {fileID: 1956797084}
+  cutscene: 0
   jumpSoundEffect: {fileID: 288398860}
   superJumpSoundEffect: {fileID: 2000691840}
 --- !u!50 &1956797090
