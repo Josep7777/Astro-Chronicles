@@ -54,9 +54,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Tuto
+  - name: Suelo
     uniqueID: 1352612755
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: fondo
+    uniqueID: 2740842779
+    locked: 0
+  - name: encima
+    uniqueID: 1911027415
     locked: 0
