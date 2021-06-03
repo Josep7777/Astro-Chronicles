@@ -5,11 +5,11 @@ using UnityEngine.UI;
 public class PlayerFuelBar : MonoBehaviour
 {
     public Slider fuelBar;
-    private PlayerFuel playerFuel;
+    private CharacterController playerFuel;
 
     private void Start()
     {
-        playerFuel = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFuel>();
+        playerFuel = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
         fuelBar = GetComponent<Slider>();
         fuelBar.maxValue = playerFuel.playerMaxFuel;
         fuelBar.value = playerFuel.playerMaxFuel;
