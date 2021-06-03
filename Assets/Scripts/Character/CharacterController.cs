@@ -16,25 +16,24 @@ public class CharacterController : MonoBehaviour
     public float salto_powerup=9.0f;
     public float salto_rebote = 4.0f;
     private PlayerCollisionsController pcc;
+    private PlayerFuel pf;
     private float tiempo_rebote = 0f;
     private bool flag_rebote_vel = false;
 
     private bool flag_salto;
     private int flag_rebote_izqui;
     private int flag_rebote_dere;
-
-
-    Rigidbody2D rb;
-
+    public bool flying;
+    private bool sinFuel;
     //private bool flag_tiempo;
     //private float tiempo_aux;
     void Start()
     {
         pcc = this.GetComponent<PlayerCollisionsController>();
+        pf = this.GetComponent<PlayerFuel>();
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
-        rb = GetComponent<Rigidbody2D>();
         //flag_tiempo = false;
     }
 
@@ -163,14 +162,22 @@ public class CharacterController : MonoBehaviour
 
     void JetPack()
     {
-
-            if ((Input.GetKey(KeyCode.F)))
+        if (pf.playerFuel >= 0)
+        {
+            if ((Input.GetKey(KeyCode.F)) && pcc.jetPackFlag == true)
             {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime , ForceMode2D.Impulse);
-  
-                //rebotari= true;
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
+                flying = true;
             }
 
-        
+            else
+             {
+             flying = false;
+                if (pf.playerFuel <= 2000)
+                {
+                    pf.playerFuel++;
+                }
+            }
+        }
     }
 }

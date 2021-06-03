@@ -272,10 +272,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 357147217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01b07ed92fb313742aca84f0651ffde1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9429b0aa9814b274b9d34fa973ce7de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 357147220}
+  fuelBar: {fileID: 357147220}
 --- !u!114 &357147220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1142663967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1681901505
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2120,7 +2120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1765000858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2237,7 +2237,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2362,6 +2362,7 @@ GameObject:
   - component: {fileID: 1879798885}
   - component: {fileID: 1879798884}
   - component: {fileID: 1879798883}
+  - component: {fileID: 1879798889}
   - component: {fileID: 1879798882}
   - component: {fileID: 1879798881}
   m_Layer: 0
@@ -2392,6 +2393,7 @@ MonoBehaviour:
   flag_escopeta: 0
   final_lvl1: 0
   jp: {fileID: 1681901504}
+  fuelBarSlider: {fileID: 357147217}
   jetPackFlag: 0
 --- !u!114 &1879798882
 MonoBehaviour:
@@ -2462,10 +2464,11 @@ MonoBehaviour:
   estaensuelo: 0
   rebotar: 0
   rebotari: 0
-  saltoJet: 2
+  saltoJet: 2.5
   salto: 7
   salto_powerup: 0.1
   salto_rebote: 4
+  flying: 0
 --- !u!50 &1879798886
 Rigidbody2D:
   serializedVersion: 4
@@ -2558,6 +2561,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1879798889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879798880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901058efe6e11bc429b64be478dfd030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMaxFuel: 4000
+  playerFuel: 4000
+  tiempo_inmortal: 1
+  fBar: {fileID: 0}
+  cc: {fileID: 0}
 --- !u!1 &1900083472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,7 +2721,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
