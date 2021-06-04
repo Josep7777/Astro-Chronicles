@@ -38,6 +38,8 @@ public class DialogueController : MonoBehaviour
 
     private bool frase_acabada = false;
 
+    public GameObject continuara;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -122,8 +124,16 @@ public class DialogueController : MonoBehaviour
 
             if (flag_fade)
             {
-                fadeIn.CrossFadeAlpha(1, 1.5f, false);
+                fadeIn.CrossFadeAlpha(1, 1.0f, false);
                 //Debug.Log("a");
+            }
+
+            //Debug.Log(fadeIn.canvasRenderer.GetAlpha());
+
+            if (fadeIn.canvasRenderer.GetAlpha() >= 0.99f)
+            {
+                Debug.Log("Lol");
+                continuara.gameObject.SetActive(true);
             }
         }
 
