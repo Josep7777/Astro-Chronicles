@@ -6359,7 +6359,7 @@ MonoBehaviour:
   raton: {fileID: 936028758}
   texto_acabado: 0
   fadeIn: {fileID: 1892654105}
-  continuara: {fileID: 0}
+  continuara: {fileID: 1375080143}
 --- !u!1 &1534146673
 GameObject:
   m_ObjectHideFlags: 0
