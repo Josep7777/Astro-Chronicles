@@ -21,6 +21,7 @@ public class CharacterController : MonoBehaviour
     public int playerMaxFuel;
     public int playerFuel;
     public PlayerFuelBar fBar;
+    public GameObject particulasJet;
 
     private bool flag_salto;
     private int flag_rebote_izqui;
@@ -172,15 +173,17 @@ public class CharacterController : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
                 playerFuel = playerFuel - 1;
                 fBar.SetFuel(playerFuel);
+                particulasJet.SetActive(true);
             }
 
             else
              {
                 if (playerFuel <= playerMaxFuel && estaensuelo == true)
                 {
-                    playerFuel++;
+                    playerFuel = playerFuel + 3;
                     fBar.SetFuel(playerFuel);
                 }
+                particulasJet.SetActive(false);
             }
         }
     }
