@@ -18,6 +18,11 @@ public class PlayerCollisionsController : MonoBehaviour
         public AudioSource getPowerUpSound;
     public PlayerHealth ph;
     //GameObject Player;
+    public GameObject jp;
+    Rigidbody2D rb;
+    public GameObject fuelBarSlider;
+    public bool jetPackFlag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +31,8 @@ public class PlayerCollisionsController : MonoBehaviour
         velocidad_pos = new GameObject();
         //Player = gameObject.transform.parent.gameObject;
         ph = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        jetPackFlag = false;
+        fuelBarSlider.SetActive(false);
     }
 
     // Update is called once per frame
@@ -68,6 +75,16 @@ public class PlayerCollisionsController : MonoBehaviour
             Destroy(other.gameObject);
             wp.arma_actual = "Escopeta";
             flag_escopeta = true;
+
+        }
+
+        if (other.gameObject.tag == "jetpack")
+        {
+            Destroy(other.gameObject);
+            // wp.arma_actual = "Escopeta";
+            jp.SetActive(true);
+            fuelBarSlider.SetActive(true);
+            jetPackFlag = true;
 
         }
 

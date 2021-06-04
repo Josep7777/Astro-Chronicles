@@ -12,6 +12,8 @@ public class CharacterController : MonoBehaviour
     public bool rebotar = false;
     public bool rebotari = false;
     public float salto=6.5f;
+    public float saltoJet;
+    public float salto=7.0f;
     public float salto_powerup=9.0f;
     public float salto_rebote = 5.0f;
     public Animator animator;
@@ -19,9 +21,16 @@ public class CharacterController : MonoBehaviour
     private float tiempo_rebote = 0f;
     private bool flag_rebote_vel = false;
     private float horizontalmove = 0;
+    public int playerMaxFuel;
+    public int playerFuel;
+    public PlayerFuelBar fBar;
+    public GameObject particulasJet;
+
     private bool flag_salto;
     private int flag_rebote_izqui;
     private int flag_rebote_dere;
+    public bool flying;
+    private bool sinFuel;
     //private bool flag_tiempo;
     //private float tiempo_aux;
     public AudioSource jumpSoundEffect;
@@ -34,6 +43,7 @@ public class CharacterController : MonoBehaviour
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
+        playerFuel = playerMaxFuel;
         //flag_tiempo = false;
     }
 
@@ -59,6 +69,7 @@ public class CharacterController : MonoBehaviour
         Rebotar();
         Rebotari();
         Saltar();
+        JetPack();
 
         if (estaensuelo)
         {
@@ -251,6 +262,31 @@ public class CharacterController : MonoBehaviour
                     }*/
                 }
 
+            }
+        }
+    }
+
+    void JetPack()
+    {
+        if (pcc.jetPackFlag == true)
+        {
+            if ((Input.GetKey(KeyCode.F)) && playerFuel >= 0)
+            {
+
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
+                playerFuel = playerFuel - 1;
+                fBar.SetFuel(playerFuel);
+                particulasJet.SetActive(true);
+            }
+
+            else
+             {
+                if (playerFuel <= playerMaxFuel && estaensuelo == true)
+                {
+                    playerFuel = playerFuel + 3;
+                    fBar.SetFuel(playerFuel);
+                }
+                particulasJet.SetActive(false);
             }
         }
     }

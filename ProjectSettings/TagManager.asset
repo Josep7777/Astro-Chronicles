@@ -21,6 +21,9 @@ TagManager:
   - enemybullet
   - gladis
   - gamecontroller
+  - Undefined
+  - jetpack
+  - jetpackf
   - Ametralladora
   - Pincho
   - Boss
