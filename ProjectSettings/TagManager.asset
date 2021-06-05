@@ -30,6 +30,7 @@ TagManager:
   - Onda
   - Cosa
   - MovPlat
+  - jetPack
   layers:
   - Default
   - TransparentFX
@@ -63,6 +64,12 @@ TagManager:
   - 
   - 
   - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: MenuBoton
     uniqueID: 1326212433
@@ -80,6 +87,7 @@ TagManager:
     uniqueID: 2474507457
     locked: 0
   - name: Tuto
+  - name: Suelo
     uniqueID: 1352612755
     locked: 0
   - name: Default
@@ -90,4 +98,10 @@ TagManager:
     locked: 0
   - name: New Layer
     uniqueID: 2475140545
+    locked: 0
+  - name: fondo
+    uniqueID: 2740842779
+    locked: 0
+  - name: encima
+    uniqueID: 1911027415
     locked: 0
