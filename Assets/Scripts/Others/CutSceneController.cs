@@ -14,6 +14,8 @@ public class CutSceneController : MonoBehaviour
     private float contador;
     public GameObject jefe;
     private DialogueController dc;
+    public AudioSource musicaTension;
+    private bool iniciarMusica = false;
 
     private void Start()
     {
@@ -47,6 +49,11 @@ public class CutSceneController : MonoBehaviour
         if (contador >= 2)
         {
             jefe.transform.eulerAngles = new Vector3(0, -180, 0);
+            if (!iniciarMusica)
+            {
+                musicaTension.Play();
+                iniciarMusica = true;
+            }
         }
 
         if(contador >= 4)

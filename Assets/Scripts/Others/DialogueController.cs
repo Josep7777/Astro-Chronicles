@@ -132,7 +132,7 @@ public class DialogueController : MonoBehaviour
 
             if (fadeIn.canvasRenderer.GetAlpha() >= 0.99f)
             {
-                Debug.Log("Lol");
+                //Debug.Log("Lol");
                 continuara.gameObject.SetActive(true);
             }
         }
