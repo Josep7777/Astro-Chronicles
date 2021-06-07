@@ -11,6 +11,7 @@ public class WeaponRotation : MonoBehaviour
     /*public GameObject suelo;
     public GameObject paredDere;
     public GameObject paredIzqui;*/
+    public bool cutscene = false;
 
     //private Transform centre;
     //private Vector3 desiredPos;
@@ -25,7 +26,7 @@ public class WeaponRotation : MonoBehaviour
 
     private void Update()
     {
-        if (!pm.pausa)
+        if (!pm.pausa && !cutscene)
         { //Si el juego no esta en pausa
             Vector3 posicion_raton = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             posicion_raton.Normalize();

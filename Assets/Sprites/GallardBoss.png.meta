@@ -1,0 +1,1856 @@
+fileFormatVersion: 2
+guid: 718a088a1e75eb0418bdb9ab2d2f08ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7770350676929282587
+    second: GallardBoss_0
+  - first:
+      213: -7340342215329883363
+    second: GallardBoss_1
+  - first:
+      213: 5870071124895414747
+    second: GallardBoss_2
+  - first:
+      213: 2989476910362887309
+    second: GallardBoss_3
+  - first:
+      213: -5356905225129930877
+    second: GallardBoss_4
+  - first:
+      213: 2998182544416995563
+    second: GallardBoss_5
+  - first:
+      213: 8765612312043666510
+    second: GallardBoss_6
+  - first:
+      213: -66564115478809798
+    second: GallardBoss_7
+  - first:
+      213: 6578493073266288234
+    second: GallardBoss_8
+  - first:
+      213: 7328504289110829682
+    second: GallardBoss_9
+  - first:
+      213: -5879887260121514283
+    second: GallardBoss_10
+  - first:
+      213: 1398985687077009196
+    second: GallardBoss_11
+  - first:
+      213: -300783299869783299
+    second: GallardBoss_12
+  - first:
+      213: 4923940165616286512
+    second: GallardBoss_13
+  - first:
+      213: 2275128741415172653
+    second: GallardBoss_14
+  - first:
+      213: 7461718789215909285
+    second: GallardBoss_15
+  - first:
+      213: -5480422330899607471
+    second: GallardBoss_16
+  - first:
+      213: -3821678071887545737
+    second: GallardBoss_17
+  - first:
+      213: 5139923249668345625
+    second: GallardBoss_18
+  - first:
+      213: -7137169739446890531
+    second: GallardBoss_19
+  - first:
+      213: 3894451789100246593
+    second: GallardBoss_20
+  - first:
+      213: 8943292133589385535
+    second: GallardBoss_21
+  - first:
+      213: 5688996363064764237
+    second: GallardBoss_22
+  - first:
+      213: 3441810096168178553
+    second: GallardBoss_23
+  - first:
+      213: -1098979746030304219
+    second: GallardBoss_24
+  - first:
+      213: -5678541360436889645
+    second: GallardBoss_25
+  - first:
+      213: 8097704314837488139
+    second: GallardBoss_26
+  - first:
+      213: 1873929672100569147
+    second: GallardBoss_27
+  - first:
+      213: -1484196095644625961
+    second: GallardBoss_28
+  - first:
+      213: -8067845658098376234
+    second: GallardBoss_29
+  - first:
+      213: 136853641144915719
+    second: GallardBoss_30
+  - first:
+      213: -4795162191681495766
+    second: GallardBoss_31
+  - first:
+      213: 6556486446053065604
+    second: GallardBoss_32
+  - first:
+      213: -4736187993740902045
+    second: GallardBoss_33
+  - first:
+      213: -4196069223900450270
+    second: GallardBoss_34
+  - first:
+      213: -2987334904113918452
+    second: GallardBoss_35
+  - first:
+      213: 5390900121143813650
+    second: GallardBoss_36
+  - first:
+      213: -9153905208744807309
+    second: GallardBoss_37
+  - first:
+      213: 8008469725705916683
+    second: GallardBoss_38
+  - first:
+      213: -1802377067670487915
+    second: GallardBoss_39
+  - first:
+      213: -1789043058852067607
+    second: GallardBoss_40
+  - first:
+      213: -1458894191096791886
+    second: GallardBoss_41
+  - first:
+      213: 724757711385960900
+    second: GallardBoss_42
+  - first:
+      213: -7747198381831175583
+    second: GallardBoss_43
+  - first:
+      213: 5893380840599232064
+    second: GallardBoss_44
+  - first:
+      213: -2147594489654149607
+    second: GallardBoss_45
+  - first:
+      213: -3474627282647460634
+    second: GallardBoss_46
+  - first:
+      213: -5441562048702591350
+    second: GallardBoss_47
+  - first:
+      213: -60345584733432101
+    second: GallardBoss_48
+  - first:
+      213: 8941509686746066065
+    second: GallardBoss_49
+  - first:
+      213: 422109348063135443
+    second: GallardBoss_50
+  - first:
+      213: 7210178156262598075
+    second: GallardBoss_51
+  - first:
+      213: 1560014490550787259
+    second: GallardBoss_52
+  - first:
+      213: -3319070515731575816
+    second: GallardBoss_53
+  - first:
+      213: -4249402731605535691
+    second: GallardBoss_54
+  - first:
+      213: 630468447759931353
+    second: GallardBoss_55
+  - first:
+      213: -5997442470864537474
+    second: GallardBoss_56
+  - first:
+      213: 1186444846660473602
+    second: GallardBoss_57
+  - first:
+      213: -4874988683106176952
+    second: GallardBoss_58
+  - first:
+      213: 2082749585985184640
+    second: GallardBoss_59
+  - first:
+      213: -5000183261684034617
+    second: GallardBoss_60
+  - first:
+      213: 8359409938279765931
+    second: GallardBoss_61
+  - first:
+      213: -4384145215249076101
+    second: GallardBoss_62
+  - first:
+      213: -4704095183081841819
+    second: GallardBoss_63
+  - first:
+      213: -5521147496237004084
+    second: GallardBoss_64
+  - first:
+      213: -3028009566068962784
+    second: GallardBoss_65
+  - first:
+      213: 8643437826587496414
+    second: GallardBoss_66
+  - first:
+      213: -7354074628013741463
+    second: GallardBoss_67
+  - first:
+      213: -762100878494530934
+    second: GallardBoss_68
+  - first:
+      213: -3971565433454218787
+    second: GallardBoss_69
+  - first:
+      213: 4392516493835747710
+    second: GallardBoss_70
+  - first:
+      213: -1595390040871769538
+    second: GallardBoss_71
+  - first:
+      213: -8182518814656866291
+    second: GallardBoss_72
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GallardBoss_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 758
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf9697a3b2a2490800000000000000
+      internalID: -7770350676929282587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 755
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b557d55add12a90800000000000000
+      internalID: -7340342215329883363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 757
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd93bad469ea67150800000000000000
+      internalID: 5870071124895414747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 759
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84896a3961cc7920800000000000000
+      internalID: 2989476910362887309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 674
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f42b0741378a5b0800000000000000
+      internalID: -5356905225129930877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 674
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be870cb932fab9920800000000000000
+      internalID: 2998182544416995563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 674
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c3722a4f5b5a970800000000000000
+      internalID: 8765612312043666510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_7
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 677
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33f8162a44831ff0800000000000000
+      internalID: -66564115478809798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_8
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 676
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66a76588908b4b50800000000000000
+      internalID: 6578493073266288234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 681
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27aa067a2d314b560800000000000000
+      internalID: 7328504289110829682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_10
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 683
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5debc1d90b1766ea0800000000000000
+      internalID: -5879887260121514283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_11
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 683
+        width: 80
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27b41cf1123a6310800000000000000
+      internalID: 1398985687077009196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_12
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 596
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa44e0be2763dbf0800000000000000
+      internalID: -300783299869783299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 596
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b36d21e79555440800000000000000
+      internalID: 4923940165616286512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_14
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 596
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a35524981e29f10800000000000000
+      internalID: 2275128741415172653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_15
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 595
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5721574b95d8760800000000000000
+      internalID: 7461718789215909285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_16
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 595
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1505c933de0a1f3b0800000000000000
+      internalID: -5480422330899607471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 600
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a3e3faa0ca6fac0800000000000000
+      internalID: -3821678071887545737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_18
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 602
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fc04d86fca45740800000000000000
+      internalID: 5139923249668345625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_19
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 606
+        width: 79
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfc992bfeda3fc90800000000000000
+      internalID: -7137169739446890531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 517
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146643cb44fdb0630800000000000000
+      internalID: 3894451789100246593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 518
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f310429dfc4fc1c70800000000000000
+      internalID: 8943292133589385535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_22
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 526
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47e6f4fc0063fe40800000000000000
+      internalID: 5688996363064764237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 517
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97315760c04c3cf20800000000000000
+      internalID: 3441810096168178553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_24
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 519
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524c38e5eb3afb0f0800000000000000
+      internalID: -1098979746030304219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_25
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 521
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7bbc808b4c131b0800000000000000
+      internalID: -5678541360436889645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 519
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02590ebb23d06070800000000000000
+      internalID: 8097704314837488139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 395
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b306e97bb19810a10800000000000000
+      internalID: 1873929672100569147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_28
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 399
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3941eb383176be0800000000000000
+      internalID: -1484196095644625961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_29
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 398
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d16e568e11490090800000000000000
+      internalID: -8067845658098376234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 401
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70759aa59a336e100800000000000000
+      internalID: 136853641144915719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_31
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 403
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dd07c7469247db0800000000000000
+      internalID: -4795162191681495766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_32
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 390
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48308a75fa15dfa50800000000000000
+      internalID: 6556486446053065604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 390
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3618a93fc1ea54eb0800000000000000
+      internalID: -4736187993740902045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_34
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 403
+        width: 44
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222f678c54194c5c0800000000000000
+      internalID: -4196069223900450270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_35
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 279
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e0a277bbada86d0800000000000000
+      internalID: -2987334904113918452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 278
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2162364191350da40800000000000000
+      internalID: 5390900121143813650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_37
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 285
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374fa2d46bbc6f080800000000000000
+      internalID: -9153905208744807309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_38
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 291
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01db2be8ccc32f60800000000000000
+      internalID: 8008469725705916683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_39
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 293
+        width: 41
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cb03a3b9bacf6e0800000000000000
+      internalID: -1802377067670487915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_40
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 286
+        width: 41
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e68e3511da0c27e0800000000000000
+      internalID: -1789043058852067607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_41
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 276
+        width: 41
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc7bc67677f0cbe0800000000000000
+      internalID: -1458894191096791886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_42
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 277
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1a26f6c4bde0a00800000000000000
+      internalID: 724757711385960900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_43
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 183
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162c87e3e1c6c7490800000000000000
+      internalID: -7747198381831175583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_44
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 184
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e920a66ae79c150800000000000000
+      internalID: 5893380840599232064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_45
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 183
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ef39aa0363232e0800000000000000
+      internalID: -2147594489654149607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_46
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 184
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4dae255e4a7cfc0800000000000000
+      internalID: -3474627282647460634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_47
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 218
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ec5d7b520bb74b0800000000000000
+      internalID: -5441562048702591350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_48
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 218
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6533aa20c992ff0800000000000000
+      internalID: -60345584733432101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_49
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 218
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ca63a9faf961c70800000000000000
+      internalID: 8941509686746066065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_50
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 218
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6cca33732abd500800000000000000
+      internalID: 422109348063135443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_51
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 218
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5205bf4d2bf0460800000000000000
+      internalID: 7210178156262598075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_52
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 178
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcddb1f9e846a510800000000000000
+      internalID: 1560014490550787259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_53
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 181
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbc85d73fa40f1d0800000000000000
+      internalID: -3319070515731575816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_54
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 100
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534d31bdab61705c0800000000000000
+      internalID: -4249402731605535691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_55
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 101
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d792de76bfdfb800800000000000000
+      internalID: 630468447759931353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_56
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 100
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78374b39ddc4cca0800000000000000
+      internalID: -5997442470864537474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_57
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 100
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2035ace4d49177010800000000000000
+      internalID: 1186444846660473602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_58
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 101
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840386b1f9f885cb0800000000000000
+      internalID: -4874988683106176952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_59
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 128
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0832dbca6b967ec10800000000000000
+      internalID: 2082749585985184640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_60
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 130
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3187bc0d7cb9ab0800000000000000
+      internalID: -5000183261684034617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_61
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 131
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7190f7c07920470800000000000000
+      internalID: 8359409938279765931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_62
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 131
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70b959a7236823c0800000000000000
+      internalID: -4384145215249076101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_63
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 117
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bd7c6ba52b7beb0800000000000000
+      internalID: -4704095183081841819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_64
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 117
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca814eba91f063b0800000000000000
+      internalID: -5521147496237004084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_65
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 116
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a89fdb7595af5d0800000000000000
+      internalID: -3028009566068962784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_66
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 116
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf0ceb88e8a3f770800000000000000
+      internalID: 8643437826587496414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_67
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 110
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a2781e61411f990800000000000000
+      internalID: -7354074628013741463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_68
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 112
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82025ee9497c65f0800000000000000
+      internalID: -762100878494530934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_69
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 112
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1bdb0d74a22e8c0800000000000000
+      internalID: -3971565433454218787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_70
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 112
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71cf158a7a55fc30800000000000000
+      internalID: 4392516493835747710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_71
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 10
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a64a7e5390cd9e0800000000000000
+      internalID: -1595390040871769538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GallardBoss_72
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 10
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d085d6cad7ad17e80800000000000000
+      internalID: -8182518814656866291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
