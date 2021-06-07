@@ -19,7 +19,7 @@ public class BossHPController : MonoBehaviour
     {
         if (EnemyHealth <= 0)
         {
-            //gc.GetComponent<EndController>().flag = true;
+            gc.GetComponent<EndController>().flag = true;
             Destroy(gameObject);
         }
     }

@@ -19,8 +19,10 @@ public class EndController : MonoBehaviour
     {
         if (flag)
         {
-            if(tiempo>=1.5f)
-                SceneManager.LoadScene("FinalLvl1");
+            if (tiempo >= 1.5f)
+            {
+                SceneManager.LoadScene("Nivel3");
+            }
             tiempo += Time.deltaTime;
         }
     }
