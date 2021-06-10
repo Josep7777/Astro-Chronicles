@@ -46,6 +46,11 @@ public class WeaponController : MonoBehaviour
             escopeta = true;
         }
 
+        if (SceneManager.GetActiveScene().name == "Nivel3")
+        {
+            ametralladora = true;
+        }
+
         switch (arma_actual)
         {
             case "Pistola":
