@@ -13,6 +13,7 @@ public class CharacterController : MonoBehaviour
     public bool rebotari = false;
     public float salto=6.5f;
     public float saltoJet;
+    public float saltoJetSuelo;
     //public float salto=7.0f;
     public float salto_powerup=9.0f;
     public float salto_rebote = 5.0f;
@@ -282,7 +283,16 @@ public class CharacterController : MonoBehaviour
     {
         if (pcc.jetPackFlag == true)
         {
-            if ((Input.GetKey(KeyCode.F)) && playerFuel >= 0)
+            if ((Input.GetKey(KeyCode.F)) && playerFuel >= 0 && estaensuelo == true)
+            {
+
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJetSuelo) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
+                playerFuel = playerFuel - 1;
+                fBar.SetFuel(playerFuel);
+                particulasJet.SetActive(true);
+            }
+
+            if ((Input.GetKey(KeyCode.F)) && playerFuel >= 0 && estaensuelo == false)
             {
 
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
