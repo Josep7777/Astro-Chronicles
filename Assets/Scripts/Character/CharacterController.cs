@@ -285,7 +285,6 @@ public class CharacterController : MonoBehaviour
         {
             if ((Input.GetMouseButton(1)) && playerFuel >= 0 && estaensuelo == true)
             {
-                Debug.Log("Pressed left click.");
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJetSuelo) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
                 playerFuel = playerFuel - 1;
                 fBar.SetFuel(playerFuel);
