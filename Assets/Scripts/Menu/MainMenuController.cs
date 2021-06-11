@@ -41,8 +41,8 @@ public class MainMenuController : MonoBehaviour
 
     private void Update()
     {
-        if (Screen.fullScreen) fs.isOn = true;
-        else fs.isOn = false;
+        //if (Screen.fullScreen) fs.isOn = true;
+        //else fs.isOn = false;
 
         am.GetFloat("Volumen", out vol_aux);
         vol.value = vol_aux;
