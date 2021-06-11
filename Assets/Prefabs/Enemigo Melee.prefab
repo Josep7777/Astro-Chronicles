@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1486864950fe713419bc405d2500106d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   distance: 1
   groundDetection: {fileID: 7913171323434772711}
   area: 3.5
@@ -195,6 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyMaxHealth: 5
+  EnemyHealth: 0
+  RobotDeathSoundEffect: {fileID: 0}
 --- !u!95 &2670519155243274020
 Animator:
   serializedVersion: 3
