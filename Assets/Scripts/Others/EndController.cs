@@ -21,6 +21,7 @@ public class EndController : MonoBehaviour
         {
             if (tiempo >= 1.5f)
             {
+                VariablesController.Nivel3 = true;
                 SceneManager.LoadScene("Nivel3");
             }
             tiempo += Time.deltaTime;

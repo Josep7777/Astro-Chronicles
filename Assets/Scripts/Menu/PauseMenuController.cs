@@ -79,6 +79,7 @@ public class PauseMenuController : MonoBehaviour
         //Reseteamos variables globales
         VariablesController.Muerto = false;
         VariablesController.Nivel2 = false;
+        VariablesController.Nivel3 = false;
 
         //Volvemos al menu principal
         SceneManager.LoadScene("MenuInicial");

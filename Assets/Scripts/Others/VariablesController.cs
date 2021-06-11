@@ -6,6 +6,7 @@ public static class VariablesController
 {
     private static bool muerto = false;
     private static bool nivel2 = false;
+    private static bool nivel3 = false;
 
     public static bool Muerto
     {
@@ -28,6 +29,18 @@ public static class VariablesController
         set
         {
             nivel2 = value;
+        }
+    }
+
+    public static bool Nivel3
+    {
+        get
+        {
+            return nivel3;
+        }
+        set
+        {
+            nivel3 = value;
         }
     }
 

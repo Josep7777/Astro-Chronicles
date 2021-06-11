@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class DialogueController : MonoBehaviour
     private bool frase_acabada = false;
 
     public GameObject continuara;
+
+    private float tiempo_cre = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -134,6 +137,10 @@ public class DialogueController : MonoBehaviour
             {
                 //Debug.Log("Lol");
                 continuara.gameObject.SetActive(true);
+                if (tiempo_cre >= 3.0f){
+                    SceneManager.LoadScene("Nivel2");
+                }
+                tiempo_cre += Time.deltaTime;
             }
         }
 
