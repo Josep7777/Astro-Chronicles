@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class CreditsController : MonoBehaviour
 {
+    float contador;
     // Start is called before the first frame update
     void Start()
     {
-        
+        contador = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(this.transform.position.y >= 1400)
+        contador += Time.deltaTime;
+        if(contador >=27.5f)
         {
             VariablesController.Muerto = false;
             VariablesController.Nivel2 = false;
