@@ -69,6 +69,11 @@ public class MainMenuController : MonoBehaviour
         Screen.fullScreen = fs;
     }
 
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void Salir()
     {
         Application.Quit();
