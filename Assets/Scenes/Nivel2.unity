@@ -7374,6 +7374,8 @@ MonoBehaviour:
   cutscene: 0
   jumpSoundEffect: {fileID: 1558621562}
   superJumpSoundEffect: {fileID: 831575037}
+  ph: {fileID: 0}
+  healthBar: {fileID: 1408756903}
 --- !u!50 &431801317
 Rigidbody2D:
   serializedVersion: 4

@@ -38,14 +38,19 @@ public class CharacterController : MonoBehaviour
     public AudioSource jumpSoundEffect;
     public AudioSource superJumpSoundEffect;
 
+    private bool inmortal;
+    public PlayerHealth ph;
+    public PlayerHealthbar healthBar;
     private bool patata= false;
     void Start()
     {
         pcc = this.GetComponent<PlayerCollisionsController>();
+        ph = this.GetComponent<PlayerHealth>();
         flag_salto = false;
         flag_rebote_dere = 0;
         flag_rebote_izqui = 0;
         playerFuel = playerMaxFuel;
+        inmortal = false;
         //flag_tiempo = false;
     }
 
@@ -74,6 +79,7 @@ public class CharacterController : MonoBehaviour
         Rebotari();
         Saltar();
         JetPack();
+            ModoInmortal();
             Rebotar();
             Rebotari();
             Saltar();
@@ -310,5 +316,19 @@ public class CharacterController : MonoBehaviour
                 particulasJet.SetActive(false);
             }
         }
+    }
+
+    void ModoInmortal()
+    {
+            if (Input.GetKey(KeyCode.I) && inmortal == false)
+            {
+                inmortal = true;
+                ph.playerHealth = ph.playerMaxHealth;
+                healthBar.SetHealth(ph.playerHealth);
+             }
+            if (Input.GetKey(KeyCode.I) && inmortal == true)
+            {
+                inmortal = false;
+            }
     }
 }
