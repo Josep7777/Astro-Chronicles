@@ -14907,7 +14907,7 @@ PrefabInstance:
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.85
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 2495512774865125351, guid: aa0fa67888f993249ba3d6436b88e443,
         type: 3}
@@ -20982,7 +20982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2c4f3c871ae0b418d33f878d39dc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyMaxHealth: 35
+  EnemyMaxHealth: 40
   barra_vida: {fileID: 1459436957}
   gc: {fileID: 1799674939}
 --- !u!212 &1091680351
@@ -28367,7 +28367,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656992299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 354c0a11fcd23634ba3c6e47ac767b2d, type: 3}
   m_Name: 
@@ -36955,7 +36955,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988211233}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 354c0a11fcd23634ba3c6e47ac767b2d, type: 3}
   m_Name: 

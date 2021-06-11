@@ -18,7 +18,8 @@ public class Muerte : MonoBehaviour
 	void TaskOnClick()
 	{
 		VariablesController.Muerto = true;
-		if(VariablesController.Nivel2) SceneManager.LoadScene("Nivel2");
+		if (VariablesController.Nivel3) SceneManager.LoadScene("Nivel3");
+		else if (VariablesController.Nivel2) SceneManager.LoadScene("Nivel2");
 		else SceneManager.LoadScene("NIvel1");
 	}
 }
