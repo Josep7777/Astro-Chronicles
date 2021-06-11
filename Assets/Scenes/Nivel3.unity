@@ -20067,7 +20067,7 @@ MonoBehaviour:
   rebotari: 0
   salto: 6
   saltoJet: 1.7
-  saltoJetSuelo: 14
+  saltoJetSuelo: 16
   salto_powerup: 9
   salto_rebote: 4
   animator: {fileID: 1300819287}
