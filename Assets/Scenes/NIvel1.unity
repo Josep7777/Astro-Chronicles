@@ -2835,6 +2835,7 @@ MonoBehaviour:
   rebotari: 0
   salto: 7
   saltoJet: 0
+  saltoJetSuelo: 0
   salto_powerup: 9
   salto_rebote: 4
   animator: {fileID: 0}
@@ -2846,6 +2847,8 @@ MonoBehaviour:
   cutscene: 0
   jumpSoundEffect: {fileID: 0}
   superJumpSoundEffect: {fileID: 0}
+  ph: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!50 &254580692
 Rigidbody2D:
   serializedVersion: 4
@@ -9149,7 +9152,7 @@ PrefabInstance:
     - target: {fileID: 4060139303970807167, guid: 38ce114c56bee674b9868bbe6c2c3382,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.2089405
+      value: 9.208941
       objectReference: {fileID: 0}
     - target: {fileID: 4060139303970807167, guid: 38ce114c56bee674b9868bbe6c2c3382,
         type: 3}
@@ -10459,7 +10462,7 @@ PrefabInstance:
     - target: {fileID: 4060139303970807167, guid: f34955f32f07ef444bc26833e1387de4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 4060139303970807167, guid: f34955f32f07ef444bc26833e1387de4,
         type: 3}
@@ -14804,6 +14807,7 @@ MonoBehaviour:
   rebotari: 0
   salto: 7
   saltoJet: 0
+  saltoJetSuelo: 0
   salto_powerup: 9
   salto_rebote: 4
   animator: {fileID: 0}
@@ -14815,6 +14819,8 @@ MonoBehaviour:
   cutscene: 0
   jumpSoundEffect: {fileID: 0}
   superJumpSoundEffect: {fileID: 0}
+  ph: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!50 &1063815405
 Rigidbody2D:
   serializedVersion: 4
@@ -18198,12 +18204,12 @@ PrefabInstance:
     - target: {fileID: 4060139303970807167, guid: d52823cacbc4fc247a16a71742bd5621,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24
+      value: 23.73
       objectReference: {fileID: 0}
     - target: {fileID: 4060139303970807167, guid: d52823cacbc4fc247a16a71742bd5621,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.2089405
+      value: 9.208941
       objectReference: {fileID: 0}
     - target: {fileID: 4060139303970807167, guid: d52823cacbc4fc247a16a71742bd5621,
         type: 3}
@@ -20980,6 +20986,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1527151544}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1527734176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1933816569141024895, guid: 38ce114c56bee674b9868bbe6c2c3382,
+    type: 3}
+  m_PrefabInstance: {fileID: 860764604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1527734179
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527734176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a693d38a0b29ca42825ecc35c1767df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1529809680
 GameObject:
   m_ObjectHideFlags: 0
@@ -22728,6 +22759,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720472476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1933816569141024895, guid: d52823cacbc4fc247a16a71742bd5621,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324018000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1720472477
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720472476}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1cf3087578cef87428443a53ec26d5c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1723500772
 GameObject:
   m_ObjectHideFlags: 0
@@ -23462,6 +23518,7 @@ MonoBehaviour:
   rebotari: 0
   salto: 7.5
   saltoJet: 2.5
+  saltoJetSuelo: 0
   salto_powerup: 9
   salto_rebote: 4
   animator: {fileID: 1787721418}
@@ -23473,6 +23530,8 @@ MonoBehaviour:
   cutscene: 0
   jumpSoundEffect: {fileID: 864063285}
   superJumpSoundEffect: {fileID: 1432744968}
+  ph: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!50 &1787721422
 Rigidbody2D:
   serializedVersion: 4

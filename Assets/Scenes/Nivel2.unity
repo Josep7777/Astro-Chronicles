@@ -25496,6 +25496,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435139351}
   m_CullTransparentMesh: 0
+--- !u!1 &1444169442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6647972605576561040, guid: 695c403af3b225346aaef46607804154,
+    type: 3}
+  m_PrefabInstance: {fileID: 2114423597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1444169445
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444169442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: efa22ce958cf85748a4ca479bed9ad3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1446546829
 GameObject:
   m_ObjectHideFlags: 0
@@ -25853,9 +25878,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 35
+  m_MaxValue: 40
   m_WholeNumbers: 0
-  m_Value: 35
+  m_Value: 40
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -39176,7 +39201,7 @@ PrefabInstance:
     - target: {fileID: 9136852700733441168, guid: 695c403af3b225346aaef46607804154,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 9136852700733441168, guid: 695c403af3b225346aaef46607804154,
         type: 3}
