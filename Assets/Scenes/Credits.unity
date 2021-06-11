@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 239600342}
   - component: {fileID: 239600344}
   - component: {fileID: 239600343}
+  - component: {fileID: 239600345}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -263,6 +264,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &239600345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239600341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83791f87b4f9ccd48bf35c047711bab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &446645264
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +371,7 @@ GameObject:
   - component: {fileID: 494784266}
   - component: {fileID: 494784265}
   - component: {fileID: 494784264}
+  - component: {fileID: 494784268}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -446,6 +460,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &494784268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494784263}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83791f87b4f9ccd48bf35c047711bab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779550740
 GameObject:
   m_ObjectHideFlags: 0

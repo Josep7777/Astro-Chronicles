@@ -137,8 +137,8 @@ public class DialogueController : MonoBehaviour
             {
                 //Debug.Log("Lol");
                 continuara.gameObject.SetActive(true);
-                if (tiempo_cre >= 3.0f){
-                    SceneManager.LoadScene("Nivel2");
+                if (tiempo_cre >= 6.0f){
+                    SceneManager.LoadScene("Credits");
                 }
                 tiempo_cre += Time.deltaTime;
             }
