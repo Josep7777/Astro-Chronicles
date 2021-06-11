@@ -42,8 +42,8 @@ public class PauseMenuController : MonoBehaviour
             opciones = false;
         }
 
-        if (Screen.fullScreen) fs.isOn = true;
-        else fs.isOn = false;
+        //if (Screen.fullScreen) fs.isOn = true;
+        //else fs.isOn = false;
 
         am.GetFloat("Volumen", out vol_aux);
         vol.value = vol_aux;
