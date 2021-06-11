@@ -32,6 +32,7 @@ public class CutSceneController : MonoBehaviour
         {
             camara.transform.position = Vector3.MoveTowards(camara.transform.position, new Vector3(posCamara.position.x, camara.transform.position.y, camara.transform.position.z), 2f * Time.deltaTime); //Mueve la camara
             jugador.GetComponent<SpriteRenderer>().sprite = sprite_jugador; //Pone el sprite por default
+            jugador.GetComponent<CharacterController>().particulasJet.SetActive(false); //Evita que el jugador se mueva
             jugador.GetComponent<CharacterController>().cutscene = true; //Evita que el jugador se mueva
             jugador.GetComponent<Shot>().cutscene = true; //Evita que el jugador dispare
             rotacion.GetComponent<WeaponRotation>().cutscene = true; //Evita la rotacion del arma

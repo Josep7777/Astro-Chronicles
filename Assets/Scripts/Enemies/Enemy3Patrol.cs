@@ -23,6 +23,7 @@ public class Enemy3Patrol : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletParent;
     public float fireRate = 1f;
+    private bool disparar = false;
 
     private void Start()
     {
@@ -34,16 +35,15 @@ public class Enemy3Patrol : MonoBehaviour
     {
         float distancia = Vector2.Distance(player.position, transform.position);
 
-        if (distancia < areadisparo) //disparar
+        if (distancia < areadisparo || disparar) //disparar
         {
 
                    
 
                 if (tiempofire < Time.time)
                 {
-                    Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
+                    Instantiate(bullet, bulletParent.transform.position, Quaternion.Euler(0, 0, 90));
                     tiempofire = Time.time + fireRate;
-
                 }
            
 
@@ -52,6 +52,16 @@ public class Enemy3Patrol : MonoBehaviour
          if (distancia < area) //embestir
         {
             transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(player.position.x, this.transform.position.y), speed2 * Time.deltaTime);
+            if (this.transform.position.x - player.position.x < 0)
+            {
+                movingRight = true;
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            }
         }
         else
         {
@@ -81,6 +91,12 @@ public class Enemy3Patrol : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, -180, 0);
             movingRight = false;
+        }
+
+        if (collision.gameObject.tag.Equals("bala"))
+        {
+            disparar = true;
+            //Debug.Log(EnemyHealth);
         }
 
         if (collision.gameObject.tag == "izquierda")
