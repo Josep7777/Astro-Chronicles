@@ -15,7 +15,7 @@ public class PlayerFuelBar : MonoBehaviour
         fuelBar.value = playerFuel.playerMaxFuel;
     }
 
-    public void SetFuel(int fuel)
+    public void SetFuel(float fuel)
     {
         fuelBar.value = fuel;
     }

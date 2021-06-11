@@ -22,8 +22,8 @@ public class CharacterController : MonoBehaviour
     private float tiempo_rebote = 0f;
     private bool flag_rebote_vel = false;
     private float horizontalmove = 0;
-    public int playerMaxFuel;
-    public int playerFuel;
+    public float playerMaxFuel;
+    public float playerFuel;
     public PlayerFuelBar fBar;
     public GameObject particulasJet;
 
@@ -286,7 +286,7 @@ public class CharacterController : MonoBehaviour
             if ((Input.GetMouseButton(1)) && playerFuel >= 0 && estaensuelo == true)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJetSuelo) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
-                playerFuel = playerFuel - 1;
+                playerFuel = playerFuel - 100*Time.deltaTime;
                 fBar.SetFuel(playerFuel);
                 particulasJet.SetActive(true);
             }
@@ -295,7 +295,7 @@ public class CharacterController : MonoBehaviour
             {
 
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, saltoJet) * velocidad * Time.deltaTime, ForceMode2D.Impulse);
-                playerFuel = playerFuel - 1;
+                playerFuel = playerFuel - 100*Time.deltaTime;
                 fBar.SetFuel(playerFuel);
                 particulasJet.SetActive(true);
             }
@@ -304,7 +304,7 @@ public class CharacterController : MonoBehaviour
              {
                 if (playerFuel <= playerMaxFuel && estaensuelo == true)
                 {
-                    playerFuel = playerFuel + 3;
+                    playerFuel = playerFuel + 200 * Time.deltaTime;
                     fBar.SetFuel(playerFuel);
                 }
                 particulasJet.SetActive(false);
